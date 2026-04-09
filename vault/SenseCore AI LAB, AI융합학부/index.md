@@ -4,7 +4,7 @@ source_kind: page
 source_path: ssot/pages/31ee313f58b980d68c5ad8ed9d5aeff8__SenseCore AI LAB, AI융합학부
 notion_id: 31ee313f58b980d68c5ad8ed9d5aeff8
 notion_url: https://www.notion.so/31ee313f58b980d68c5ad8ed9d5aeff8
-icon: "🌒"
+notion_icon: "🌒"
 ---
 # ⭐ Vision
 [SensCore AI Lab](https://senscore.github.io/index.html#home)
