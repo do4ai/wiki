@@ -1,9 +1,9 @@
 ---
-title: "do4ai Obsidian"
+title: "do4ai Atlas"
 source_kind: generated_index
 ---
 
-# do4ai Obsidian
+# do4ai Atlas
 
 ## Workspace
 
