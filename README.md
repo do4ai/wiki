@@ -5,6 +5,7 @@
 - 배포 도메인: `obsidian.do4ai.com`
 - 인프라와 운영: 별도 GitOps 저장소에서 담당
 - 이 저장소의 책임: `vault/` 아래 마크다운 문서와 SilverBullet space 설정 유지
+- 기본 UX 방향: Notion에 가까운 넓은 문서 편집 화면, 템플릿, slash snippets 제공
 
 ## 갱신 방식
 
