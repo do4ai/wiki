@@ -23,6 +23,34 @@ DEFAULT_SITE_URL = "https://atlas.do4ai.com"
 DEFAULT_LOCALE = "en"
 SYNC_TAG = "atlas-sync"
 STATE_VERSION = 1
+LEGACY_SB_CLIENT_CLEANUP_HEAD = """<script>
+(() => {
+  try {
+    const marker = 'atlas-legacy-sw-cleanup-v1';
+    if (!('serviceWorker' in navigator)) {
+      return;
+    }
+    navigator.serviceWorker.getRegistrations().then(async regs => {
+      let hadLegacy = false;
+      for (const reg of regs) {
+        const urls = [reg.active?.scriptURL, reg.installing?.scriptURL, reg.waiting?.scriptURL].filter(Boolean);
+        if (urls.some(url => /service_worker\\.js(?:\\?|$)/.test(url) || /\\/\\.client\\//.test(url))) {
+          hadLegacy = true;
+        }
+        await reg.unregister();
+      }
+      if ('caches' in window) {
+        const keys = await caches.keys();
+        await Promise.all(keys.map(key => caches.delete(key)));
+      }
+      if (hadLegacy && !sessionStorage.getItem(marker)) {
+        sessionStorage.setItem(marker, '1');
+        location.reload();
+      }
+    }).catch(() => {});
+  } catch (_) {}
+})();
+</script>"""
 
 
 class WikiSyncError(RuntimeError):
@@ -134,6 +162,82 @@ def login(base_url: str, username: str, password: str) -> str:
         message = response.get("message") or response.get("slug") or "login failed"
         raise WikiSyncError(message)
     return result["jwt"]
+
+
+def ensure_client_cleanup_theming(base_url: str, token: str) -> None:
+    data = graphql(
+        base_url,
+        """
+        query CurrentThemingConfig {
+          theming {
+            config {
+              theme
+              iconset
+              darkMode
+              tocPosition
+              injectCSS
+              injectHead
+              injectBody
+            }
+          }
+        }
+        """,
+        {},
+        token=token,
+        timeout=30,
+    )
+    config = data["theming"]["config"]
+    if config.get("injectHead") == LEGACY_SB_CLIENT_CLEANUP_HEAD:
+        return
+
+    data = graphql(
+        base_url,
+        """
+        mutation SetThemingConfig(
+          $theme: String!,
+          $iconset: String!,
+          $darkMode: Boolean!,
+          $tocPosition: String,
+          $injectCSS: String,
+          $injectHead: String,
+          $injectBody: String
+        ) {
+          theming {
+            setConfig(
+              theme: $theme,
+              iconset: $iconset,
+              darkMode: $darkMode,
+              tocPosition: $tocPosition,
+              injectCSS: $injectCSS,
+              injectHead: $injectHead,
+              injectBody: $injectBody
+            ) {
+              responseResult {
+                succeeded
+                slug
+                message
+              }
+            }
+          }
+        }
+        """,
+        {
+            "theme": config["theme"],
+            "iconset": config["iconset"],
+            "darkMode": bool(config["darkMode"]),
+            "tocPosition": config.get("tocPosition") or "left",
+            "injectCSS": config.get("injectCSS") or "",
+            "injectHead": LEGACY_SB_CLIENT_CLEANUP_HEAD,
+            "injectBody": config.get("injectBody") or "",
+        },
+        token=token,
+        timeout=30,
+    )
+    response = data["theming"]["setConfig"]["responseResult"]
+    if not response["succeeded"]:
+        raise WikiSyncError(
+            response.get("message") or response.get("slug") or "failed to update Wiki.js theming cleanup script"
+        )
 
 
 def ensure_setup(
@@ -687,6 +791,7 @@ def sync_pages(
         return
 
     token = login(base_url, admin_email, admin_password)
+    ensure_client_cleanup_theming(base_url, token)
     remote_pages = list_remote_pages(base_url, token, locale)
     remote_by_path = {page["path"]: page for page in remote_pages}
     atlas_remote = {
