@@ -12,3 +12,7 @@ CLAUDE.md
 
 # Local screenshots and debugging captures
 images/
+
+# Python cache
+__pycache__/
+*.pyc
