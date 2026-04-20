@@ -16,3 +16,11 @@ images/
 # Python cache
 __pycache__/
 *.pyc
+
+# Node package installs and local package-manager state
+node_modules/
+.npm/
+.pnpm-store/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
