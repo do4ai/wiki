@@ -30,12 +30,12 @@ source_kind: page
 - 데이터 설계가 아키텍처만큼 중요하다는 점을 구체적으로 말할 수 있습니다.
 
 # 강의 목록
-[4. CLIP, contrastive learning, shared embedding](4. CLIP, contrastive learning, shared embedding/index.md)
-[5. hard negative, temperature, retrieval](5. hard negative, temperature, retrieval/index.md)
-[6. multimodal pretraining objective와 data mixture](6. multimodal pretraining objective와 data mixture/index.md)
+[4. CLIP, contrastive learning, shared embedding](https://wiki.do4ai.com/home/lecture/vlm을-위한-수학과-구조/02-이미지와-텍스트를-같은-공간에-맞추기/4-clip-contrastive-learning-shared-embedding)
+[5. hard negative, temperature, retrieval](https://wiki.do4ai.com/home/lecture/vlm을-위한-수학과-구조/02-이미지와-텍스트를-같은-공간에-맞추기/5-hard-negative-temperature-retrieval)
+[6. multimodal pretraining objective와 data mixture](https://wiki.do4ai.com/home/lecture/vlm을-위한-수학과-구조/02-이미지와-텍스트를-같은-공간에-맞추기/6-multimodal-pretraining-objective와-data-mixture)
 
 ## Page Tree
 
-- [4. CLIP, contrastive learning, shared embedding](4. CLIP, contrastive learning, shared embedding/index.md)
-- [5. hard negative, temperature, retrieval](5. hard negative, temperature, retrieval/index.md)
-- [6. multimodal pretraining objective와 data mixture](6. multimodal pretraining objective와 data mixture/index.md)
+- [4. CLIP, contrastive learning, shared embedding](https://wiki.do4ai.com/home/lecture/vlm을-위한-수학과-구조/02-이미지와-텍스트를-같은-공간에-맞추기/4-clip-contrastive-learning-shared-embedding)
+- [5. hard negative, temperature, retrieval](https://wiki.do4ai.com/home/lecture/vlm을-위한-수학과-구조/02-이미지와-텍스트를-같은-공간에-맞추기/5-hard-negative-temperature-retrieval)
+- [6. multimodal pretraining objective와 data mixture](https://wiki.do4ai.com/home/lecture/vlm을-위한-수학과-구조/02-이미지와-텍스트를-같은-공간에-맞추기/6-multimodal-pretraining-objective와-data-mixture)

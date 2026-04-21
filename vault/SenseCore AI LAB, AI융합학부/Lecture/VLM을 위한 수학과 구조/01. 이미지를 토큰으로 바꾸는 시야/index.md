@@ -30,12 +30,12 @@ source_kind: page
 - connector가 없는 VLM 설계가 왜 곧바로 성립하지 않는지 말할 수 있습니다.
 
 # 강의 목록
-[1. 패치, feature map, vision token](1. 패치, feature map, vision token/index.md)
-[2. CNN, ViT, vision encoder 비교](2. CNN, ViT, vision encoder 비교/index.md)
-[3. projector, adapter, connector](3. projector, adapter, connector/index.md)
+[1. 패치, feature map, vision token](https://wiki.do4ai.com/home/lecture/vlm을-위한-수학과-구조/01-이미지를-토큰으로-바꾸는-시야/1-패치-feature-map-vision-token)
+[2. CNN, ViT, vision encoder 비교](https://wiki.do4ai.com/home/lecture/vlm을-위한-수학과-구조/01-이미지를-토큰으로-바꾸는-시야/2-cnn-vit-vision-encoder-비교)
+[3. projector, adapter, connector](https://wiki.do4ai.com/home/lecture/vlm을-위한-수학과-구조/01-이미지를-토큰으로-바꾸는-시야/3-projector-adapter-connector)
 
 ## Page Tree
 
-- [1. 패치, feature map, vision token](1. 패치, feature map, vision token/index.md)
-- [2. CNN, ViT, vision encoder 비교](2. CNN, ViT, vision encoder 비교/index.md)
-- [3. projector, adapter, connector](3. projector, adapter, connector/index.md)
+- [1. 패치, feature map, vision token](https://wiki.do4ai.com/home/lecture/vlm을-위한-수학과-구조/01-이미지를-토큰으로-바꾸는-시야/1-패치-feature-map-vision-token)
+- [2. CNN, ViT, vision encoder 비교](https://wiki.do4ai.com/home/lecture/vlm을-위한-수학과-구조/01-이미지를-토큰으로-바꾸는-시야/2-cnn-vit-vision-encoder-비교)
+- [3. projector, adapter, connector](https://wiki.do4ai.com/home/lecture/vlm을-위한-수학과-구조/01-이미지를-토큰으로-바꾸는-시야/3-projector-adapter-connector)

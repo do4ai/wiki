@@ -30,12 +30,12 @@ source_kind: page
 - 텍스트-only alignment와 multimodal alignment의 차이를 말할 수 있습니다.
 
 # 강의 목록
-[10. grounding, OCR, region reasoning](10. grounding, OCR, region reasoning/index.md)
-[11. hallucination, faithfulness, evaluation](11. hallucination, faithfulness, evaluation/index.md)
-[12. instruction tuning, RLHF, multimodal alignment](12. instruction tuning, RLHF, multimodal alignment/index.md)
+[10. grounding, OCR, region reasoning](https://wiki.do4ai.com/home/lecture/vlm을-위한-수학과-구조/04-grounding-ocr-멀티모달-정렬/10-grounding-ocr-region-reasoning)
+[11. hallucination, faithfulness, evaluation](https://wiki.do4ai.com/home/lecture/vlm을-위한-수학과-구조/04-grounding-ocr-멀티모달-정렬/11-hallucination-faithfulness-evaluation)
+[12. instruction tuning, RLHF, multimodal alignment](https://wiki.do4ai.com/home/lecture/vlm을-위한-수학과-구조/04-grounding-ocr-멀티모달-정렬/12-instruction-tuning-rlhf-multimodal-alignment)
 
 ## Page Tree
 
-- [10. grounding, OCR, region reasoning](10. grounding, OCR, region reasoning/index.md)
-- [11. hallucination, faithfulness, evaluation](11. hallucination, faithfulness, evaluation/index.md)
-- [12. instruction tuning, RLHF, multimodal alignment](12. instruction tuning, RLHF, multimodal alignment/index.md)
+- [10. grounding, OCR, region reasoning](https://wiki.do4ai.com/home/lecture/vlm을-위한-수학과-구조/04-grounding-ocr-멀티모달-정렬/10-grounding-ocr-region-reasoning)
+- [11. hallucination, faithfulness, evaluation](https://wiki.do4ai.com/home/lecture/vlm을-위한-수학과-구조/04-grounding-ocr-멀티모달-정렬/11-hallucination-faithfulness-evaluation)
+- [12. instruction tuning, RLHF, multimodal alignment](https://wiki.do4ai.com/home/lecture/vlm을-위한-수학과-구조/04-grounding-ocr-멀티모달-정렬/12-instruction-tuning-rlhf-multimodal-alignment)

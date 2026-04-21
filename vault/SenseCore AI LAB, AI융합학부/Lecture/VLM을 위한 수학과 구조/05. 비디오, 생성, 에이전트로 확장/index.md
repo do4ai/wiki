@@ -30,12 +30,12 @@ source_kind: page
 - unified multimodal model이 왜 연구적으로 매력적이면서도 어려운지 정리할 수 있습니다.
 
 # 강의 목록
-[13. video token, temporal modeling, long context](13. video token, temporal modeling, long context/index.md)
-[14. multimodal RAG, tool use, agent loop](14. multimodal RAG, tool use, agent loop/index.md)
-[15. diffusion, image generation, unified multimodal model](15. diffusion, image generation, unified multimodal model/index.md)
+[13. video token, temporal modeling, long context](https://wiki.do4ai.com/home/lecture/vlm을-위한-수학과-구조/05-비디오-생성-에이전트로-확장/13-video-token-temporal-modeling-long-context)
+[14. multimodal RAG, tool use, agent loop](https://wiki.do4ai.com/home/lecture/vlm을-위한-수학과-구조/05-비디오-생성-에이전트로-확장/14-multimodal-rag-tool-use-agent-loop)
+[15. diffusion, image generation, unified multimodal model](https://wiki.do4ai.com/home/lecture/vlm을-위한-수학과-구조/05-비디오-생성-에이전트로-확장/15-diffusion-image-generation-unified-multimodal-model)
 
 ## Page Tree
 
-- [13. video token, temporal modeling, long context](13. video token, temporal modeling, long context/index.md)
-- [14. multimodal RAG, tool use, agent loop](14. multimodal RAG, tool use, agent loop/index.md)
-- [15. diffusion, image generation, unified multimodal model](15. diffusion, image generation, unified multimodal model/index.md)
+- [13. video token, temporal modeling, long context](https://wiki.do4ai.com/home/lecture/vlm을-위한-수학과-구조/05-비디오-생성-에이전트로-확장/13-video-token-temporal-modeling-long-context)
+- [14. multimodal RAG, tool use, agent loop](https://wiki.do4ai.com/home/lecture/vlm을-위한-수학과-구조/05-비디오-생성-에이전트로-확장/14-multimodal-rag-tool-use-agent-loop)
+- [15. diffusion, image generation, unified multimodal model](https://wiki.do4ai.com/home/lecture/vlm을-위한-수학과-구조/05-비디오-생성-에이전트로-확장/15-diffusion-image-generation-unified-multimodal-model)

@@ -30,12 +30,12 @@ source_kind: page
 - encoder-decoder와 decoder-only 접근의 장단점을 과제 기준으로 설명할 수 있습니다.
 
 # 강의 목록
-[7. early fusion, late fusion, encoder-decoder](7. early fusion, late fusion, encoder-decoder/index.md)
-[8. cross-attention, Q-Former, resampler](8. cross-attention, Q-Former, resampler/index.md)
-[9. decoder-only VLM, prefix tuning, visual prompt](9. decoder-only VLM, prefix tuning, visual prompt/index.md)
+[7. early fusion, late fusion, encoder-decoder](https://wiki.do4ai.com/home/lecture/vlm을-위한-수학과-구조/03-vlm-아키텍처와-정보-흐름/7-early-fusion-late-fusion-encoder-decoder)
+[8. cross-attention, Q-Former, resampler](https://wiki.do4ai.com/home/lecture/vlm을-위한-수학과-구조/03-vlm-아키텍처와-정보-흐름/8-cross-attention-q-former-resampler)
+[9. decoder-only VLM, prefix tuning, visual prompt](https://wiki.do4ai.com/home/lecture/vlm을-위한-수학과-구조/03-vlm-아키텍처와-정보-흐름/9-decoder-only-vlm-prefix-tuning-visual-prompt)
 
 ## Page Tree
 
-- [7. early fusion, late fusion, encoder-decoder](7. early fusion, late fusion, encoder-decoder/index.md)
-- [8. cross-attention, Q-Former, resampler](8. cross-attention, Q-Former, resampler/index.md)
-- [9. decoder-only VLM, prefix tuning, visual prompt](9. decoder-only VLM, prefix tuning, visual prompt/index.md)
+- [7. early fusion, late fusion, encoder-decoder](https://wiki.do4ai.com/home/lecture/vlm을-위한-수학과-구조/03-vlm-아키텍처와-정보-흐름/7-early-fusion-late-fusion-encoder-decoder)
+- [8. cross-attention, Q-Former, resampler](https://wiki.do4ai.com/home/lecture/vlm을-위한-수학과-구조/03-vlm-아키텍처와-정보-흐름/8-cross-attention-q-former-resampler)
+- [9. decoder-only VLM, prefix tuning, visual prompt](https://wiki.do4ai.com/home/lecture/vlm을-위한-수학과-구조/03-vlm-아키텍처와-정보-흐름/9-decoder-only-vlm-prefix-tuning-visual-prompt)
