@@ -1,13 +1,13 @@
 ---
-title: "05. 멀티모달 생성과 instruction tuning"
+title: "05. 멀티모달 tuning, preference, safety"
 source_kind: page
 ---
-이 단계는 정렬된 표현을 실제 생성형 assistant로 바꾸는 단계입니다. captioning과 VQA에서 출발해, multimodal instruction data, RLHF, DPO, safety policy가 어떻게 결합되는지 읽습니다.
+이 단계는 text-only alignment 일반론을 반복하는 단계가 아닙니다. 여기서는 `시각 근거가 포함된 instruction data`, `멀티모달 preference`, `이미지가 포함된 safety policy`처럼 VLM에서만 복잡해지는 tuning 문제를 다룹니다.
 
 # 이 단계에서 배우는 것
 - captioning, VQA, conditional generation의 공통 구조를 배운다.
 - multimodal SFT 데이터와 instruction tuning의 역할을 이해한다.
-- preference learning, reward model, RLHF를 멀티모달 맥락에서 읽는다.
+- preference learning, reward model, RLHF를 `visual evidence 포함` 관점에서 읽는다.
 - DPO와 rejection sampling 같은 alignment 대안을 비교한다.
 - safety policy와 refusal이 실제 제품 동작을 어떻게 바꾸는지 본다.
 
@@ -32,13 +32,13 @@ source_kind: page
 - 25. safety policy, refusal, jailbreak 대응: 제품 수준 안전성 이해.
 
 # 이 단계를 읽을 때 기억할 점
-- 좋은 답은 정답성, 근거성, 안전성이 함께 맞아야 한다.
-- instruction tuning은 능력을 마법처럼 만드는 것이 아니라, 이미 있는 표현과 reasoning을 재배치한다.
-- alignment는 품질 향상과 동시에 새로운 failure mode도 만들 수 있다.
+- 이 단계는 generic RLHF 설명보다 `멀티모달 정렬의 특수성`을 더 오래 봅니다.
+- 좋은 답은 정답성, 근거성, 안전성이 함께 맞아야 합니다.
+- alignment는 품질 향상과 동시에 새로운 failure mode도 만들 수 있습니다.
 
 # 이 단계를 마치면 할 수 있는 것
 - multimodal SFT와 preference tuning의 차이를 설명할 수 있다.
-- RLHF와 DPO가 무엇을 바꾸는지 말할 수 있다.
+- RLHF와 DPO가 `멀티모달 응답 분포`에서 무엇을 바꾸는지 말할 수 있다.
 - safety policy가 모델 구조와 분리된 후처리만이 아니라는 점을 설명할 수 있다.
 
 # 문제 해설과 강의 목록

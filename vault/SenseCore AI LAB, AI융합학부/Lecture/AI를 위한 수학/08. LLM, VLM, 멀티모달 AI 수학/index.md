@@ -19,7 +19,8 @@ parent_notion_id: 32be313f58b981e7b26fea2d45e6fa7f
 - 본편 강의는 핵심 구조와 수학을 직접 설명할 만큼 충분히 깊게 다룹니다.
 - 다만 VLM, 멀티모달 생성, 최신 아키텍처처럼 독립적으로 더 깊게 파야 하는 주제는 이후 별도 심화 교재로 분리해 확장합니다.
 - 즉 본편은 큰 흐름과 핵심 수학을 책임지고, 심화 교재는 세부 아키텍처와 응용 분야를 이어서 다룹니다.
-- 별도 심화 교재 초안은 [VLM을 위한 수학과 구조](../../VLM을 위한 수학과 구조/index.md)에서 시작합니다.
+- 이 단계에서는 Transformer, pretraining, alignment, CLIP, VLM의 큰 그림과 공통 수학만 잡습니다.
+- vision encoder 세부, connector family, OCR/document understanding, faithfulness 평가, video/audio/agent 확장처럼 `VLM에서만 본격적으로 어려워지는 주제`는 [VLM을 위한 수학과 구조](../../VLM을 위한 수학과 구조/index.md)로 넘깁니다.
 
 # 이 단계를 읽는 순서
 1. 37강에서 attention과 Transformer의 기본 연산을 잡습니다.

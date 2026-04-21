@@ -1,8 +1,8 @@
 ---
-title: "06. 평가, 신뢰성, hallucination 완화"
+title: "06. 평가, faithfulness, hallucination 완화"
 source_kind: page
 ---
-이 단계는 VLM을 “잘 만든다”는 말이 실제로 무엇을 뜻하는지 묻는 단계입니다. benchmark와 leaderboard를 읽는 방법, hallucination과 faithfulness를 나누는 틀, calibration과 human evaluation까지 묶어 신뢰성 관점을 세웁니다.
+이 단계는 `점수가 높은 모델`과 `믿고 쓸 수 있는 모델`을 구분하는 단계입니다. benchmark와 leaderboard를 보는 법보다, faithfulness, verifier, abstention, human evaluation 같은 VLM 신뢰성 문제에 더 무게를 둡니다.
 
 # 이 단계에서 배우는 것
 - benchmark와 evaluation protocol을 읽는 기준을 배운다.
@@ -32,13 +32,13 @@ source_kind: page
 - 30. human evaluation과 product metric: 실제 제품 검증 언어 만들기.
 
 # 이 단계를 읽을 때 기억할 점
-- 벤치마크 점수는 모델의 일부만 보여 준다.
-- hallucination 완화는 구조, 데이터, 평가, 제품 정책이 모두 얽힌 문제다.
-- human evaluation 없이는 제품 품질을 놓치기 쉽다.
+- 이 단계는 VLM 평가의 본질을 `trust` 기준으로 다시 정리합니다.
+- 벤치마크 점수는 모델의 일부만 보여 줍니다.
+- hallucination 완화는 구조, 데이터, 평가, 제품 정책이 모두 얽힌 문제입니다.
 
 # 이 단계를 마치면 할 수 있는 것
 - 어떤 평가가 빠져 있는지 benchmark 설명만 보고도 짚을 수 있다.
-- hallucination과 calibration 문제를 구분해 설명할 수 있다.
+- hallucination과 calibration, faithfulness 문제를 구분해 설명할 수 있다.
 - research metric과 product metric을 동시에 설계하는 관점을 가질 수 있다.
 
 # 문제 해설과 강의 목록

@@ -1,11 +1,11 @@
 ---
-title: "04. Grounding, OCR, region reasoning"
+title: "04. Grounding, OCR, structured visual reasoning"
 source_kind: page
 ---
-이 단계는 VLM이 실제로 무엇을 보고 있는지 시험하는 단계입니다. 단순 captioning에서 멈추지 않고, OCR, region reference, counting, visual reasoning을 통해 grounding이 왜 핵심 품질 기준인지 구조적으로 이해합니다.
+이 단계는 VLM 특화 교재의 핵심입니다. generic multimodal alignment를 넘어, 실제 제품에서 가장 자주 문제 되는 OCR, document/chart understanding, spatial reference, counting, grounded reasoning을 집중적으로 다룹니다.
 
 # 이 단계에서 배우는 것
-- OCR과 document understanding이 왜 고해상도 문제인지 배운다.
+- OCR과 document understanding이 왜 고해상도·고정밀 문제인지 배운다.
 - box, mask, region token, spatial reference가 어떻게 쓰이는지 읽는다.
 - referring expression과 counting 같은 세밀한 reasoning 과제를 이해한다.
 - multimodal chain-of-thought가 visual reasoning에 미치는 영향을 본다.
@@ -32,13 +32,13 @@ source_kind: page
 - 20. grounding failure와 hallucination의 구조: 오류 메커니즘 정리.
 
 # 이 단계를 읽을 때 기억할 점
-- 유창한 답변은 grounded한 답변과 다르다.
-- OCR 실패는 단순 vision 문제라기보다 resolution, token budget, structure 이해의 결합 문제일 수 있다.
-- grounding을 이해해야 뒤 단계의 alignment와 evaluation도 제대로 읽을 수 있다.
+- 이 단계는 VLM에서 가장 중요한 `믿을 수 있게 보는 능력`을 다룹니다.
+- 유창한 답변은 grounded한 답변과 다릅니다.
+- OCR 실패는 단순 vision 문제라기보다 resolution, token budget, structure 이해의 결합 문제일 수 있습니다.
 
 # 이 단계를 마치면 할 수 있는 것
 - region reasoning과 captioning의 차이를 설명할 수 있다.
-- OCR과 spatial reference가 왜 어려운지 구조적으로 말할 수 있다.
+- OCR과 spatial reference가 왜 VLM에서 핵심 난제인지 구조적으로 말할 수 있다.
 - hallucination이 어디서 생기는지 vision, connector, LM 관점으로 나눠 설명할 수 있다.
 
 # 문제 해설과 강의 목록
