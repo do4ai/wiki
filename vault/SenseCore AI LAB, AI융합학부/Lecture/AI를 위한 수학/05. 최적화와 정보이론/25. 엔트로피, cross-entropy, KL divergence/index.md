@@ -120,6 +120,50 @@ $$
 H(p,q) = H(p) + D_{\mathrm{KL}}(p \| q)
 $$
 
+이 관계는 정의를 펼치면 바로 보입니다. KL divergence의 정의에서 시작합니다.
+
+$$
+D_{\mathrm{KL}}(p\|q)
+=
+\sum_x p(x)\log\frac{p(x)}{q(x)}
+$$
+
+로그의 나눗셈은 로그의 뺄셈으로 바꿀 수 있습니다.
+
+$$
+D_{\mathrm{KL}}(p\|q)
+=
+\sum_x p(x)\log p(x)
+-
+\sum_x p(x)\log q(x)
+$$
+
+그런데 엔트로피는
+
+$$
+H(p)=-\sum_x p(x)\log p(x)
+$$
+
+이고, 크로스엔트로피는
+
+$$
+H(p,q)=-\sum_x p(x)\log q(x)
+$$
+
+입니다. 따라서 위 식을 다시 쓰면
+
+$$
+D_{\mathrm{KL}}(p\|q)=-H(p)+H(p,q)
+$$
+
+이고, 양변을 정리해
+
+$$
+H(p,q)=H(p)+D_{\mathrm{KL}}(p\|q)
+$$
+
+를 얻습니다.
+
 이 식이 중요한 이유는 분명합니다.
 
 - H(p)는 실제 분포 자체가 가진 불확실성이다.

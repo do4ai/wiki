@@ -113,6 +113,63 @@ $$
 
 즉 현재 노드의 gradient는 "뒤쪽에서 온 gradient"와 "현재 연산의 국소 미분"을 곱해서 얻을 수 있습니다. 이 원리를 층 전체에 반복 적용하면, 전체 신경망의 미분이 계산됩니다.
 
+숫자로 보면 더 분명합니다. 예를 들어
+
+$$
+h=2x,\qquad L=h^2
+$$
+
+라고 합시다. 먼저 뒤쪽에서
+
+$$
+\frac{\partial L}{\partial h}=2h
+$$
+
+가 옵니다. 현재 연산
+
+$$
+h=2x
+$$
+
+의 국소 미분은
+
+$$
+\frac{\partial h}{\partial x}=2
+$$
+
+입니다. 따라서
+
+$$
+\frac{\partial L}{\partial x}
+=
+\frac{\partial L}{\partial h}
+\frac{\partial h}{\partial x}
+=
+2h\cdot 2
+=
+4h
+$$
+
+입니다. 만약
+
+$$
+x=3
+$$
+
+이면
+
+$$
+h=6
+$$
+
+이므로
+
+$$
+\frac{\partial L}{\partial x}=24
+$$
+
+입니다. backprop은 이런 계산을 모든 노드에서 같은 방식으로 반복합니다.
+
 ## 6. backprop이 효율적인 이유는 중간 계산을 재사용하기 때문이다
 만약 각 파라미터에 대해 미분을 따로 처음부터 다시 계산한다면 비용이 엄청 커집니다. 하지만 backprop은 forward에서 만든 중간값을 저장해 두고, backward에서 이를 재사용합니다.
 

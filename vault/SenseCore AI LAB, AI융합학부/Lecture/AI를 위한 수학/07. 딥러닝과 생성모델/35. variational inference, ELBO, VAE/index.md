@@ -136,6 +136,66 @@ $$
 
 이 과정을 학습하기 위해 등장하는 식이 ELBO입니다.
 
+ELBO가 왜 하한인지도 과정을 봐야 합니다. 로그우도는 다음처럼 쓸 수 있습니다.
+
+$$
+\log p_\theta(x)
+=
+\log \int p_\theta(x,z)\,dz
+$$
+
+여기에 근사분포
+
+$$
+q_\phi(z\mid x)
+$$
+
+를 곱했다가 나누면
+
+$$
+\log p_\theta(x)
+=
+\log \int q_\phi(z\mid x)
+\frac{p_\theta(x,z)}{q_\phi(z\mid x)}\,dz
+$$
+
+가 됩니다. 적분은
+
+$$
+q_\phi(z\mid x)
+$$
+
+에 대한 기대값으로 볼 수 있으므로
+
+$$
+\log p_\theta(x)
+=
+\log
+\mathbb{E}_{q_\phi(z\mid x)}
+\left[
+\frac{p_\theta(x,z)}{q_\phi(z\mid x)}
+\right]
+$$
+
+입니다. 여기서 로그는 오목함수라서 Jensen 부등식에 의해
+
+$$
+\log \mathbb{E}[A]\ge \mathbb{E}[\log A]
+$$
+
+가 됩니다. 따라서
+
+$$
+\log p_\theta(x)
+\ge
+\mathbb{E}_{q_\phi(z\mid x)}
+\left[
+\log p_\theta(x,z)-\log q_\phi(z\mid x)
+\right]
+$$
+
+가 되고, 이 오른쪽이 ELBO입니다. 즉 ELBO는 임의로 만든 목적식이 아니라, 계산하기 어려운 로그우도를 아래에서 받치는 계산 가능한 식입니다.
+
 $$
 \log p_\theta(x)
 \ge
