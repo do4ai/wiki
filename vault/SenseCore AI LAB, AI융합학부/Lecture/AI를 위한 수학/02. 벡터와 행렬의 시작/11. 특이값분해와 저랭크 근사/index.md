@@ -149,11 +149,12 @@ $\Sigma$를 곱하면 각 성분이 특이값만큼 커집니다.
 
 $$
 \Sigma V^T x =
-\begin{bmatrix}
-\sigma_1(v_1^T x) \\
-\sigma_2(v_2^T x) \\
-\vdots
-\end{bmatrix}
+\left(
+\sigma_1(v_1^T x),
+\sigma_2(v_2^T x),
+\dots,
+\sigma_n(v_n^T x)
+\right)^T
 $$
 
 큰 특이값 방향은 많이 반영되고, 작은 특이값 방향은 적게 반영됩니다.
@@ -402,11 +403,12 @@ $$
 
 $$
 u_i v_i^T =
-\begin{bmatrix}
-u_{1i} \\
-u_{2i} \\
-\vdots
-\end{bmatrix}
+\left(
+u_{1i},
+u_{2i},
+\dots,
+u_{mi}
+\right)^T
 \begin{bmatrix}
 v_{1i} & v_{2i} & \cdots
 \end{bmatrix}
