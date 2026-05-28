@@ -395,7 +395,61 @@ $$
 Ax = \sum_i \sigma_i(v_i^T x)u_i
 $$
 
-는 행렬 자체에 대해 다음 식과 연결됩니다.
+는 "행렬 $A$가 벡터 $x$에 작용한 결과"를 쓴 식입니다. 이제 이 식을 행렬 자체에 대한 식으로 바꿔 봅시다.
+
+먼저 한 항만 봅니다.
+
+$$
+\sigma_i(v_i^T x)u_i
+$$
+
+여기서 $v_i^T x$는 내적이므로 숫자 하나입니다. 따라서 숫자끼리는 순서를 바꿔도 되어서 다음처럼 쓸 수 있습니다.
+
+$$
+\sigma_i(v_i^T x)u_i = \sigma_i u_i(v_i^T x)
+$$
+
+이제 결합법칙으로 괄호를 바꿔 봅니다.
+
+$$
+u_i(v_i^T x) = (u_i v_i^T)x
+$$
+
+왜냐하면 $u_i$는 세로 벡터, $v_i^T$는 가로 벡터이기 때문입니다. 크기를 쓰면
+
+$$
+u_i: m \times 1, \quad v_i^T: 1 \times n, \quad x: n \times 1
+$$
+
+이고,
+
+$$
+u_i(v_i^T x): (m \times 1)(1 \times 1) = m \times 1
+$$
+
+$$
+(u_i v_i^T)x: (m \times n)(n \times 1) = m \times 1
+$$
+
+입니다. 두 식은 같은 벡터를 만듭니다. 따라서 한 항은 다음처럼 바꿀 수 있습니다.
+
+$$
+\sigma_i(v_i^T x)u_i = (\sigma_i u_i v_i^T)x
+$$
+
+이제 모든 $i$에 대해 더하면
+
+$$
+Ax = \sum_i (\sigma_i u_i v_i^T)x
+$$
+
+입니다. 오른쪽의 각 항은 모두 같은 $x$를 곱하고 있으므로, 다시 묶을 수 있습니다.
+
+$$
+Ax = \left(\sum_i \sigma_i u_i v_i^T\right)x
+$$
+
+즉 어떤 입력 $x$를 넣어도 $A$를 곱한 결과와 $\sum_i \sigma_i u_i v_i^T$를 곱한 결과가 같습니다. 모든 $x$에 대해 같은 변환을 하므로 두 행렬 자체가 같습니다.
 
 $$
 A = \sum_{i=1}^{r} \sigma_i u_i v_i^T
