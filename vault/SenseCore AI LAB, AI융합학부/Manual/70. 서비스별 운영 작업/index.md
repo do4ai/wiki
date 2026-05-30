@@ -18,6 +18,8 @@ parent_notion_id: 330e313f58b98098b619f0e3ef2d0fa0
 - `do4i 배포 이상 대응 절차`: `api`, `mysql`, `api-ingress` 중심의 상세 확인 절차
 - `palcar 배포 이상 대응 절차`: `api`, `mysql`, `/api`, `/health` 경로 중심의 상세 확인 절차
 - `papersens 배포 이상 대응 절차`: `papersens` deployment 와 ingress 중심의 상세 확인 절차
+- `passv 배포 이상 대응 절차`: EC2(현재 prod)와 K8s(dev/컷오버 후) 양쪽의 `api`, `mysql`, 도메인 확인 절차
+- `wiki(atlas) 운영 절차`: WikiJS 런타임·콘텐츠 동기화(`content-sync`)·발행 점검 절차
 
 권장 순서는 아래와 같다.
 
@@ -30,3 +32,5 @@ parent_notion_id: 330e313f58b98098b619f0e3ef2d0fa0
 - [do4i 배포 이상 대응 절차](do4i 배포 이상 대응 절차/index.md)
 - [palcar 배포 이상 대응 절차](palcar 배포 이상 대응 절차/index.md)
 - [papersens 배포 이상 대응 절차](papersens 배포 이상 대응 절차/index.md)
+- [passv 배포 이상 대응 절차](passv 배포 이상 대응 절차/index.md)
+- [wiki(atlas) 운영 절차](wiki(atlas) 운영 절차/index.md)

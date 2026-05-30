@@ -15,7 +15,9 @@ parent_notion_id: 330e313f58b98098b619f0e3ef2d0fa0
 현재 운영 기준으로 먼저 볼 문서는 아래다.
 
 - `k3s 클러스터 접속과 GitOps 배포 점검`: 운영 서버 접속, live GitOps 기준 확인, `kubectl` 과 `Application` 상태 점검 절차
+- `passv gitops 이전·컷오버 점검`: passv를 EC2에서 중앙 gitops(K8s)로 옮기는 dev 롤아웃·prod 컷오버 절차(게이팅)
 
 ## Page Tree
 
 - [k3s 클러스터 접속과 GitOps 배포 점검](k3s 클러스터 접속과 GitOps 배포 점검/index.md)
+- [passv gitops 이전·컷오버 점검](passv gitops 이전·컷오버 점검/index.md)

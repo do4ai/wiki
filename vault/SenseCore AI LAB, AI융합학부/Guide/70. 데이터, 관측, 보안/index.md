@@ -16,7 +16,12 @@ parent_notion_id: 330e313f58b9802b9cedda8dcbc5d112
 
 Grafana, Prometheus, ELK, Tempo, Infisical 같은 운영 솔루션 가이드는 이 영역 아래에 배치하고, 설계 검토 문서는 운영 가이드와 구분해 유지한다.
 
+전체 관측·알림이 어떤 컴포넌트로 어떻게 연결되는지 큰 그림은 아래 문서부터 본다.
+
+- [모니터링·알림 아키텍처 가이드](모니터링·알림 아키텍처 가이드/index.md): 메트릭/로그/트레이스 → Alerta → Discord 전체 파이프라인과 알림 규칙 인벤토리.
+
 ## Page Tree
 
+- [모니터링·알림 아키텍처 가이드](모니터링·알림 아키텍처 가이드/index.md)
 - [운영 장애 Discord 리포트 솔루션 리서치](운영 장애 Discord 리포트 솔루션 리서치/index.md)
 - [k3s 운영 장애 Discord 리포트 설계](k3s 운영 장애 Discord 리포트 설계/index.md)
