@@ -51,6 +51,39 @@ curl -f http://localhost:8000/api/health
 ```
 - 롤백은 passv 레포 `rollback.yml`(이미지 태그 되돌리기) 또는 직전 `.env.production`/이미지로 재기동.
 
+## 발화 실패 등 앱 레벨 장애를 디스코드로 받기 (Alerta 직접 전송)
+
+챗봇 발화 실패는 인프라 지표(ingress 5xx·배포 가용성)로는 안 잡힌다(200 응답에 오류 본문이거나 외부 LLM/아바타 의존성 실패, 저트래픽 단발 등). 그래서 passv 백엔드가 **Alerta REST API로 직접** 알림을 쏘고, Alerta Discord 플러그인이 디스코드에 게시하게 한다. **EC2/K8s 어디서 돌든** 동작한다.
+
+경로: `passv 백엔드 → https://alerta.do4ai.com/api/alert (Key 인증) → Alerta Discord 플러그인 → 디스코드`
+
+### 활성화 (passv 설정)
+`server/config.py`의 Alerta 설정을 환경변수로 켠다(`.env.example` 참고).
+```bash
+ALERTA_ENABLED=true
+ALERTA_API_URL=https://alerta.do4ai.com/api
+ALERTA_API_KEY=<passv 전용 키>          # 아래 절차로 발급, Infisical /apps/passv-api 에 저장
+ALERTA_CHAT_FAILURE_THRESHOLD=3         # 5분(WINDOW) 내 발화 실패 N건 이상이면 발사(제안값)
+ALERTA_CHAT_FAILURE_WINDOW_SECONDS=300
+```
+구현: `server/shared/infrastructure/alerta.py`의 `notify_chat_failure()`가 `chat_streaming.py`의 발화 실패 except에 연결돼 있다. 알림 실패는 내부에서 삼켜 본 기능을 막지 않는다.
+
+### Alerta 전용 API 키 발급 (ADMIN_KEY 재사용 금지)
+1. Alerta(`alerta.do4ai.com`) 관리자 로그인 → **API Keys**에서 `scope=write`, 용도 `passv` 키 생성.
+   - 또는 API로: `curl -XPOST https://alerta.do4ai.com/api/key -H "Authorization: Key <ADMIN_KEY>" -H 'Content-Type: application/json' -d '{"user":"passv","scopes":["write:alerts"],"text":"passv app alerts"}'`
+2. 발급된 키를 Infisical `do4ai/prod/apps/passv-api`의 `ALERTA_API_KEY`로 저장(EC2면 `.env.production`).
+3. ADMIN_KEY(=`alerta-secrets`)는 절대 앱에 넣지 않는다.
+
+### 노이즈 제어
+- (resource=`passv/chat`, event=`ChatGenerationFailed`) 단위로 윈도 내 임계·최소 재전송 간격을 둔다.
+- Alerta가 (environment, resource, event)로 중복을 묶고 `timeout`(기본 600s)으로 자동 resolve한다.
+- 즉시 1건부터 받고 싶으면 `ALERTA_CHAT_FAILURE_THRESHOLD=1`.
+
+### 검증
+- 비활성(`ALERTA_ENABLED=false`)이면 아무것도 전송하지 않는다(기본값).
+- 임시로 켜고 발화 실패를 N건 유발하면 디스코드에 `major passv/chat` 알림이 떠야 한다.
+- 키/URL 점검: `curl -XPOST $ALERTA_API_URL/alert -H "Authorization: Key $ALERTA_API_KEY" -H 'Content-Type: application/json' -d '{"environment":"Production","service":["passv"],"resource":"passv/chat","event":"AlertaSmokeTest","severity":"warning","text":"smoke"}'`
+
 ## 검증 기준
 - `api` 가 재시작 루프 없이 수렴, `mysql` 정상, `/api/health` 200, 대표 로그인/대화 흐름 동작.
 
