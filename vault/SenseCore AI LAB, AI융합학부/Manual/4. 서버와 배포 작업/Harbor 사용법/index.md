@@ -22,4 +22,4 @@ title: "Harbor 사용법"
 - 각 서비스 CI가 빌드 후 harbor로 푸시하고 gitops kustomization의 이미지 ref를 갱신한다(서비스 레포의 워크플로 참고).
 
 ## 함께 보기
-- [ArgoCD 사용법](../ArgoCD 사용법/index.md) · [Infisical 시크릿 반영과 권한 변경 절차](../../60. 시크릿-권한 작업/Infisical 시크릿 반영과 권한 변경 절차/index.md)
+- [ArgoCD 사용법](../ArgoCD 사용법/index.md) · [Infisical 시크릿 반영과 권한 변경 절차](../../7. 시크릿-권한 작업/Infisical 시크릿 반영과 권한 변경 절차/index.md)

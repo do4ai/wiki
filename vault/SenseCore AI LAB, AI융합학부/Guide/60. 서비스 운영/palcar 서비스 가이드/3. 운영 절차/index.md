@@ -40,4 +40,4 @@ sudo kubectl get svc -n palcar
 - `ImagePullBackOff`/`CrashLoopBackOff` 지속 / `/health` 미회복 / DB 연결 실패 반복 / ingress path 변경 직후 API·health 동시 다운.
 
 ## 참고
-- 롤백·배포 점검: [Manual/30 ArgoCD 사용법](../../../../Manual/30. 서버와 배포 작업/ArgoCD 사용법/index.md).
+- 롤백·배포 점검: [Manual/4 ArgoCD 사용법](../../../../Manual/4. 서버와 배포 작업/ArgoCD 사용법/index.md).

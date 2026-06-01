@@ -1,7 +1,7 @@
 ---
 title: "k3s 클러스터 접속과 GitOps 배포 점검"
 source_kind: page
-source_path: ssot/pages/31ee313f58b980d68c5ad8ed9d5aeff8__SenseCore AI LAB, AI융합학부/children/manual/330e313f58b98098b619f0e3ef2d0fa0__Manual/children/330e313f58b9813fbc22ca7f38ac4014__30. 서버와 배포 작업/children/338e313f58b981dfbed0fc166c44a2c2__k3s 클러스터 접속과 GitOps 배포 점검
+source_path: ssot/pages/31ee313f58b980d68c5ad8ed9d5aeff8__SenseCore AI LAB, AI융합학부/children/manual/330e313f58b98098b619f0e3ef2d0fa0__Manual/children/330e313f58b9813fbc22ca7f38ac4014__4. 서버와 배포 작업/children/338e313f58b981dfbed0fc166c44a2c2__k3s 클러스터 접속과 GitOps 배포 점검
 notion_id: 338e313f58b981dfbed0fc166c44a2c2
 notion_url: https://www.notion.so/338e313f58b981dfbed0fc166c44a2c2
 parent_notion_id: 330e313f58b9813fbc22ca7f38ac4014

@@ -1,7 +1,7 @@
 ---
 title: "카카오로그인"
 source_kind: page
-source_path: ssot/pages/31ee313f58b980d68c5ad8ed9d5aeff8__SenseCore AI LAB, AI융합학부/children/manual/330e313f58b98098b619f0e3ef2d0fa0__Manual/children/330e313f58b98114bbc9e9d8d8aa230a__20. 외부 로그인 설정/children/330e313f58b981ad93eff818824124a1__카카오로그인
+source_path: ssot/pages/31ee313f58b980d68c5ad8ed9d5aeff8__SenseCore AI LAB, AI융합학부/children/manual/330e313f58b98098b619f0e3ef2d0fa0__Manual/children/330e313f58b98114bbc9e9d8d8aa230a__3. 외부 로그인 설정/children/330e313f58b981ad93eff818824124a1__카카오로그인
 notion_id: 330e313f58b981ad93eff818824124a1
 notion_url: https://www.notion.so/330e313f58b981ad93eff818824124a1
 parent_notion_id: 330e313f58b98114bbc9e9d8d8aa230a

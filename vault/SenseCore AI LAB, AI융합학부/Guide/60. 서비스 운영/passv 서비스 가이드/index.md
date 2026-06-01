@@ -22,8 +22,8 @@ AI 대화형 커머스 플랫폼 `passv`(PassView)의 모든 문서를 한곳에
 
 ## 공통·도구 문서
 
-- 이전·컷오버: [Manual/30 passv gitops 이전·컷오버 점검](../../../Manual/30. 서버와 배포 작업/passv gitops 이전·컷오버 점검/index.md)
-- 발화 실패 알림 설정: [Manual/50 Alerta 사용법](../../../Manual/50. 모니터링-로그 작업/Alerta 사용법/index.md)
+- 이전·컷오버: [Manual/4 passv gitops 이전·컷오버 점검](../../../Manual/4. 서버와 배포 작업/passv gitops 이전·컷오버 점검/index.md)
+- 발화 실패 알림 설정: [Manual/6 Alerta 사용법](../../../Manual/6. 모니터링-로그 작업/Alerta 사용법/index.md)
 - 서비스 공통: [서비스 공통 1차 대응 절차](../서비스 공통 1차 대응 절차/index.md)
 - 공통 토대: [50. 인프라와 플랫폼](../../50. 인프라와 플랫폼/index.md) · [모니터링·알림 아키텍처](../../70. 데이터, 관측, 보안/모니터링·알림 아키텍처 가이드/index.md)
 

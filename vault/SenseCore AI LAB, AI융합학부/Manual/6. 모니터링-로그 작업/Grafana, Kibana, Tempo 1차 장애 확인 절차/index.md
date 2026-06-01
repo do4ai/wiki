@@ -1,7 +1,7 @@
 ---
 title: "Grafana, Kibana, Tempo 1차 장애 확인 절차"
 source_kind: page
-source_path: ssot/pages/31ee313f58b980d68c5ad8ed9d5aeff8__SenseCore AI LAB, AI융합학부/children/manual/330e313f58b98098b619f0e3ef2d0fa0__Manual/children/330e313f58b98117b6efd664ee0f6659__50. 모니터링-로그 작업/children/338e313f58b981cb9d17f7c61b7d1d0c__Grafana, Kibana, Tempo 1차 장애 확인 절차
+source_path: ssot/pages/31ee313f58b980d68c5ad8ed9d5aeff8__SenseCore AI LAB, AI융합학부/children/manual/330e313f58b98098b619f0e3ef2d0fa0__Manual/children/330e313f58b98117b6efd664ee0f6659__6. 모니터링-로그 작업/children/338e313f58b981cb9d17f7c61b7d1d0c__Grafana, Kibana, Tempo 1차 장애 확인 절차
 notion_id: 338e313f58b981cb9d17f7c61b7d1d0c
 notion_url: https://www.notion.so/338e313f58b981cb9d17f7c61b7d1d0c
 parent_notion_id: 330e313f58b98117b6efd664ee0f6659

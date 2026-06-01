@@ -1,7 +1,7 @@
 ---
 title: "Infisical 시크릿 반영과 권한 변경 절차"
 source_kind: page
-source_path: ssot/pages/31ee313f58b980d68c5ad8ed9d5aeff8__SenseCore AI LAB, AI융합학부/children/manual/330e313f58b98098b619f0e3ef2d0fa0__Manual/children/330e313f58b98140bc33f493356b50dc__60. 시크릿-권한 작업/children/338e313f58b98168ba1ddcebbea85b42__Infisical 시크릿 반영과 권한 변경 절차
+source_path: ssot/pages/31ee313f58b980d68c5ad8ed9d5aeff8__SenseCore AI LAB, AI융합학부/children/manual/330e313f58b98098b619f0e3ef2d0fa0__Manual/children/330e313f58b98140bc33f493356b50dc__7. 시크릿-권한 작업/children/338e313f58b98168ba1ddcebbea85b42__Infisical 시크릿 반영과 권한 변경 절차
 notion_id: 338e313f58b98168ba1ddcebbea85b42
 notion_url: https://www.notion.so/338e313f58b98168ba1ddcebbea85b42
 parent_notion_id: 330e313f58b98140bc33f493356b50dc
