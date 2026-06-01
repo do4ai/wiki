@@ -23,4 +23,4 @@ GitHub do4ai/wiki (vault 소스)
 - **전략**: replicas 1, `Recreate`(롤링 아님). SQLite 단일 파일이라 HA 불가 — 단일 인스턴스 운영.
 - **도메인**: `wiki.do4ai.com`, 내부 `origin.wiki.do4ai.com`.
 
-> 운영·복구 손절차는 [Manual/70 wiki(atlas) 운영 절차](../../../../Manual/70. 서비스별 운영 작업/wiki(atlas) 운영 절차/index.md).
+> 운영·복구 손절차는 [3. 운영 절차](../3. 운영 절차/index.md).

@@ -38,4 +38,4 @@ title: "2. 모니터링·알람·SRE"
 3. Grafana `do4i-api-operations` → 5xx·재시작·리소스.
 4. Kibana에서 `do4i` 로그 에러.
 
-상세 절차: [Manual/70 do4i 배포 이상 대응 절차](../../../../Manual/70. 서비스별 운영 작업/do4i 배포 이상 대응 절차/index.md).
+상세 절차: [3. 운영 절차](../3. 운영 절차/index.md).

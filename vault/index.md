@@ -197,18 +197,16 @@ Workspace home: [SenseCore AI LAB, AI융합학부](SenseCore AI LAB, AI융합학
     - [구글로그인](SenseCore AI LAB, AI융합학부/Manual/20. 외부 로그인 설정/구글로그인/index.md)
     - [카카오로그인](SenseCore AI LAB, AI융합학부/Manual/20. 외부 로그인 설정/카카오로그인/index.md)
   - [30. 서버와 배포 작업](SenseCore AI LAB, AI융합학부/Manual/30. 서버와 배포 작업/index.md)
+    - [ArgoCD 사용법](SenseCore AI LAB, AI융합학부/Manual/30. 서버와 배포 작업/ArgoCD 사용법/index.md)
     - [k3s 클러스터 접속과 GitOps 배포 점검](SenseCore AI LAB, AI융합학부/Manual/30. 서버와 배포 작업/k3s 클러스터 접속과 GitOps 배포 점검/index.md)
+    - [Harbor 사용법](SenseCore AI LAB, AI융합학부/Manual/30. 서버와 배포 작업/Harbor 사용법/index.md)
   - [40. 운영 변경 작업](SenseCore AI LAB, AI융합학부/Manual/40. 운영 변경 작업/index.md)
     - [Ingress, 도메인, 이미지, 환경 변수 변경 절차](SenseCore AI LAB, AI융합학부/Manual/40. 운영 변경 작업/Ingress, 도메인, 이미지, 환경 변수 변경 절차/index.md)
   - [50. 모니터링/로그 작업](SenseCore AI LAB, AI융합학부/Manual/50. 모니터링-로그 작업/index.md)
     - [Grafana, Kibana, Tempo 1차 장애 확인 절차](SenseCore AI LAB, AI융합학부/Manual/50. 모니터링-로그 작업/Grafana, Kibana, Tempo 1차 장애 확인 절차/index.md)
+    - [Alerta 사용법](SenseCore AI LAB, AI융합학부/Manual/50. 모니터링-로그 작업/Alerta 사용법/index.md)
   - [60. 시크릿/권한 작업](SenseCore AI LAB, AI융합학부/Manual/60. 시크릿-권한 작업/index.md)
     - [Infisical 시크릿 반영과 권한 변경 절차](SenseCore AI LAB, AI융합학부/Manual/60. 시크릿-권한 작업/Infisical 시크릿 반영과 권한 변경 절차/index.md)
-  - [70. 서비스별 운영 작업](SenseCore AI LAB, AI융합학부/Manual/70. 서비스별 운영 작업/index.md)
-    - [서비스 배포 이상 1차 대응 절차](SenseCore AI LAB, AI융합학부/Manual/70. 서비스별 운영 작업/서비스 배포 이상 1차 대응 절차/index.md)
-    - [do4i 배포 이상 대응 절차](SenseCore AI LAB, AI융합학부/Manual/70. 서비스별 운영 작업/do4i 배포 이상 대응 절차/index.md)
-    - [palcar 배포 이상 대응 절차](SenseCore AI LAB, AI융합학부/Manual/70. 서비스별 운영 작업/palcar 배포 이상 대응 절차/index.md)
-    - [papersens 배포 이상 대응 절차](SenseCore AI LAB, AI융합학부/Manual/70. 서비스별 운영 작업/papersens 배포 이상 대응 절차/index.md)
 
 ## Data Sources
 

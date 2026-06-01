@@ -26,4 +26,4 @@ title: "2. 모니터링·알람·SRE"
 2. ArgoCD `atlas` Sync/Health, `atlas` 네임스페이스 파드(wikijs/content-sync).
 3. 콘텐츠 미갱신 시 `content-sync` 로그(레포 pull 실패) 확인.
 
-상세: [Manual/70 wiki(atlas) 운영 절차](../../../../Manual/70. 서비스별 운영 작업/wiki(atlas) 운영 절차/index.md).
+상세 절차: [3. 운영 절차](../3. 운영 절차/index.md).

@@ -17,13 +17,16 @@ title: "wiki 서비스 가이드"
 | --- | --- |
 | [1. 아키텍처와 배포](1. 아키텍처와 배포/index.md) | WikiJS·SQLite·콘텐츠 동기화, 네임스페이스·전략·도메인 |
 | [2. 모니터링·알람·SRE](2. 모니터링·알람·SRE/index.md) | 프로브·합성 프로브, 알림, 데이터 복구, SRE |
+| [3. 운영 절차](3. 운영 절차/index.md) | 페이지 미표시·콘텐츠 미갱신 대응, 복구 |
 
-## 바로 가는 운영·공통 문서
+## 공통·도구 문서
 
-- 절차: [Manual/70 wiki(atlas) 운영 절차](../../../Manual/70. 서비스별 운영 작업/wiki(atlas) 운영 절차/index.md)
+- 서비스 공통: [서비스 공통 1차 대응 절차](../서비스 공통 1차 대응 절차/index.md)
+- 도구 사용법: `Manual`(솔루션 사용법)
 - 발행 미리보기: `python3 scripts/wiki_wikijs_sync.py sync --dry-run`
 
 ## Page Tree
 
 - [1. 아키텍처와 배포](1. 아키텍처와 배포/index.md)
 - [2. 모니터링·알람·SRE](2. 모니터링·알람·SRE/index.md)
+- [3. 운영 절차](3. 운영 절차/index.md)

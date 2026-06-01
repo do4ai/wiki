@@ -16,7 +16,7 @@ title: "2. 모니터링·알람·SRE"
 - 경로: `passv → https://alerta.do4ai.com/api/alert (Key 인증) → Alerta Discord 플러그인 → 디스코드`. **EC2/K8s 어디서든 동작**.
 - 구현: `server/shared/infrastructure/alerta.py`의 `notify_chat_failure()`가 `chat_streaming.py` 발화 실패 경로에 연결. 알림 실패는 내부에서 삼켜 본 기능 비차단.
 - 노이즈 제어: `(passv/chat, ChatGenerationFailed)` 단위 임계(`ALERTA_CHAT_FAILURE_THRESHOLD`, 제안 5분 3건) + 최소 재전송 간격, Alerta correlate/timeout로 중복 수렴.
-- 켜기/키 발급/검증 손절차: [Manual/70 passv 배포 이상 대응 절차](../../../../Manual/70. 서비스별 운영 작업/passv 배포 이상 대응 절차/index.md)의 "발화 실패 앱 레벨 알림" 절.
+- 켜기/키 발급/검증 손절차: [Manual/50 Alerta 사용법](../../../../Manual/50. 모니터링-로그 작업/Alerta 사용법/index.md).
 
 ## 장애 알람 (gitops 편입 후)
 
@@ -32,4 +32,4 @@ title: "2. 모니터링·알람·SRE"
 
 - 현재(EC2): passv 레포 CI(`deploy.yml`/`rollback.yml`)와 EC2 호스트 점검.
 - gitops(dev/컷오버 후): ArgoCD `passv` → `passv` 네임스페이스 파드 → Grafana/Kibana.
-- 상세: [Manual/70 passv 배포 이상 대응 절차](../../../../Manual/70. 서비스별 운영 작업/passv 배포 이상 대응 절차/index.md).
+- 상세: [3. 운영 절차](../3. 운영 절차/index.md).

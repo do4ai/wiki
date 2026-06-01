@@ -30,4 +30,4 @@ title: "2. 모니터링·알람·SRE"
 2. `papersens` 네임스페이스 파드, `/health`(:8082).
 3. Grafana 리소스(메모리)·5xx → Kibana 로그(LLM/OpenRouter 오류).
 
-상세: [Manual/70 papersens 배포 이상 대응 절차](../../../../Manual/70. 서비스별 운영 작업/papersens 배포 이상 대응 절차/index.md).
+상세 절차: [3. 운영 절차](../3. 운영 절차/index.md).
