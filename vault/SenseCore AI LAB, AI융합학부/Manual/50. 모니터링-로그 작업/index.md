@@ -12,10 +12,12 @@ parent_notion_id: 330e313f58b98098b619f0e3ef2d0fa0
 
 어떤 화면과 명령을 먼저 봐야 하는지 실무 절차 중심으로 정리한다.
 
-현재 운영 기준으로 먼저 볼 문서는 아래다.
+도구별 사용법은 아래에서 본다.
 
 - `Grafana, Kibana, Tempo 1차 장애 확인 절차`: 장애 시간 범위 고정, 메트릭/로그/트레이스 교차 확인, 1차 판정 기준
+- `Alerta 사용법`: 알림 허브 분류(triage), 앱이 직접 알림 보내기(passv 발화 실패 등), 전용 키 발급
 
 ## Page Tree
 
 - [Grafana, Kibana, Tempo 1차 장애 확인 절차](Grafana, Kibana, Tempo 1차 장애 확인 절차/index.md)
+- [Alerta 사용법](Alerta 사용법/index.md)

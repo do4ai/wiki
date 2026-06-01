@@ -12,10 +12,16 @@ parent_notion_id: 330e313f58b98098b619f0e3ef2d0fa0
 
 실수 비용이 큰 작업이 많으므로 단계별 체크와 검증 방법을 함께 기록하는 것을 기본으로 한다.
 
-현재 운영 기준으로 먼저 볼 문서는 아래다.
+도구별 사용법과 배포 절차는 아래에서 본다.
 
-- `k3s 클러스터 접속과 GitOps 배포 점검`: 운영 서버 접속, live GitOps 기준 확인, `kubectl` 과 `Application` 상태 점검 절차
+- `ArgoCD 사용법`: 배포 상태 읽기, 수동 sync, 롤백(GitOps 정석/UI)
+- `k3s 클러스터 접속과 GitOps 배포 점검`: 운영 서버 접속, live GitOps 기준 확인, `kubectl`·`Application` 상태 점검
+- `Harbor 사용법`: 컨테이너 이미지 레지스트리 확인, `ImagePullBackOff` 원인 분리
+- `passv gitops 이전·컷오버 점검`: passv를 EC2에서 중앙 gitops(K8s)로 옮기는 dev 롤아웃·prod 컷오버 절차(게이팅)
 
 ## Page Tree
 
+- [ArgoCD 사용법](ArgoCD 사용법/index.md)
 - [k3s 클러스터 접속과 GitOps 배포 점검](k3s 클러스터 접속과 GitOps 배포 점검/index.md)
+- [Harbor 사용법](Harbor 사용법/index.md)
+- [passv gitops 이전·컷오버 점검](passv gitops 이전·컷오버 점검/index.md)
