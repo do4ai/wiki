@@ -23,4 +23,4 @@ title: "1. 아키텍처와 배포"
 - **prod 규모**: 신규 HPA(min 2 / max 4) + PDB minAvailable 1. `TODO(확정 필요)`: 무거운 워크로드라 min 2는 노드 용량 의존 — 단일/저용량 노드면 min 1.
 - **도메인**: `papersens.do4ai.com`, 와일드카드 `*.ps.do4ai.com`(테넌트).
 
-> 배포 이상 대응은 [3. 운영 절차](../3. 운영 절차/index.md). 도구는 [Manual/30 ArgoCD 사용법](../../../../Manual/30. 서버와 배포 작업/ArgoCD 사용법/index.md).
+> 배포 이상 대응은 [3. 운영 절차](../3. 운영 절차/index.md). 도구는 [Manual/4 ArgoCD 사용법](../../../../Manual/4. 서버와 배포 작업/ArgoCD 사용법/index.md).

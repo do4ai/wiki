@@ -41,4 +41,4 @@ sudo kubectl get svc -n papersens
 - deployment 미수렴 지속 / 대표·wildcard host 동시 실패 / ingress rule 변경 직후 외부 접근 전면 실패 / startup 실패가 새 변경과 직결.
 
 ## 참고
-- 롤백·배포 점검: [Manual/30 ArgoCD 사용법](../../../../Manual/30. 서버와 배포 작업/ArgoCD 사용법/index.md).
+- 롤백·배포 점검: [Manual/4 ArgoCD 사용법](../../../../Manual/4. 서버와 배포 작업/ArgoCD 사용법/index.md).

@@ -34,11 +34,11 @@ curl -f http://localhost:8000/api/health
 - 롤백은 passv 레포 `rollback.yml` 또는 직전 `.env.production`/이미지로 재기동.
 
 ## 발화 실패 알림 (앱 레벨)
-챗봇 발화 실패는 인프라 지표로 안 잡혀, passv 백엔드가 Alerta로 직접 알림을 보낸다. 개요는 [2. 모니터링·알람·SRE](../2. 모니터링·알람·SRE/index.md), 켜기·키 발급·검증은 [Manual/50 Alerta 사용법](../../../../Manual/50. 모니터링-로그 작업/Alerta 사용법/index.md).
+챗봇 발화 실패는 인프라 지표로 안 잡혀, passv 백엔드가 Alerta로 직접 알림을 보낸다. 개요는 [2. 모니터링·알람·SRE](../2. 모니터링·알람·SRE/index.md), 켜기·키 발급·검증은 [Manual/6 Alerta 사용법](../../../../Manual/6. 모니터링-로그 작업/Alerta 사용법/index.md).
 
 ## 검증 기준
 - `api` 재시작 루프 없이 수렴, `mysql` 정상, `/api/health` 200, 대표 로그인/대화 흐름 동작.
 
 ## Escalation 또는 롤백 기준
 - `api`·`mysql` 동시 비정상 / DB 연결 실패 반복 / 직전 배포 원인 명확 / 결제·인증 등 핵심 도메인 장애.
-- 컷오버 중 장애는 [Manual/30 passv gitops 이전·컷오버 점검](../../../../Manual/30. 서버와 배포 작업/passv gitops 이전·컷오버 점검/index.md)의 롤백 단계.
+- 컷오버 중 장애는 [Manual/4 passv gitops 이전·컷오버 점검](../../../../Manual/4. 서버와 배포 작업/passv gitops 이전·컷오버 점검/index.md)의 롤백 단계.

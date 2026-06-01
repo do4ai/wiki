@@ -28,7 +28,7 @@ title: "장애 대응 의사결정 가이드"
 
 - 배포 정본은 gitops 레포다. 롤백 = **직전 정상 이미지 태그/digest로 되돌려 커밋** 하거나 ArgoCD에서 이전 리비전으로 sync.
 - prod ArgoCD는 자동 동기화를 켜지 않은 앱이 있으므로(do4i/passv prod), 수동 sync 시점을 통제할 수 있다.
-- 서비스별 점검 절차는 각 서비스 가이드의 `3. 운영 절차`, 도구 사용법은 [Manual/30 ArgoCD 사용법](../../../Manual/30. 서버와 배포 작업/ArgoCD 사용법/index.md)·[k3s 클러스터 접속과 GitOps 배포 점검](../../../Manual/30. 서버와 배포 작업/k3s 클러스터 접속과 GitOps 배포 점검/index.md).
+- 서비스별 점검 절차는 각 서비스 가이드의 `3. 운영 절차`, 도구 사용법은 [Manual/4 ArgoCD 사용법](../../../Manual/4. 서버와 배포 작업/ArgoCD 사용법/index.md)·[k3s 클러스터 접속과 GitOps 배포 점검](../../../Manual/4. 서버와 배포 작업/k3s 클러스터 접속과 GitOps 배포 점검/index.md).
 
 ## 에러 버짓과 연결
 

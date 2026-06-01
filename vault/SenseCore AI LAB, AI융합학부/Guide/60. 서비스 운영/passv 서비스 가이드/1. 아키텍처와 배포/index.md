@@ -23,7 +23,7 @@ landing/platform/admin (React, S3+CloudFront)
 
 ## 배포 구조 (이전 중)
 
-> 자세한 경계·절차는 `gitops/k8s/apps/passv/README.md`와 [Manual/30 컷오버 점검](../../../../Manual/30. 서버와 배포 작업/passv gitops 이전·컷오버 점검/index.md).
+> 자세한 경계·절차는 `gitops/k8s/apps/passv/README.md`와 [Manual/4 컷오버 점검](../../../../Manual/4. 서버와 배포 작업/passv gitops 이전·컷오버 점검/index.md).
 
 - **현재 prod 정본**: EC2 docker-compose(API) + S3/CloudFront(프론트). 이미지 ECR `passv-api`.
 - **목표(중앙 gitops)**: `gitops/k8s/apps/passv` (base + overlays/prod·dev), ArgoCD Application `passv`, 네임스페이스 `passv`.

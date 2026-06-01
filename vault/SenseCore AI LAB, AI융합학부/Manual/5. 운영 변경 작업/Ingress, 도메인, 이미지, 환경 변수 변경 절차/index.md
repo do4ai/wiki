@@ -1,7 +1,7 @@
 ---
 title: "Ingress, 도메인, 이미지, 환경 변수 변경 절차"
 source_kind: page
-source_path: ssot/pages/31ee313f58b980d68c5ad8ed9d5aeff8__SenseCore AI LAB, AI융합학부/children/manual/330e313f58b98098b619f0e3ef2d0fa0__Manual/children/330e313f58b98127a3a5c1d5d883a489__40. 운영 변경 작업/children/338e313f58b98158aed9cb71470b8ec5__Ingress, 도메인, 이미지, 환경 변수 변경 절차
+source_path: ssot/pages/31ee313f58b980d68c5ad8ed9d5aeff8__SenseCore AI LAB, AI융합학부/children/manual/330e313f58b98098b619f0e3ef2d0fa0__Manual/children/330e313f58b98127a3a5c1d5d883a489__5. 운영 변경 작업/children/338e313f58b98158aed9cb71470b8ec5__Ingress, 도메인, 이미지, 환경 변수 변경 절차
 notion_id: 338e313f58b98158aed9cb71470b8ec5
 notion_url: https://www.notion.so/338e313f58b98158aed9cb71470b8ec5
 parent_notion_id: 330e313f58b98127a3a5c1d5d883a489
