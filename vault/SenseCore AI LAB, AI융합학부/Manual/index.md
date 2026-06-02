@@ -10,7 +10,7 @@ parent_notion_id: 31ee313f58b980d68c5ad8ed9d5aeff8
 
 `Manual`은 **운영에 쓰는 솔루션(도구)을 어떻게 쓰는가**를 정리한 곳이다. ArgoCD, kubectl/k3s, Grafana, Kibana, Tempo, Infisical, Harbor, Alerta 같은 도구의 사용·점검 절차를 도구 단위로 모은다.
 
-> 서비스별(do4i·passv·palcar·papersens·wiki) 아키텍처와 그 서비스의 운영 절차는 `Guide`의 [60. 서비스 운영](../Guide/60. 서비스 운영/index.md)에서 서비스 폴더로 본다. **Manual = 도구 사용법, Guide = 서비스.**
+> 서비스별(do4i·passv·palcar·papersens·wiki) 아키텍처와 그 서비스의 운영 절차는 `Guide`의 [7. 서비스 운영](../Guide/7. 서비스 운영/index.md)에서 서비스 폴더로 본다. **Manual = 도구 사용법, Guide = 서비스.**
 
 ## 솔루션별 사용법 (빠른 찾기)
 

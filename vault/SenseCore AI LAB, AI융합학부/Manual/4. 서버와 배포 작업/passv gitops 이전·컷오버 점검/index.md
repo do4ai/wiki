@@ -45,4 +45,4 @@ kubectl kustomize k8s/apps/passv/overlays/dev
 
 ## 참고
 - 매니페스트 구조·TODO: `gitops/k8s/apps/passv/README.md`.
-- 서비스 개요: [passv 서비스 가이드](../../../Guide/60. 서비스 운영/passv 서비스 가이드/index.md).
+- 서비스 개요: [passv 서비스 가이드](../../../Guide/7. 서비스 운영/passv 서비스 가이드/index.md).
