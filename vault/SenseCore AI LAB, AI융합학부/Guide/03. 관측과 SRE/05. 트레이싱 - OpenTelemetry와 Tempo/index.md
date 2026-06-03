@@ -33,4 +33,4 @@ Prometheus(traces_spanmetrics_*) → platform-api-apm 대시보드
 ## 1차 확인 포인트
 1. 특정 요청이 느리면 Grafana → Explore(Tempo)에서 trace 검색, 또는 platform-api-apm에서 서비스별 p95·에러율.
 2. APM 알림이 떴는데 트레이스가 비면 otel-gateway(2 replica)·Tempo(SPOF) 상태 확인.
-3. 메트릭/로그와 함께 보는 순서는 [10. Observability 운영 가이드](../10. Observability 운영 가이드/index.md).
+3. 메트릭/로그와 함께 보는 순서는 [10. Observability 운영 가이드](../01. Observability 운영 가이드/index.md).

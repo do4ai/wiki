@@ -8,25 +8,23 @@ parent_notion_id: 330e313f58b9802b9cedda8dcbc5d112
 ---
 # 01. 인프라와 플랫폼
 
-우리가 실제로 구축해 운영하는 서버·클러스터·배포·관측 **솔루션 전부**를 다룬다. 각 문서는 "무엇을 위한 솔루션인지 + 실제 우리 설정(버전·접속·연결)"을 함께 적어, 검수와 운영에 그대로 쓸 수 있게 한다.
+서비스가 돌아가는 **기반 플랫폼**을 다룬다 — 클러스터·배포(GitOps/ArgoCD)·트래픽 입구·레지스트리·시크릿·대시보드. 각 문서는 개념과 **실제 우리 설정(버전·접속·연결)** 을 함께 적는다.
+
+> 관측(메트릭·로그·트레이스)과 SRE(SLO·알림·장애 대응)는 따로 떼어 [03. 관측과 SRE](../03. 관측과 SRE/index.md)에서 다룬다.
 
 ## 전체 아키텍처 한눈에
 
 ```
-                Terraform → k3s 클러스터 2개 (do4ai-prod / do4ai-dev)
-                                  │
-                         ArgoCD (app-of-apps, GitOps)
-                                  │  레포 변경을 클러스터 상태로 수렴
-        ┌─────────────────────────┼──────────────────────────────┐
-        ▼                         ▼                               ▼
-   ingress-nginx            플랫폼 서비스                      관측(Observability)
-   (트래픽 입구)        Harbor(이미지)·Infisical(시크릿)      메트릭: Prometheus·Grafana
-        │               Headlamp(대시보드)                   알림:  Alertmanager·Alerta→Discord
-        ▼                         │                          로그:  Filebeat·ES·Kibana·ElastAlert
-   서비스(do4i·passv·palcar·papersens·wiki)                  트레이스: OTel·Tempo
+Terraform → k3s 클러스터 2개 (do4ai-prod / do4ai-dev)
+                  │
+         ArgoCD (app-of-apps, GitOps)  ← 레포 변경을 클러스터 상태로 수렴
+                  │
+   ingress-nginx(입구) · Harbor(이미지) · Infisical(시크릿) · Headlamp(대시보드)
+                  │
+   서비스(do4i·passv·palcar·papersens·wiki)  → 관측은 03. 관측과 SRE
 ```
 
-## 읽는 순서 (기반 → 배포 → 플랫폼 → 관측)
+## 읽는 순서
 
 | # | 문서 | 무엇을 보나 |
 | --- | --- | --- |
@@ -39,16 +37,6 @@ parent_notion_id: 330e313f58b9802b9cedda8dcbc5d112
 | 07 | `Harbor 컨테이너 레지스트리` | 이미지 보관·배포, ImagePullBackOff 진단 |
 | 08 | `Infisical 시크릿 관리 가이드` | 시크릿 저장·주입(InfisicalSecret) |
 | 09 | `Headlamp 클러스터 대시보드` | 브라우저로 리소스/로그 둘러보기(읽기 전용) |
-| 10 | `Observability 운영 가이드` | 메트릭·로그·트레이스를 어떤 순서로 보는지(개요) |
-| 11 | `메트릭 - Prometheus와 Grafana` | 수집·대시보드(kube-prometheus-stack 58.7.2) |
-| 12 | `알림 - Alertmanager와 Alerta` | 알림 라우팅 → Alerta → Discord, 규칙 인벤토리 |
-| 13 | `로그 - Elasticsearch, Kibana, Filebeat, ElastAlert` | ELK 로그 수집·검색·로그기반 알림 |
-| 14 | `트레이싱 - OpenTelemetry와 Tempo` | 분산 트레이싱·APM(스팬 메트릭) |
-
-## 이 섹션의 원칙
-- 개념과 **실제 구축 설정**(버전·접속·연결)을 함께 설명한다.
-- 도구를 직접 다루는 단계별 절차는 `Manual`(솔루션 사용법)에서 다룬다.
-- 평문 시크릿(`Admin12!` 등)·SPOF(ES/Tempo/Alerta replica 1) 같은 개선 과제는 본문에 ⚠️로 표시한다.
 
 ## Page Tree
 
@@ -61,8 +49,3 @@ parent_notion_id: 330e313f58b9802b9cedda8dcbc5d112
 - [07. Harbor 컨테이너 레지스트리](07. Harbor 컨테이너 레지스트리/index.md)
 - [08. Infisical 시크릿 관리 가이드](08. Infisical 시크릿 관리 가이드/index.md)
 - [09. Headlamp 클러스터 대시보드](09. Headlamp 클러스터 대시보드/index.md)
-- [10. Observability 운영 가이드](10. Observability 운영 가이드/index.md)
-- [11. 메트릭 - Prometheus와 Grafana](11. 메트릭 - Prometheus와 Grafana/index.md)
-- [12. 알림 - Alertmanager와 Alerta](12. 알림 - Alertmanager와 Alerta/index.md)
-- [13. 로그 - Elasticsearch, Kibana, Filebeat, ElastAlert](13. 로그 - Elasticsearch, Kibana, Filebeat, ElastAlert/index.md)
-- [14. 트레이싱 - OpenTelemetry와 Tempo](14. 트레이싱 - OpenTelemetry와 Tempo/index.md)
