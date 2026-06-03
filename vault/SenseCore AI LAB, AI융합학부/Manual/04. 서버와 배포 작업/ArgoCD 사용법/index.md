@@ -21,7 +21,7 @@ sudo kubectl describe application <앱> -n argocd
 - 수동 sync: UI에서 앱 선택 → `Sync`. CLI는 `argocd app sync <앱>`.
 
 ## 롤백
-1. 무엇을 되돌릴지 결정([장애 대응 의사결정 가이드](../../../Guide/04. 장애 대응과 운영 판단/장애 대응 의사결정 가이드/index.md)).
+1. 무엇을 되돌릴지 결정([장애 대응 의사결정 가이드](../../../Guide/03. 관측과 SRE/10. 장애 대응 의사결정 가이드/index.md)).
 2. **방법 A(GitOps 정석)**: gitops 레포에서 이미지 태그/digest를 직전 정상으로 되돌려 커밋 → sync.
 3. **방법 B(임시)**: ArgoCD UI에서 `History and Rollback` → 이전 리비전 선택.
 - 정본은 Git이므로, B로 임시 롤백했어도 Git을 맞춰두지 않으면 self-heal/다음 sync에서 되돌아온다.

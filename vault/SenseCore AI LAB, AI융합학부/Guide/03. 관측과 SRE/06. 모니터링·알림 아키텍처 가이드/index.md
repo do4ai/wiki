@@ -58,5 +58,5 @@ title: "모니터링·알림 아키텍처 가이드"
 
 - 이 문서: 컴포넌트가 **왜·어떻게 연결되는가**.
 - 도구별 1차 확인 절차: [Manual/06 Grafana, Kibana, Tempo 1차 장애 확인 절차](../../../Manual/06. 모니터링-로그 작업/Grafana, Kibana, Tempo 1차 장애 확인 절차/index.md).
-- 장애 판단·SLO·에스컬레이션: [04. 장애 대응과 운영 판단](../../04. 장애 대응과 운영 판단/index.md).
-- Discord 리포트 설계 배경: [k3s 운영 장애 Discord 리포트 설계](../k3s 운영 장애 Discord 리포트 설계/index.md).
+- 장애 판단·SLO·에스컬레이션: [04. 장애 대응과 운영 판단](../index.md).
+- Discord 리포트 설계 배경: [k3s 운영 장애 Discord 리포트 설계](../12. k3s 운영 장애 Discord 리포트 설계/index.md).

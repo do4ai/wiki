@@ -14,26 +14,26 @@ parent_notion_id: 31ee313f58b980d68c5ad8ed9d5aeff8
 
 [01. 인프라와 플랫폼](01. 인프라와 플랫폼/index.md)
 [02. 서비스 운영](02. 서비스 운영/index.md)
-[03. 데이터, 관측, 보안](03. 데이터, 관측, 보안/index.md)
-[04. 장애 대응과 운영 판단](04. 장애 대응과 운영 판단/index.md)
+[03. 관측과 SRE](03. 관측과 SRE/index.md)
 
 | 섹션 | 무엇을 보나 |
 | --- | --- |
-| 01. 인프라와 플랫폼 | k3s·GitOps·ArgoCD·Infisical·Observability 등 공통 토대 |
+| 01. 인프라와 플랫폼 | 기반: 클러스터·GitOps·ArgoCD·ingress·Harbor·Infisical·Headlamp |
 | 02. 서비스 운영 | 서비스별(do4i·passv·palcar·papersens·wiki) 아키텍처·운영 |
-| 03. 데이터, 관측, 보안 | 모니터링·알림 파이프라인, 장애 리포트 설계 |
-| 04. 장애 대응과 운영 판단 | SLO·에러버짓, 인시던트·에스컬레이션, 대응 의사결정 |
+| 03. 관측과 SRE | **관측 솔루션·URL·메트릭/로그·서비스별 조치 + SLO·인시던트·의사결정** (가장 중요) |
 
 ## Page Tree
 
 - [01. 인프라와 플랫폼](01. 인프라와 플랫폼/index.md)
-  - [03. k3s GitOps 운영 클러스터 초보자 가이드](01. 인프라와 플랫폼/03. k3s GitOps 운영 클러스터 초보자 가이드/index.md)
   - [01. Kubernetes 기본 구조 가이드](01. 인프라와 플랫폼/01. Kubernetes 기본 구조 가이드/index.md)
   - [02. k3s 운영 구조 가이드](01. 인프라와 플랫폼/02. k3s 운영 구조 가이드/index.md)
+  - [03. k3s GitOps 운영 클러스터 초보자 가이드](01. 인프라와 플랫폼/03. k3s GitOps 운영 클러스터 초보자 가이드/index.md)
   - [04. GitOps 운영 모델 가이드](01. 인프라와 플랫폼/04. GitOps 운영 모델 가이드/index.md)
   - [05. ArgoCD 운영 흐름 가이드](01. 인프라와 플랫폼/05. ArgoCD 운영 흐름 가이드/index.md)
+  - [06. ingress-nginx](01. 인프라와 플랫폼/06. ingress-nginx/index.md)
+  - [07. Harbor 컨테이너 레지스트리](01. 인프라와 플랫폼/07. Harbor 컨테이너 레지스트리/index.md)
   - [08. Infisical 시크릿 관리 가이드](01. 인프라와 플랫폼/08. Infisical 시크릿 관리 가이드/index.md)
-  - [10. Observability 운영 가이드](01. 인프라와 플랫폼/10. Observability 운영 가이드/index.md)
+  - [09. Headlamp 클러스터 대시보드](01. 인프라와 플랫폼/09. Headlamp 클러스터 대시보드/index.md)
 - [02. 서비스 운영](02. 서비스 운영/index.md)
   - [서비스 공통 1차 대응 절차](02. 서비스 운영/서비스 공통 1차 대응 절차/index.md)
   - [do4i 서비스 가이드](02. 서비스 운영/do4i 서비스 가이드/index.md)
@@ -41,11 +41,16 @@ parent_notion_id: 31ee313f58b980d68c5ad8ed9d5aeff8
   - [palcar 서비스 가이드](02. 서비스 운영/palcar 서비스 가이드/index.md)
   - [papersens 서비스 가이드](02. 서비스 운영/papersens 서비스 가이드/index.md)
   - [wiki 서비스 가이드](02. 서비스 운영/wiki 서비스 가이드/index.md)
-- [03. 데이터, 관측, 보안](03. 데이터, 관측, 보안/index.md)
-  - [모니터링·알림 아키텍처 가이드](03. 데이터, 관측, 보안/모니터링·알림 아키텍처 가이드/index.md)
-  - [운영 장애 Discord 리포트 솔루션 리서치](03. 데이터, 관측, 보안/운영 장애 Discord 리포트 솔루션 리서치/index.md)
-  - [k3s 운영 장애 Discord 리포트 설계](03. 데이터, 관측, 보안/k3s 운영 장애 Discord 리포트 설계/index.md)
-- [04. 장애 대응과 운영 판단](04. 장애 대응과 운영 판단/index.md)
-  - [SLO·SLI와 에러 버짓 가이드](04. 장애 대응과 운영 판단/SLO·SLI와 에러 버짓 가이드/index.md)
-  - [알림에서 인시던트, 에스컬레이션까지](04. 장애 대응과 운영 판단/알림에서 인시던트, 에스컬레이션까지/index.md)
-  - [장애 대응 의사결정 가이드](04. 장애 대응과 운영 판단/장애 대응 의사결정 가이드/index.md)
+- [03. 관측과 SRE](03. 관측과 SRE/index.md)
+  - [01. Observability 운영 가이드](03. 관측과 SRE/01. Observability 운영 가이드/index.md)
+  - [02. 메트릭 - Prometheus와 Grafana](03. 관측과 SRE/02. 메트릭 - Prometheus와 Grafana/index.md)
+  - [03. 알림 - Alertmanager와 Alerta](03. 관측과 SRE/03. 알림 - Alertmanager와 Alerta/index.md)
+  - [04. 로그 - Elasticsearch, Kibana, Filebeat, ElastAlert](03. 관측과 SRE/04. 로그 - Elasticsearch, Kibana, Filebeat, ElastAlert/index.md)
+  - [05. 트레이싱 - OpenTelemetry와 Tempo](03. 관측과 SRE/05. 트레이싱 - OpenTelemetry와 Tempo/index.md)
+  - [06. 모니터링·알림 아키텍처 가이드](03. 관측과 SRE/06. 모니터링·알림 아키텍처 가이드/index.md)
+  - [07. 서비스별 관측과 조치](03. 관측과 SRE/07. 서비스별 관측과 조치/index.md)
+  - [08. SLO·SLI와 에러 버짓 가이드](03. 관측과 SRE/08. SLO·SLI와 에러 버짓 가이드/index.md)
+  - [09. 알림에서 인시던트, 에스컬레이션까지](03. 관측과 SRE/09. 알림에서 인시던트, 에스컬레이션까지/index.md)
+  - [10. 장애 대응 의사결정 가이드](03. 관측과 SRE/10. 장애 대응 의사결정 가이드/index.md)
+  - [11. 운영 장애 Discord 리포트 솔루션 리서치](03. 관측과 SRE/11. 운영 장애 Discord 리포트 솔루션 리서치/index.md)
+  - [12. k3s 운영 장애 Discord 리포트 설계](03. 관측과 SRE/12. k3s 운영 장애 Discord 리포트 설계/index.md)

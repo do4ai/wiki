@@ -3,7 +3,7 @@ title: "12. 알림 - Alertmanager와 Alerta"
 ---
 # 12. 알림 — Alertmanager와 Alerta
 
-장애 신호를 모아 디스코드로 보내는 알림 파이프라인이다. 전체 그림은 [모니터링·알림 아키텍처 가이드](../../03. 데이터, 관측, 보안/모니터링·알림 아키텍처 가이드/index.md), 도구 사용법은 [Manual 06. Alerta 사용법](../../../Manual/06. 모니터링-로그 작업/Alerta 사용법/index.md).
+장애 신호를 모아 디스코드로 보내는 알림 파이프라인이다. 전체 그림은 [모니터링·알림 아키텍처 가이드](../06. 모니터링·알림 아키텍처 가이드/index.md), 도구 사용법은 [Manual 06. Alerta 사용법](../../../Manual/06. 모니터링-로그 작업/Alerta 사용법/index.md).
 
 ```
 Prometheus 규칙 ─ Alertmanager ─┐
@@ -44,4 +44,4 @@ ArgoCD Notifications ────────────┤
 ## 1차 확인 포인트
 1. 디스코드 알림 → Alerta(`alerta.do4ai.com`)에서 같은 service/alertname 묶음 확인(진짜 영향 vs 노이즈).
 2. 알림이 안 오면: Alertmanager→Alerta webhook, Alerta 파드/DB, Discord webhook 순으로 점검.
-3. 판단·에스컬레이션은 [04. 장애 대응과 운영 판단](../../04. 장애 대응과 운영 판단/index.md).
+3. 판단·에스컬레이션은 [04. 장애 대응과 운영 판단](../index.md).

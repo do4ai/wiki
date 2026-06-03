@@ -3,7 +3,7 @@ title: "11. 메트릭 - Prometheus와 Grafana"
 ---
 # 11. 메트릭 — Prometheus와 Grafana
 
-우리가 실제 구축해 쓰는 메트릭 스택이다. `monitoring` 네임스페이스에 **kube-prometheus-stack(Helm chart 58.7.2)** 한 묶음으로 배포되며 Prometheus·Grafana·Alertmanager·node-exporter·kube-state-metrics를 함께 설치한다. (알림 라우팅/Alerta는 [12. 알림](../12. 알림 - Alertmanager와 Alerta/index.md) 참고.)
+우리가 실제 구축해 쓰는 메트릭 스택이다. `monitoring` 네임스페이스에 **kube-prometheus-stack(Helm chart 58.7.2)** 한 묶음으로 배포되며 Prometheus·Grafana·Alertmanager·node-exporter·kube-state-metrics를 함께 설치한다. (알림 라우팅/Alerta는 [12. 알림](../03. 알림 - Alertmanager와 Alerta/index.md) 참고.)
 
 ```
 앱/노드/ingress(/metrics)
