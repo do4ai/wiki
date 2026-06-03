@@ -1,12 +1,12 @@
 ---
-title: "ArgoCD 운영 흐름 가이드"
+title: "05. ArgoCD 운영 흐름 가이드"
 source_kind: page
-source_path: ssot/pages/31ee313f58b980d68c5ad8ed9d5aeff8__SenseCore AI LAB, AI융합학부/children/guide/330e313f58b9802b9cedda8dcbc5d112__Guide/children/330e313f58b981a0b738ed69daa8f3a0__01. 인프라와 플랫폼/children/338e313f58b981f4a6d8d696ab620029__ArgoCD 운영 흐름 가이드
+source_path: ssot/pages/31ee313f58b980d68c5ad8ed9d5aeff8__SenseCore AI LAB, AI융합학부/children/guide/330e313f58b9802b9cedda8dcbc5d112__Guide/children/330e313f58b981a0b738ed69daa8f3a0__01. 인프라와 플랫폼/children/338e313f58b981f4a6d8d696ab620029__05. ArgoCD 운영 흐름 가이드
 notion_id: 338e313f58b981f4a6d8d696ab620029
 notion_url: https://www.notion.so/338e313f58b981f4a6d8d696ab620029
 parent_notion_id: 330e313f58b981a0b738ed69daa8f3a0
 ---
-# ArgoCD 운영 흐름 가이드
+# 05. ArgoCD 운영 흐름 가이드
 
 이 문서는 ArgoCD를 운영 관점에서 어떻게 읽어야 하는지 설명하는 가이드다.
 
@@ -61,6 +61,6 @@ ArgoCD는 GitOps 선언을 읽고, 클러스터의 실제 상태를 원하는 �
 
 ## 이 문서 다음에 무엇을 읽는가
 
-- 변경 기준이 궁금하면 `GitOps 운영 모델 가이드`
-- 바닥 리소스 구조가 약하면 `Kubernetes 기본 구조 가이드`
+- 변경 기준이 궁금하면 `04. GitOps 운영 모델 가이드`
+- 바닥 리소스 구조가 약하면 `01. Kubernetes 기본 구조 가이드`
 - 실제 절차는 `Manual` 의 배포 확인, sync 확인, 롤백 문서를 본다.

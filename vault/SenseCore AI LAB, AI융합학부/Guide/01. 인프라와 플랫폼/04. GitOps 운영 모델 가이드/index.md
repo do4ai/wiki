@@ -1,12 +1,12 @@
 ---
-title: "GitOps 운영 모델 가이드"
+title: "04. GitOps 운영 모델 가이드"
 source_kind: page
-source_path: ssot/pages/31ee313f58b980d68c5ad8ed9d5aeff8__SenseCore AI LAB, AI융합학부/children/guide/330e313f58b9802b9cedda8dcbc5d112__Guide/children/330e313f58b981a0b738ed69daa8f3a0__01. 인프라와 플랫폼/children/338e313f58b981008b6bcee9a4b3333e__GitOps 운영 모델 가이드
+source_path: ssot/pages/31ee313f58b980d68c5ad8ed9d5aeff8__SenseCore AI LAB, AI융합학부/children/guide/330e313f58b9802b9cedda8dcbc5d112__Guide/children/330e313f58b981a0b738ed69daa8f3a0__01. 인프라와 플랫폼/children/338e313f58b981008b6bcee9a4b3333e__04. GitOps 운영 모델 가이드
 notion_id: 338e313f58b981008b6bcee9a4b3333e
 notion_url: https://www.notion.so/338e313f58b981008b6bcee9a4b3333e
 parent_notion_id: 330e313f58b981a0b738ed69daa8f3a0
 ---
-# GitOps 운영 모델 가이드
+# 04. GitOps 운영 모델 가이드
 
 이 문서는 연구실 운영 환경이 왜 GitOps 방식으로 관리되는지 설명하는 가이드다.
 

@@ -1,12 +1,12 @@
 ---
-title: "Infisical 시크릿 관리 가이드"
+title: "08. Infisical 시크릿 관리 가이드"
 source_kind: page
-source_path: ssot/pages/31ee313f58b980d68c5ad8ed9d5aeff8__SenseCore AI LAB, AI융합학부/children/guide/330e313f58b9802b9cedda8dcbc5d112__Guide/children/330e313f58b981a0b738ed69daa8f3a0__01. 인프라와 플랫폼/children/338e313f58b98101a383cf9fc68ffcf5__Infisical 시크릿 관리 가이드
+source_path: ssot/pages/31ee313f58b980d68c5ad8ed9d5aeff8__SenseCore AI LAB, AI융합학부/children/guide/330e313f58b9802b9cedda8dcbc5d112__Guide/children/330e313f58b981a0b738ed69daa8f3a0__01. 인프라와 플랫폼/children/338e313f58b98101a383cf9fc68ffcf5__08. Infisical 시크릿 관리 가이드
 notion_id: 338e313f58b98101a383cf9fc68ffcf5
 notion_url: https://www.notion.so/338e313f58b98101a383cf9fc68ffcf5
 parent_notion_id: 330e313f58b981a0b738ed69daa8f3a0
 ---
-# Infisical 시크릿 관리 가이드
+# 08. Infisical 시크릿 관리 가이드
 
 이 문서는 연구실 운영 시크릿이 어떤 구조로 관리되는지 설명하는 가이드다.
 

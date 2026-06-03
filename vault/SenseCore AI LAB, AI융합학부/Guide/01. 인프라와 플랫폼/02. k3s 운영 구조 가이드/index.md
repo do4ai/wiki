@@ -1,12 +1,12 @@
 ---
-title: "k3s 운영 구조 가이드"
+title: "02. k3s 운영 구조 가이드"
 source_kind: page
-source_path: ssot/pages/31ee313f58b980d68c5ad8ed9d5aeff8__SenseCore AI LAB, AI융합학부/children/guide/330e313f58b9802b9cedda8dcbc5d112__Guide/children/330e313f58b981a0b738ed69daa8f3a0__01. 인프라와 플랫폼/children/338e313f58b9817bbfd3ecb17862cbd8__k3s 운영 구조 가이드
+source_path: ssot/pages/31ee313f58b980d68c5ad8ed9d5aeff8__SenseCore AI LAB, AI융합학부/children/guide/330e313f58b9802b9cedda8dcbc5d112__Guide/children/330e313f58b981a0b738ed69daa8f3a0__01. 인프라와 플랫폼/children/338e313f58b9817bbfd3ecb17862cbd8__02. k3s 운영 구조 가이드
 notion_id: 338e313f58b9817bbfd3ecb17862cbd8
 notion_url: https://www.notion.so/338e313f58b9817bbfd3ecb17862cbd8
 parent_notion_id: 330e313f58b981a0b738ed69daa8f3a0
 ---
-# k3s 운영 구조 가이드
+# 02. k3s 운영 구조 가이드
 
 이 문서는 연구실이 운영 클러스터를 어떤 단위로 바라보는지 설명하는 가이드다.
 
@@ -56,6 +56,6 @@ k3s는 Kubernetes를 더 가볍게 운영할 수 있게 정리한 배포판이�
 
 ## 이 문서 다음에 무엇을 읽는가
 
-- 리소스 개념이 약하면 `Kubernetes 기본 구조 가이드`
-- 배포 흐름이 궁금하면 `GitOps 운영 모델 가이드`
-- 동기화와 수렴 판단이 궁금하면 `ArgoCD 운영 흐름 가이드`
+- 리소스 개념이 약하면 `01. Kubernetes 기본 구조 가이드`
+- 배포 흐름이 궁금하면 `04. GitOps 운영 모델 가이드`
+- 동기화와 수렴 판단이 궁금하면 `05. ArgoCD 운영 흐름 가이드`

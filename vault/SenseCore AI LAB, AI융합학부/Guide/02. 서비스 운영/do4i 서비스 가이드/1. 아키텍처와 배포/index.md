@@ -48,4 +48,4 @@ title: "1. 아키텍처와 배포"
 - **부트스트랩**: `api-bootstrap` Job이 alembic 마이그레이션 수행(ArgoCD Sync hook).
 - **도메인**: `agents.do4i.com`, `admin.do4i.com`, `do4i.com` (프론트는 CloudFront→S3, `/api*`는 CloudFront→ingress).
 
-> 배포 이상 대응은 [3. 운영 절차](../3. 운영 절차/index.md). 도구는 [Manual/04 ArgoCD 사용법](../../../../Manual/04. 서버와 배포 작업/ArgoCD 사용법/index.md). 플랫폼 공통 배포 모델은 [GitOps 운영 모델 가이드](../../../01. 인프라와 플랫폼/GitOps 운영 모델 가이드/index.md).
+> 배포 이상 대응은 [3. 운영 절차](../3. 운영 절차/index.md). 도구는 [Manual/04 ArgoCD 사용법](../../../../Manual/04. 서버와 배포 작업/ArgoCD 사용법/index.md). 플랫폼 공통 배포 모델은 [04. GitOps 운영 모델 가이드](../../../01. 인프라와 플랫폼/04. GitOps 운영 모델 가이드/index.md).
