@@ -3,7 +3,7 @@ title: "ArgoCD 사용법"
 ---
 # ArgoCD 사용법
 
-데이터센스 배포의 핵심 도구인 ArgoCD를 운영에서 어떻게 쓰는지 정리한다. 개념(왜 GitOps인가)은 [Guide/01 ArgoCD 운영 흐름 가이드](../../../Guide/01. 인프라와 플랫폼/ArgoCD 운영 흐름 가이드/index.md)를 본다. 여기서는 손에 잡히는 사용법이다.
+데이터센스 배포의 핵심 도구인 ArgoCD를 운영에서 어떻게 쓰는지 정리한다. 개념(왜 GitOps인가)은 [Guide/01 05. ArgoCD 운영 흐름 가이드](../../../Guide/01. 인프라와 플랫폼/05. ArgoCD 운영 흐름 가이드/index.md)를 본다. 여기서는 손에 잡히는 사용법이다.
 
 ## 접속
 - UI: `argocd.do4ai.com` (또는 NodePort 30080). 기본 계정 `admin` (시크릿은 Infisical, 평문 로테이션은 진행 예정).

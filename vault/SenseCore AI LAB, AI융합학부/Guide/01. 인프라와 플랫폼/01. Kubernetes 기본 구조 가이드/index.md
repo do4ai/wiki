@@ -1,12 +1,12 @@
 ---
-title: "Kubernetes 기본 구조 가이드"
+title: "01. Kubernetes 기본 구조 가이드"
 source_kind: page
-source_path: ssot/pages/31ee313f58b980d68c5ad8ed9d5aeff8__SenseCore AI LAB, AI융합학부/children/guide/330e313f58b9802b9cedda8dcbc5d112__Guide/children/330e313f58b981a0b738ed69daa8f3a0__01. 인프라와 플랫폼/children/338e313f58b9818d93b4df013bf48769__Kubernetes 기본 구조 가이드
+source_path: ssot/pages/31ee313f58b980d68c5ad8ed9d5aeff8__SenseCore AI LAB, AI융합학부/children/guide/330e313f58b9802b9cedda8dcbc5d112__Guide/children/330e313f58b981a0b738ed69daa8f3a0__01. 인프라와 플랫폼/children/338e313f58b9818d93b4df013bf48769__01. Kubernetes 기본 구조 가이드
 notion_id: 338e313f58b9818d93b4df013bf48769
 notion_url: https://www.notion.so/338e313f58b9818d93b4df013bf48769
 parent_notion_id: 330e313f58b981a0b738ed69daa8f3a0
 ---
-# Kubernetes 기본 구조 가이드
+# 01. Kubernetes 기본 구조 가이드
 
 이 문서는 연구실 운영 문서를 읽기 전에 알아야 하는 Kubernetes의 기본 추상화를 정리한 가이드다.
 

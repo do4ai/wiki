@@ -1,7 +1,7 @@
 ---
-title: "k3s GitOps 운영 클러스터 초보자 가이드"
+title: "03. k3s GitOps 운영 클러스터 초보자 가이드"
 source_kind: page
-source_path: ssot/pages/31ee313f58b980d68c5ad8ed9d5aeff8__SenseCore AI LAB, AI융합학부/children/guide/330e313f58b9802b9cedda8dcbc5d112__Guide/children/330e313f58b981a0b738ed69daa8f3a0__01. 인프라와 플랫폼/children/330e313f58b98144ac78c9476ef7246c__k3s GitOps 운영 클러스터 초보자 가이드
+source_path: ssot/pages/31ee313f58b980d68c5ad8ed9d5aeff8__SenseCore AI LAB, AI융합학부/children/guide/330e313f58b9802b9cedda8dcbc5d112__Guide/children/330e313f58b981a0b738ed69daa8f3a0__01. 인프라와 플랫폼/children/330e313f58b98144ac78c9476ef7246c__03. k3s GitOps 운영 클러스터 초보자 가이드
 notion_id: 330e313f58b98144ac78c9476ef7246c
 notion_url: https://www.notion.so/330e313f58b98144ac78c9476ef7246c
 parent_notion_id: 330e313f58b981a0b738ed69daa8f3a0
