@@ -15,8 +15,7 @@ Workspace home: [SenseCore AI LAB, AI융합학부](SenseCore AI LAB, AI융합학
 # 👨‍👨‍👧‍👦 People
 [SCAI LAB의 동료들을 소개합니다.](SenseCore AI LAB, AI융합학부/SCAI LAB의 동료들을 소개합니다/index.md)
 # 🔍 R&D
-진행 중이거나 완료된 연구/과제를 기록합니다.
-[완료](SenseCore AI LAB, AI융합학부/완료/index.md)
+진행 중이거나 완료된 연구/과제를 기록한다.
 [진행 중](SenseCore AI LAB, AI융합학부/진행 중/index.md)
 | 💼 Convention | 🧾 Domains |
 | --- | --- |
@@ -35,7 +34,6 @@ Workspace home: [SenseCore AI LAB, AI융합학부](SenseCore AI LAB, AI융합학
 - People
   - [SCAI LAB의 동료들을 소개합니다.](SenseCore AI LAB, AI융합학부/SCAI LAB의 동료들을 소개합니다/index.md)
 - R&D
-  - [완료](SenseCore AI LAB, AI융합학부/완료/index.md)
   - [진행 중](SenseCore AI LAB, AI융합학부/진행 중/index.md)
     - [PassView](SenseCore AI LAB, AI융합학부/진행 중/PassView/index.md)
       - [Feature](SenseCore AI LAB, AI융합학부/진행 중/PassView/Feature/index.md)
