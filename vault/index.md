@@ -6,6 +6,10 @@ source_kind: generated_index
 
 Workspace home: [SenseCore AI LAB, AI융합학부](SenseCore AI LAB, AI융합학부/index.md)
 
+# 🚀 시작하기 (신입 온보딩)
+처음 오셨다면 여기부터 — 위키 전체 지도 + 인프라·접속·학습 경로·첫 대응.
+**[시작하기 — 신입 온보딩](SenseCore AI LAB, AI융합학부/시작하기/index.md)**
+
 # ⭐ Vision
 [SensCore AI Lab](https://senscore.github.io/index.html#home)
 # 👨‍👨‍👧‍👦 People
@@ -27,6 +31,7 @@ Workspace home: [SenseCore AI LAB, AI융합학부](SenseCore AI LAB, AI융합학
 
 ## Page Tree
 
+- [🚀 시작하기 (신입 온보딩)](SenseCore AI LAB, AI융합학부/시작하기/index.md)
 - People
   - [SCAI LAB의 동료들을 소개합니다.](SenseCore AI LAB, AI융합학부/SCAI LAB의 동료들을 소개합니다/index.md)
 - R&D

@@ -6,6 +6,10 @@ notion_id: 31ee313f58b980d68c5ad8ed9d5aeff8
 notion_url: https://www.notion.so/31ee313f58b980d68c5ad8ed9d5aeff8
 notion_icon: "🌒"
 ---
+# 🚀 시작하기 (신입 온보딩)
+처음 오셨다면 여기부터. 위키 전체 지도(어디에 뭐가 있나)와 인프라·접속·학습 경로·첫 대응을 한 문서에서 안내합니다.
+**[시작하기 — 신입 온보딩](시작하기/index.md)**
+
 # ⭐ Vision
 [SensCore AI Lab](https://senscore.github.io/index.html#home)
 # 👨‍👨‍👧‍👦 People
@@ -27,6 +31,7 @@ notion_icon: "🌒"
 
 ## Page Tree
 
+- [🚀 시작하기 (신입 온보딩)](시작하기/index.md)
 - People
   - [SCAI LAB의 동료들을 소개합니다.](SCAI LAB의 동료들을 소개합니다/index.md)
 - R&D
