@@ -15,8 +15,7 @@ notion_icon: "🌒"
 # 👨‍👨‍👧‍👦 People
 [SCAI LAB의 동료들을 소개합니다.](SCAI LAB의 동료들을 소개합니다/index.md)
 # 🔍 R&D
-진행 중이거나 완료된 연구/과제를 기록합니다.
-[완료](완료/index.md)
+진행 중이거나 완료된 연구/과제를 기록한다.
 [진행 중](진행 중/index.md)
 | 💼 Convention | 🧾 Domains |
 | --- | --- |
@@ -35,7 +34,6 @@ notion_icon: "🌒"
 - People
   - [SCAI LAB의 동료들을 소개합니다.](SCAI LAB의 동료들을 소개합니다/index.md)
 - R&D
-  - [완료](완료/index.md)
   - [진행 중](진행 중/index.md)
     - [PassView](진행 중/PassView/index.md)
       - [Feature](진행 중/PassView/Feature/index.md)
