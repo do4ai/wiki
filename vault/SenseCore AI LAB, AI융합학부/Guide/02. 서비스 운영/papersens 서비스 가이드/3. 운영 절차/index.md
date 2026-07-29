@@ -42,3 +42,8 @@ sudo kubectl get svc -n papersens
 
 ## 참고
 - 롤백·배포 점검: [Manual/04 ArgoCD 사용법](../../../../Manual/04. 서버와 배포 작업/ArgoCD 사용법/index.md).
+
+---
+
+> **온보딩 트랙 — 2부 서비스 운영**
+> 이전: [papersens — 모니터링·알람·SRE](../2. 모니터링·알람·SRE/index.md) · 다음: [wiki 서비스 가이드](../../wiki 서비스 가이드/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../../시작하기/index.md)

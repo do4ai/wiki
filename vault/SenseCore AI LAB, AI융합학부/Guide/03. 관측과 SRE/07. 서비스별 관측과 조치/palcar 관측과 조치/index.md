@@ -26,3 +26,8 @@ title: "palcar 관측과 조치"
 ## 더 보기
 - 서비스 구조: [palcar 서비스 가이드](../../../02. 서비스 운영/palcar 서비스 가이드/index.md)
 - 손절차: [palcar 운영 절차](../../../02. 서비스 운영/palcar 서비스 가이드/3. 운영 절차/index.md)
+
+---
+
+> **온보딩 트랙 — 3부 관측과 SRE**
+> 이전: [passv 관측과 조치](../passv 관측과 조치/index.md) · 다음: [papersens 관측과 조치](../papersens 관측과 조치/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../../시작하기/index.md)

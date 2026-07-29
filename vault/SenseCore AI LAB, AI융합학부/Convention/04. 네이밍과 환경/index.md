@@ -26,3 +26,8 @@ title: "04. 네이밍과 환경"
 - `do4i`·`palcar`: **Harbor**(`harbor.do4i.com/do4ai/*`).
 - `papersens`·`passv`(prod 일부): **AWS ECR**.
 - 이미지 경로·태그 규칙은 [03. GitOps와 배포](../03. GitOps와 배포/index.md).
+
+---
+
+> **온보딩 트랙 — 4부 운영 변경과 컨벤션**
+> 이전: [GitOps와 배포](../03. GitOps와 배포/index.md) · 다음: [시크릿과 보안](../05. 시크릿과 보안/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../시작하기/index.md)

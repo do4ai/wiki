@@ -10,7 +10,7 @@ parent_notion_id: 330e313f58b98114bbc9e9d8d8aa230a
 
 ## 문서 목적
 
-이 문서는 `https://in.passv.co.kr` 운영 기준으로 Google 로그인을 구현하는 매뉴얼이다.
+이 문서는 `https://kon.ai.kr` 운영 기준으로 Google 로그인을 구현하는 매뉴얼이다.
 
 대상은 초보 운영개발자다. 따라서 아래 3가지만 끝내면 된다.
 
@@ -22,10 +22,10 @@ parent_notion_id: 330e313f58b98114bbc9e9d8d8aa230a
 
 | 항목 | 값 |
 | --- | --- |
-| 운영 주소 | `https://in.passv.co.kr` |
-| 로그인 화면 | `https://in.passv.co.kr/login` |
-| Authorized JavaScript origins | `https://in.passv.co.kr` |
-| Authorized redirect URIs | `https://in.passv.co.kr/api/auth/google/redirect` |
+| 운영 주소 | `https://kon.ai.kr` |
+| 로그인 화면 | `https://kon.ai.kr/login` |
+| Authorized JavaScript origins | `https://kon.ai.kr` |
+| Authorized redirect URIs | `https://kon.ai.kr/api/auth/google/redirect` |
 | PASSV에 실제로 넣는 값 | `Client ID` |
 | 이번 구현에서 쓰지 않는 값 | `Client Secret` |
 
@@ -36,11 +36,13 @@ parent_notion_id: 330e313f58b98114bbc9e9d8d8aa230a
 
 ## 캡처 파일 위치
 
-실제 작업 캡처는 아래 폴더에 저장했다.
+본문의 작업 캡처 이미지는 passv 운영 도메인에 호스팅되어 있다.
 
-`notion/ssot/assets/manual/google-login-in-passv-co-kr/`
+`https://kon.ai.kr/manual/google-login-in-passv-co-kr/`
 
 보안상 위험한 값은 캡처에서 마스킹했다.
+
+⚠️ 이미지가 운영 서비스 도메인에 호스팅되어 있어, 해당 서비스 장애나 경로 변경 시 이 문서의 이미지도 함께 깨진다.
 
 ## 전체 순서
 
@@ -70,7 +72,7 @@ parent_notion_id: 330e313f58b98114bbc9e9d8d8aa230a
 
 ### 캡처
 
-![Google Cloud 첫 동의 완료](https://in.passv.co.kr/manual/google-login-in-passv-co-kr/11-google-cloud-terms-completed.png)
+![Google Cloud 첫 동의 완료](https://kon.ai.kr/manual/google-login-in-passv-co-kr/11-google-cloud-terms-completed.png)
 
 ## 2. Google Cloud 프로젝트 만들기
 
@@ -89,9 +91,9 @@ parent_notion_id: 330e313f58b98114bbc9e9d8d8aa230a
 
 ### 캡처
 
-![Google Cloud 프로젝트 이름 입력 완료](https://in.passv.co.kr/manual/google-login-in-passv-co-kr/14-google-cloud-project-name-filled.png)
+![Google Cloud 프로젝트 이름 입력 완료](https://kon.ai.kr/manual/google-login-in-passv-co-kr/14-google-cloud-project-name-filled.png)
 
-![Google Cloud 프로젝트 생성 완료](https://in.passv.co.kr/manual/google-login-in-passv-co-kr/15-google-cloud-project-created.png)
+![Google Cloud 프로젝트 생성 완료](https://kon.ai.kr/manual/google-login-in-passv-co-kr/15-google-cloud-project-created.png)
 
 ## 3. Google 인증 플랫폼 시작하기
 
@@ -107,9 +109,9 @@ parent_notion_id: 330e313f58b98114bbc9e9d8d8aa230a
 
 ### 캡처
 
-![Google 인증 플랫폼 개요 화면](https://in.passv.co.kr/manual/google-login-in-passv-co-kr/17-google-auth-platform-overview-loaded.png)
+![Google 인증 플랫폼 개요 화면](https://kon.ai.kr/manual/google-login-in-passv-co-kr/17-google-auth-platform-overview-loaded.png)
 
-![Google 인증 플랫폼 시작하기 버튼 화면](https://in.passv.co.kr/manual/google-login-in-passv-co-kr/18-google-auth-get-started.png)
+![Google 인증 플랫폼 시작하기 버튼 화면](https://kon.ai.kr/manual/google-login-in-passv-co-kr/18-google-auth-get-started.png)
 
 ## 4. 앱 정보 입력하기
 
@@ -126,7 +128,7 @@ parent_notion_id: 330e313f58b98114bbc9e9d8d8aa230a
 
 ### 캡처
 
-![앱 정보 입력 완료](https://in.passv.co.kr/manual/google-login-in-passv-co-kr/20-google-auth-app-info-complete.png)
+![앱 정보 입력 완료](https://kon.ai.kr/manual/google-login-in-passv-co-kr/20-google-auth-app-info-complete.png)
 
 ## 5. 대상 설정하기
 
@@ -142,7 +144,7 @@ parent_notion_id: 330e313f58b98114bbc9e9d8d8aa230a
 
 ### 캡처
 
-![대상 외부 선택 완료](https://in.passv.co.kr/manual/google-login-in-passv-co-kr/23-google-auth-audience-external-complete.png)
+![대상 외부 선택 완료](https://kon.ai.kr/manual/google-login-in-passv-co-kr/23-google-auth-audience-external-complete.png)
 
 ## 6. 연락처 정보 입력하기
 
@@ -159,7 +161,7 @@ parent_notion_id: 330e313f58b98114bbc9e9d8d8aa230a
 
 ### 캡처
 
-![연락처 정보 입력 완료](https://in.passv.co.kr/manual/google-login-in-passv-co-kr/24-google-auth-contact-info-complete.png)
+![연락처 정보 입력 완료](https://kon.ai.kr/manual/google-login-in-passv-co-kr/24-google-auth-contact-info-complete.png)
 
 ## 7. OAuth 클라이언트 만들기
 
@@ -172,13 +174,13 @@ parent_notion_id: 330e313f58b98114bbc9e9d8d8aa230a
 5. `승인된 JavaScript 원본`에는 아래 값을 넣는다.
 
 ```text
-https://in.passv.co.kr
+https://kon.ai.kr
 ```
 
 6. `승인된 리디렉션 URI`에는 아래 값을 넣는다.
 
 ```text
-https://in.passv.co.kr/api/auth/google/redirect
+https://kon.ai.kr/api/auth/google/redirect
 ```
 
 7. `만들기`를 누른다.
@@ -192,9 +194,9 @@ https://in.passv.co.kr/api/auth/google/redirect
 
 ### 캡처
 
-![OAuth 클라이언트 입력 완료](https://in.passv.co.kr/manual/google-login-in-passv-co-kr/25-google-auth-oauth-client-form-complete.png)
+![OAuth 클라이언트 입력 완료](https://kon.ai.kr/manual/google-login-in-passv-co-kr/25-google-auth-oauth-client-form-complete.png)
 
-![OAuth 클라이언트 생성 완료 팝업](https://in.passv.co.kr/manual/google-login-in-passv-co-kr/26-google-auth-client-created-popup.png)
+![OAuth 클라이언트 생성 완료 팝업](https://kon.ai.kr/manual/google-login-in-passv-co-kr/26-google-auth-client-created-popup.png)
 
 ## 8. 앱 게시하기
 
@@ -208,13 +210,13 @@ https://in.passv.co.kr/api/auth/google/redirect
 ### 설명
 
 - 운영 서비스 기준 문서이므로 마지막 상태는 `프로덕션 단계`다.
-- 테스트만 할 때는 게시하지 않고 테스트 상태로 둘 수도 있지만, `in.passv.co.kr` 운영 기준 문서에서는 프로덕션 전환까지 포함한다.
+- 테스트만 할 때는 게시하지 않고 테스트 상태로 둘 수도 있지만, `kon.ai.kr` 운영 기준 문서에서는 프로덕션 전환까지 포함한다.
 
 ### 캡처
 
-![앱 게시 확인 팝업](https://in.passv.co.kr/manual/google-login-in-passv-co-kr/27-google-auth-publish-confirmation.png)
+![앱 게시 확인 팝업](https://kon.ai.kr/manual/google-login-in-passv-co-kr/27-google-auth-publish-confirmation.png)
 
-![프로덕션 단계 전환 완료](https://in.passv.co.kr/manual/google-login-in-passv-co-kr/28-google-auth-audience-production.png)
+![프로덕션 단계 전환 완료](https://kon.ai.kr/manual/google-login-in-passv-co-kr/28-google-auth-audience-production.png)
 
 ## 9. PASSV 운영 값에 반영하기
 
@@ -246,22 +248,22 @@ Google Console에서 가져온 `Client ID` 1개를 아래 두 위치에 같은 �
 
 - 운영 프론트는 GitHub Actions 변수 `PASSV_PROD_GOOGLE_CLIENT_ID`를 사용한다.
 - 운영 백엔드는 같은 값을 `GOOGLE_CLIENT_ID`로 사용한다.
-- `VITE_GOOGLE_REDIRECT_URI`는 현재 구현상 필수가 아니다. 기본값으로 `https://in.passv.co.kr/api/auth/google/redirect`를 사용한다.
+- `VITE_GOOGLE_REDIRECT_URI`는 현재 구현상 필수가 아니다. 기본값으로 `https://kon.ai.kr/api/auth/google/redirect`를 사용한다.
 - 이번 구현에서는 `Client Secret`을 넣지 않는다.
 
 ### 캡처
 
-![프론트 운영 변수 반영 예시](https://in.passv.co.kr/manual/google-login-in-passv-co-kr/30-passv-client-env-google-client-id.png)
+![프론트 운영 변수 반영 예시](https://kon.ai.kr/manual/google-login-in-passv-co-kr/30-passv-client-env-google-client-id.png)
 
-![백엔드 운영 변수 반영 예시](https://in.passv.co.kr/manual/google-login-in-passv-co-kr/31-passv-server-env-google-client-id.png)
+![백엔드 운영 변수 반영 예시](https://kon.ai.kr/manual/google-login-in-passv-co-kr/31-passv-server-env-google-client-id.png)
 
-![운영 배포 변수 전달 예시](https://in.passv.co.kr/manual/google-login-in-passv-co-kr/32-passv-deploy-workflow-google-client-id.png)
+![운영 배포 변수 전달 예시](https://kon.ai.kr/manual/google-login-in-passv-co-kr/32-passv-deploy-workflow-google-client-id.png)
 
 ## 10. 운영 로그인 화면에서 마지막 확인하기
 
 ### 작업 순서
 
-1. `https://in.passv.co.kr/login`으로 이동한다.
+1. `https://kon.ai.kr/login`으로 이동한다.
 2. `구글로 시작하기` 버튼이 보이는지 확인한다.
 3. 버튼을 눌렀을 때 Google 로그인 흐름이 시작되는지 확인한다.
 
@@ -272,7 +274,7 @@ Google Console에서 가져온 `Client ID` 1개를 아래 두 위치에 같은 �
 
 ### 캡처
 
-![운영 로그인 화면 구글 버튼](https://in.passv.co.kr/manual/google-login-in-passv-co-kr/33-passv-login-google-button.png)
+![운영 로그인 화면 구글 버튼](https://kon.ai.kr/manual/google-login-in-passv-co-kr/33-passv-login-google-button.png)
 
 ## 초보 운영개발자용 최종 체크리스트
 
@@ -281,9 +283,14 @@ Google Console에서 가져온 `Client ID` 1개를 아래 두 위치에 같은 �
 3. 대상은 `외부`로 설정했다.
 4. 연락처 정보와 정책 동의를 완료했다.
 5. `웹 애플리케이션` OAuth 클라이언트를 만들었다.
-6. `https://in.passv.co.kr`를 JavaScript 원본으로 등록했다.
-7. `https://in.passv.co.kr/api/auth/google/redirect`를 리디렉션 URI로 등록했다.
+6. `https://kon.ai.kr`를 JavaScript 원본으로 등록했다.
+7. `https://kon.ai.kr/api/auth/google/redirect`를 리디렉션 URI로 등록했다.
 8. `Client ID`를 복사했다.
 9. `PASSV_PROD_GOOGLE_CLIENT_ID`에 같은 값을 넣었다.
 10. 백엔드 `GOOGLE_CLIENT_ID`에도 같은 값을 넣었다.
 11. 운영 로그인 화면에서 `구글로 시작하기` 버튼을 확인했다.
+
+---
+
+> **온보딩 트랙 — 4부 운영 변경과 컨벤션**
+> 이전: [Ingress, 도메인, 이미지, 환경 변수 변경 절차 (Manual)](../../05. 운영 변경 작업/Ingress, 도메인, 이미지, 환경 변수 변경 절차/index.md) · 다음: [카카오 로그인 설정 (Manual)](../카카오로그인/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)

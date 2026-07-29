@@ -57,3 +57,8 @@ parent_notion_id: 330e313f58b9802b9cedda8dcbc5d112
 - [10. 장애 대응 의사결정 가이드](10. 장애 대응 의사결정 가이드/index.md)
 - [11. 운영 장애 Discord 리포트 솔루션 리서치](11. 운영 장애 Discord 리포트 솔루션 리서치/index.md)
 - [12. k3s 운영 장애 Discord 리포트 설계](12. k3s 운영 장애 Discord 리포트 설계/index.md)
+
+---
+
+> **온보딩 트랙 — 3부 관측과 SRE**
+> 이전: [wiki — 운영 절차](../02. 서비스 운영/wiki 서비스 가이드/3. 운영 절차/index.md) · 다음: [Observability 운영 가이드](01. Observability 운영 가이드/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../시작하기/index.md)

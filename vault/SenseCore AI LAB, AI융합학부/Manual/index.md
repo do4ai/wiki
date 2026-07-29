@@ -10,6 +10,8 @@ parent_notion_id: 31ee313f58b980d68c5ad8ed9d5aeff8
 
 `Manual`은 **운영에 쓰는 솔루션(도구)을 어떻게 쓰는가**를 정리한 곳이다. ArgoCD, kubectl/k3s, Grafana, Kibana, Tempo, Infisical, Harbor, Alerta 같은 도구의 사용·점검 절차를 도구 단위로 모은다.
 
+도구 사용법 중 일부(k3s 접속·ArgoCD·Harbor·Infisical·Grafana/Kibana/Tempo·Alerta·운영 변경·외부 로그인)는 [시작하기 — 신입 온보딩](../시작하기/index.md)의 온보딩 트랙에 실습 정거장으로 포함되어 있다.
+
 > 서비스별(do4i·passv·palcar·papersens·wiki) 아키텍처와 그 서비스의 운영 절차는 `Guide`의 [02. 서비스 운영](../Guide/02. 서비스 운영/index.md)에서 서비스 폴더로 본다. **Manual = 도구 사용법, Guide = 서비스.**
 
 ## 솔루션별 사용법 (빠른 찾기)
@@ -33,6 +35,7 @@ parent_notion_id: 31ee313f58b980d68c5ad8ed9d5aeff8
 [05. 운영 변경 작업](05. 운영 변경 작업/index.md)
 [06. 모니터링/로그 작업](06. 모니터링-로그 작업/index.md)
 [07. 시크릿/권한 작업](07. 시크릿-권한 작업/index.md)
+[08. 결제 연동 설정](08. 결제 연동 설정/index.md)
 
 ## Page Tree
 
@@ -53,3 +56,5 @@ parent_notion_id: 31ee313f58b980d68c5ad8ed9d5aeff8
   - [Alerta 사용법](06. 모니터링-로그 작업/Alerta 사용법/index.md)
 - [07. 시크릿/권한 작업](07. 시크릿-권한 작업/index.md)
   - [Infisical 시크릿 반영과 권한 변경 절차](07. 시크릿-권한 작업/Infisical 시크릿 반영과 권한 변경 절차/index.md)
+- [08. 결제 연동 설정](08. 결제 연동 설정/index.md)
+  - [토스페이먼츠 라이브키 발급](08. 결제 연동 설정/토스페이먼츠 라이브키 발급/index.md)

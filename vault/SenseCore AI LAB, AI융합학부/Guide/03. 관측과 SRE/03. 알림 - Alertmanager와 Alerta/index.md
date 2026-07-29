@@ -1,7 +1,7 @@
 ---
-title: "12. 알림 - Alertmanager와 Alerta"
+title: "03. 알림 - Alertmanager와 Alerta"
 ---
-# 12. 알림 — Alertmanager와 Alerta
+# 03. 알림 - Alertmanager와 Alerta
 
 장애 신호를 모아 디스코드로 보내는 알림 파이프라인이다. 전체 그림은 [모니터링·알림 아키텍처 가이드](../06. 모니터링·알림 아키텍처 가이드/index.md), 도구 사용법은 [Manual 06. Alerta 사용법](../../../Manual/06. 모니터링-로그 작업/Alerta 사용법/index.md).
 
@@ -44,4 +44,9 @@ ArgoCD Notifications ────────────┤
 ## 1차 확인 포인트
 1. 디스코드 알림 → Alerta(`alerta.do4ai.com`)에서 같은 service/alertname 묶음 확인(진짜 영향 vs 노이즈).
 2. 알림이 안 오면: Alertmanager→Alerta webhook, Alerta 파드/DB, Discord webhook 순으로 점검.
-3. 판단·에스컬레이션은 [04. 장애 대응과 운영 판단](../index.md).
+3. 판단·에스컬레이션은 [09. 알림에서 인시던트, 에스컬레이션까지](../09. 알림에서 인시던트, 에스컬레이션까지/index.md).
+
+---
+
+> **온보딩 트랙 — 3부 관측과 SRE**
+> 이전: [메트릭 — Prometheus와 Grafana](../02. 메트릭 - Prometheus와 Grafana/index.md) · 다음: [로그 — Elasticsearch, Kibana, Filebeat, ElastAlert](../04. 로그 - Elasticsearch, Kibana, Filebeat, ElastAlert/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)

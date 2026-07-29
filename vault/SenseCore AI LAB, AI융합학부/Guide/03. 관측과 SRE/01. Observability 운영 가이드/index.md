@@ -1,12 +1,12 @@
 ---
-title: "10. Observability 운영 가이드"
+title: "01. Observability 운영 가이드"
 source_kind: page
 source_path: ssot/pages/31ee313f58b980d68c5ad8ed9d5aeff8__SenseCore AI LAB, AI융합학부/children/guide/330e313f58b9802b9cedda8dcbc5d112__Guide/children/330e313f58b981a0b738ed69daa8f3a0__01. 인프라와 플랫폼/children/338e313f58b981759316c45f5a967fc1__10. Observability 운영 가이드
 notion_id: 338e313f58b981759316c45f5a967fc1
 notion_url: https://www.notion.so/338e313f58b981759316c45f5a967fc1
 parent_notion_id: 330e313f58b981a0b738ed69daa8f3a0
 ---
-# 10. Observability 운영 가이드
+# 01. Observability 운영 가이드
 
 이 문서는 운영 상태를 읽는 기본 도구인 메트릭, 로그, 트레이스를 어떤 관점으로 써야 하는지 설명하는 가이드다.
 
@@ -62,3 +62,8 @@ parent_notion_id: 330e313f58b981a0b738ed69daa8f3a0
 - Grafana에서 어디를 먼저 보는지
 - Kibana에서 어떤 필터로 좁히는지
 - Tempo나 trace 도구에서 어떤 요청을 찾는지
+
+---
+
+> **온보딩 트랙 — 3부 관측과 SRE**
+> 이전: [03. 관측과 SRE (섹션 지도)](../index.md) · 다음: [메트릭 — Prometheus와 Grafana](../02. 메트릭 - Prometheus와 Grafana/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)

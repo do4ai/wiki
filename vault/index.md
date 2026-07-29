@@ -7,7 +7,7 @@ source_kind: generated_index
 Workspace home: [SenseCore AI LAB, AI융합학부](SenseCore AI LAB, AI융합학부/index.md)
 
 # 🚀 시작하기 (신입 온보딩)
-새로 합류하면 여기서 출발한다 — 위키 전체 지도 + 인프라·접속·학습 경로·첫 대응.
+새로 합류하면 여기서 출발한다. 위키 전체 지도와, 운영 문서를 순서대로 잇는 온보딩 트랙(꼬리물기 경로)이 있다.
 **[시작하기 — 신입 온보딩](SenseCore AI LAB, AI융합학부/시작하기/index.md)**
 
 # ⭐ Vision
@@ -15,18 +15,18 @@ Workspace home: [SenseCore AI LAB, AI융합학부](SenseCore AI LAB, AI융합학
 # 👨‍👨‍👧‍👦 People
 [SCAI LAB의 동료들을 소개합니다.](SenseCore AI LAB, AI융합학부/SCAI LAB의 동료들을 소개합니다/index.md)
 # 🔍 R&D
-진행 중이거나 완료된 연구/과제를 기록한다.
+진행 중인 연구·과제를 기록한다.
 [진행 중](SenseCore AI LAB, AI융합학부/진행 중/index.md)
 | 💼 Convention | 🧾 Domains |
 | --- | --- |
-| 개발, 운영 등의 프로세스에서 준수해야 하는 규칙입니다.<br>[Convention](SenseCore AI LAB, AI융합학부/Convention/index.md) | 진행한 프로젝트의 일반화된 도메인 문서를 관리합니다.<br>[Domains](SenseCore AI LAB, AI융합학부/Domains/index.md) |
+| 개발·운영 프로세스에서 지켜야 하는 규칙을 모은다.<br>[Convention](SenseCore AI LAB, AI융합학부/Convention/index.md) | 진행한 프로젝트의 일반화된 도메인 문서를 관리한다.<br>[Domains](SenseCore AI LAB, AI융합학부/Domains/index.md) |
 
 | 📖 Guide | 🗓️ Manual |
 | --- | --- |
-| 솔루션, 서비스를 활용하는 가이드입니다.<br>[Guide](SenseCore AI LAB, AI융합학부/Guide/index.md) | 일, 업무 등의 절차를 기술한 매뉴얼입니다.<br>[Manual](SenseCore AI LAB, AI융합학부/Manual/index.md) |
+| 시스템·서비스를 이해하는 가이드다 (개념 + 실제 우리 설정).<br>[Guide](SenseCore AI LAB, AI융합학부/Guide/index.md) | 운영 도구(ArgoCD·k3s·Grafana·Kibana·Tempo·Infisical·Harbor·Alerta)의 사용 절차다.<br>[Manual](SenseCore AI LAB, AI융합학부/Manual/index.md) |
 | 📚 Wiki | 💻 Lecture |
 | --- | --- |
-| SCAILAB 위키입니다.<br>[Wiki](SenseCore AI LAB, AI융합학부/Wiki/index.md) | 수학, 개발, AI 등 다양한 분야의 강의 자료입니다.<br>[Lecture](SenseCore AI LAB, AI융합학부/Lecture/index.md) |
+| 분야별 지식베이스다 (개발·LLM·VLM·기획 등).<br>[Wiki](SenseCore AI LAB, AI융합학부/Wiki/index.md) | 수학, 개발, AI 등 다양한 분야의 강의 자료다.<br>[Lecture](SenseCore AI LAB, AI융합학부/Lecture/index.md) |
 
 ## Page Tree
 
@@ -111,6 +111,7 @@ Workspace home: [SenseCore AI LAB, AI융합학부](SenseCore AI LAB, AI융합학
           - [4. 지수와 로그](SenseCore AI LAB, AI융합학부/Lecture/AI를 위한 수학/01. 숫자와 계산의 감각/4. 지수와 로그/index.md)
           - [5. 수열, 급수, 시그마](SenseCore AI LAB, AI융합학부/Lecture/AI를 위한 수학/01. 숫자와 계산의 감각/5. 수열, 급수, 시그마/index.md)
           - [6. 삼각함수와 복소수](SenseCore AI LAB, AI융합학부/Lecture/AI를 위한 수학/01. 숫자와 계산의 감각/6. 삼각함수와 복소수/index.md)
+          - [문제 해설 - 01. 숫자와 계산의 감각](SenseCore AI LAB, AI융합학부/Lecture/AI를 위한 수학/01. 숫자와 계산의 감각/문제 해설 - 01. 숫자와 계산의 감각/index.md)
         - [02. 벡터와 행렬의 시작](SenseCore AI LAB, AI융합학부/Lecture/AI를 위한 수학/02. 벡터와 행렬의 시작/index.md)
           - [07. 벡터공간과 기저](SenseCore AI LAB, AI융합학부/Lecture/AI를 위한 수학/02. 벡터와 행렬의 시작/07. 벡터공간과 기저/index.md)
           - [08. 행렬연산과 선형시스템](SenseCore AI LAB, AI융합학부/Lecture/AI를 위한 수학/02. 벡터와 행렬의 시작/08. 행렬연산과 선형시스템/index.md)
@@ -161,6 +162,63 @@ Workspace home: [SenseCore AI LAB, AI융합학부](SenseCore AI LAB, AI융합학
           - [41. VLM, multimodal generation, fusion architectures](SenseCore AI LAB, AI융합학부/Lecture/AI를 위한 수학/08. LLM, VLM, 멀티모달 AI 수학/41. VLM, multimodal generation, fusion architectures/index.md)
           - [42. Frontier topics optimal transport, graphs, manifolds, mechanistic interpretability, 최신 논문 독해](SenseCore AI LAB, AI융합학부/Lecture/AI를 위한 수학/08. LLM, VLM, 멀티모달 AI 수학/42. Frontier topics optimal transport, graphs, manifolds, mechanistic interpretability, 최신 논문 독해/index.md)
           - [문제 해설 - 08. LLM, VLM, 멀티모달 AI 수학](SenseCore AI LAB, AI융합학부/Lecture/AI를 위한 수학/08. LLM, VLM, 멀티모달 AI 수학/문제 해설 - 08. LLM, VLM, 멀티모달 AI 수학/index.md)
+      - [VLM을 위한 수학과 구조](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/index.md)
+        - [01. VLM의 시각 표현과 토큰화](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/01. 이미지를 토큰으로 바꾸는 시야/index.md)
+          - [1. pixel, patch, feature map, vision token](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/01. 이미지를 토큰으로 바꾸는 시야/1. pixel, patch, feature map, vision token/index.md)
+          - [2. CNN, ViT, positional structure](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/01. 이미지를 토큰으로 바꾸는 시야/2. CNN, ViT, positional structure/index.md)
+          - [3. resolution, stride, pooling, token budget](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/01. 이미지를 토큰으로 바꾸는 시야/3. resolution, stride, pooling, token budget/index.md)
+          - [4. projector, adapter, connector](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/01. 이미지를 토큰으로 바꾸는 시야/4. projector, adapter, connector/index.md)
+          - [5. vision backbone pretraining과 transfer](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/01. 이미지를 토큰으로 바꾸는 시야/5. vision backbone pretraining과 transfer/index.md)
+          - [문제 해설 - 01. 이미지를 토큰으로 바꾸는 시야](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/01. 이미지를 토큰으로 바꾸는 시야/문제 해설 - 01. 이미지를 토큰으로 바꾸는 시야/index.md)
+        - [02. 멀티모달 정렬과 데이터 설계](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/02. 이미지와 텍스트를 같은 공간에 맞추기/index.md)
+          - [06. image-text pair, shared embedding, cosine similarity](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/02. 이미지와 텍스트를 같은 공간에 맞추기/06. image-text pair, shared embedding, cosine similarity/index.md)
+          - [07. CLIP objective, in-batch negative, temperature](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/02. 이미지와 텍스트를 같은 공간에 맞추기/07. CLIP objective, in-batch negative, temperature/index.md)
+          - [08. hard negative, retrieval, ranking](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/02. 이미지와 텍스트를 같은 공간에 맞추기/08. hard negative, retrieval, ranking/index.md)
+          - [09. captioning, matching, contrastive objective 조합](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/02. 이미지와 텍스트를 같은 공간에 맞추기/09. captioning, matching, contrastive objective 조합/index.md)
+          - [10. data mixture, web-scale data, curriculum](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/02. 이미지와 텍스트를 같은 공간에 맞추기/10. data mixture, web-scale data, curriculum/index.md)
+          - [문제 해설 - 02. 이미지와 텍스트를 같은 공간에 맞추기](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/02. 이미지와 텍스트를 같은 공간에 맞추기/문제 해설 - 02. 이미지와 텍스트를 같은 공간에 맞추기/index.md)
+        - [03. Connector와 VLM 아키텍처](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/03. VLM 아키텍처와 정보 흐름/index.md)
+          - [11. encoder-decoder, decoder-only, fusion map](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/03. VLM 아키텍처와 정보 흐름/11. encoder-decoder, decoder-only, fusion map/index.md)
+          - [12. cross-attention, perceiver resampler, Q-Former](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/03. VLM 아키텍처와 정보 흐름/12. cross-attention, perceiver resampler, Q-Former/index.md)
+          - [13. prefix tuning, visual prompt, frozen LM](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/03. VLM 아키텍처와 정보 흐름/13. prefix tuning, visual prompt, frozen LM/index.md)
+          - [14. token compression, memory, long context](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/03. VLM 아키텍처와 정보 흐름/14. token compression, memory, long context/index.md)
+          - [15. representative VLM families 비교](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/03. VLM 아키텍처와 정보 흐름/15. representative VLM families 비교/index.md)
+          - [문제 해설 - 03. VLM 아키텍처와 정보 흐름](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/03. VLM 아키텍처와 정보 흐름/문제 해설 - 03. VLM 아키텍처와 정보 흐름/index.md)
+        - [04. Grounding, OCR, structured visual reasoning](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/04. Grounding, OCR, region reasoning/index.md)
+          - [16. OCR, document understanding, chart understanding](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/04. Grounding, OCR, region reasoning/16. OCR, document understanding, chart understanding/index.md)
+          - [17. box, mask, region token, spatial reference](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/04. Grounding, OCR, region reasoning/17. box, mask, region token, spatial reference/index.md)
+          - [18. referring expression, region reasoning, counting](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/04. Grounding, OCR, region reasoning/18. referring expression, region reasoning, counting/index.md)
+          - [19. multimodal chain-of-thought와 visual reasoning](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/04. Grounding, OCR, region reasoning/19. multimodal chain-of-thought와 visual reasoning/index.md)
+          - [20. grounding failure와 hallucination의 구조](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/04. Grounding, OCR, region reasoning/20. grounding failure와 hallucination의 구조/index.md)
+          - [문제 해설 - 04. Grounding, OCR, region reasoning](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/04. Grounding, OCR, region reasoning/문제 해설 - 04. Grounding, OCR, region reasoning/index.md)
+        - [05. 멀티모달 tuning, preference, safety](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/05. 멀티모달 생성과 instruction tuning/index.md)
+          - [21. captioning, VQA, conditional generation](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/05. 멀티모달 생성과 instruction tuning/21. captioning, VQA, conditional generation/index.md)
+          - [22. supervised fine-tuning과 multimodal instruction data](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/05. 멀티모달 생성과 instruction tuning/22. supervised fine-tuning과 multimodal instruction data/index.md)
+          - [23. preference learning, reward model, RLHF](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/05. 멀티모달 생성과 instruction tuning/23. preference learning, reward model, RLHF/index.md)
+          - [24. DPO, rejection sampling, policy alignment](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/05. 멀티모달 생성과 instruction tuning/24. DPO, rejection sampling, policy alignment/index.md)
+          - [25. safety policy, refusal, jailbreak 대응](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/05. 멀티모달 생성과 instruction tuning/25. safety policy, refusal, jailbreak 대응/index.md)
+          - [문제 해설 - 05. 멀티모달 생성과 instruction tuning](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/05. 멀티모달 생성과 instruction tuning/문제 해설 - 05. 멀티모달 생성과 instruction tuning/index.md)
+        - [06. 평가, faithfulness, hallucination 완화](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/06. 평가, 신뢰성, hallucination 완화/index.md)
+          - [26. benchmark, leaderboard, evaluation protocol](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/06. 평가, 신뢰성, hallucination 완화/26. benchmark, leaderboard, evaluation protocol/index.md)
+          - [27. hallucination taxonomy와 faithfulness](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/06. 평가, 신뢰성, hallucination 완화/27. hallucination taxonomy와 faithfulness/index.md)
+          - [28. calibration, uncertainty, abstention](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/06. 평가, 신뢰성, hallucination 완화/28. calibration, uncertainty, abstention/index.md)
+          - [29. data filtering, verifier, retrieval grounding](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/06. 평가, 신뢰성, hallucination 완화/29. data filtering, verifier, retrieval grounding/index.md)
+          - [30. human evaluation과 product metric](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/06. 평가, 신뢰성, hallucination 완화/30. human evaluation과 product metric/index.md)
+          - [문제 해설 - 06. 평가, 신뢰성, hallucination 완화](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/06. 평가, 신뢰성, hallucination 완화/문제 해설 - 06. 평가, 신뢰성, hallucination 완화/index.md)
+        - [07. 비디오, 음성, RAG, 에이전트 시스템](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/07. 비디오, 음성, 에이전트로 확장/index.md)
+          - [31. video token, frame sampling, temporal modeling](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/07. 비디오, 음성, 에이전트로 확장/31. video token, frame sampling, temporal modeling/index.md)
+          - [32. speech, audio, spoken dialogue extension](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/07. 비디오, 음성, 에이전트로 확장/32. speech, audio, spoken dialogue extension/index.md)
+          - [33. multimodal RAG, memory, tool use](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/07. 비디오, 음성, 에이전트로 확장/33. multimodal RAG, memory, tool use/index.md)
+          - [34. GUI agent, robotics, embodied reasoning](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/07. 비디오, 음성, 에이전트로 확장/34. GUI agent, robotics, embodied reasoning/index.md)
+          - [35. latency, serving, cost optimization](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/07. 비디오, 음성, 에이전트로 확장/35. latency, serving, cost optimization/index.md)
+          - [문제 해설 - 07. 비디오, 음성, 에이전트로 확장](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/07. 비디오, 음성, 에이전트로 확장/문제 해설 - 07. 비디오, 음성, 에이전트로 확장/index.md)
+        - [08. Frontier VLM과 최신 논문 독해](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/08. Frontier VLM과 최신 논문 독해/index.md)
+          - [36. multimodal diffusion과 unified model](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/08. Frontier VLM과 최신 논문 독해/36. multimodal diffusion과 unified model/index.md)
+          - [37. mixture-of-experts, adaptive compute, token routing](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/08. Frontier VLM과 최신 논문 독해/37. mixture-of-experts, adaptive compute, token routing/index.md)
+          - [38. world model, simulation, action-conditioned model](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/08. Frontier VLM과 최신 논문 독해/38. world model, simulation, action-conditioned model/index.md)
+          - [39. open-source VLM ecosystem과 실험 설계](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/08. Frontier VLM과 최신 논문 독해/39. open-source VLM ecosystem과 실험 설계/index.md)
+          - [40. 최신 VLM 논문 독해 프레임워크](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/08. Frontier VLM과 최신 논문 독해/40. 최신 VLM 논문 독해 프레임워크/index.md)
+          - [문제 해설 - 08. Frontier VLM과 최신 논문 독해](SenseCore AI LAB, AI융합학부/Lecture/VLM을 위한 수학과 구조/08. Frontier VLM과 최신 논문 독해/문제 해설 - 08. Frontier VLM과 최신 논문 독해/index.md)
     - Development
       - [풀스택실전스터디](SenseCore AI LAB, AI융합학부/Lecture/풀스택실전스터디/index.md)
         - [01. 서비스 기획과 요구사항 정의](SenseCore AI LAB, AI융합학부/Lecture/풀스택실전스터디/01. 서비스 기획과 요구사항 정의/index.md)
@@ -244,6 +302,7 @@ Workspace home: [SenseCore AI LAB, AI융합학부](SenseCore AI LAB, AI융합학
     - [ArgoCD 사용법](SenseCore AI LAB, AI융합학부/Manual/04. 서버와 배포 작업/ArgoCD 사용법/index.md)
     - [k3s 클러스터 접속과 GitOps 배포 점검](SenseCore AI LAB, AI융합학부/Manual/04. 서버와 배포 작업/k3s 클러스터 접속과 GitOps 배포 점검/index.md)
     - [Harbor 사용법](SenseCore AI LAB, AI융합학부/Manual/04. 서버와 배포 작업/Harbor 사용법/index.md)
+    - [passv gitops 이전·컷오버 점검](SenseCore AI LAB, AI융합학부/Manual/04. 서버와 배포 작업/passv gitops 이전·컷오버 점검/index.md)
   - [05. 운영 변경 작업](SenseCore AI LAB, AI융합학부/Manual/05. 운영 변경 작업/index.md)
     - [Ingress, 도메인, 이미지, 환경 변수 변경 절차](SenseCore AI LAB, AI융합학부/Manual/05. 운영 변경 작업/Ingress, 도메인, 이미지, 환경 변수 변경 절차/index.md)
   - [06. 모니터링/로그 작업](SenseCore AI LAB, AI융합학부/Manual/06. 모니터링-로그 작업/index.md)

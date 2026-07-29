@@ -111,3 +111,8 @@ sudo kubectl logs deploy/<deploy-name> -n <namespace> --tail=100
 - 대상 namespace와 서비스
 - 반영 확인 시각
 - 최종 결과와 후속 조치 필요 여부
+
+---
+
+> **온보딩 트랙 — 1부 인프라와 플랫폼**
+> 이전: [Infisical 시크릿 관리 가이드](../../../Guide/01. 인프라와 플랫폼/08. Infisical 시크릿 관리 가이드/index.md) · 다음: [Headlamp 클러스터 대시보드](../../../Guide/01. 인프라와 플랫폼/09. Headlamp 클러스터 대시보드/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)

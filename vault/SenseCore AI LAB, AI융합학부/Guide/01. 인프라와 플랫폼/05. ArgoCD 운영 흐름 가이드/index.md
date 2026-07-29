@@ -61,6 +61,11 @@ ArgoCD는 GitOps 선언을 읽고, 클러스터의 실제 상태를 원하는 �
 
 ## 이 문서 다음에 무엇을 읽는가
 
-- 변경 기준이 궁금하면 `04. GitOps 운영 모델 가이드`
-- 바닥 리소스 구조가 약하면 `01. Kubernetes 기본 구조 가이드`
-- 실제 절차는 `Manual` 의 배포 확인, sync 확인, 롤백 문서를 본다.
+- 변경 기준이 궁금하면 [04. GitOps 운영 모델 가이드](../04. GitOps 운영 모델 가이드/index.md)
+- 바닥 리소스 구조가 약하면 [01. Kubernetes 기본 구조 가이드](../01. Kubernetes 기본 구조 가이드/index.md)
+- 배포 확인·sync 확인·롤백 같은 실제 절차는 [ArgoCD 사용법](../../../Manual/04. 서버와 배포 작업/ArgoCD 사용법/index.md)을 본다.
+
+---
+
+> **온보딩 트랙 — 1부 인프라와 플랫폼**
+> 이전: [GitOps 운영 모델 가이드](../04. GitOps 운영 모델 가이드/index.md) · 다음: [ArgoCD 사용법 (Manual)](../../../Manual/04. 서버와 배포 작업/ArgoCD 사용법/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)

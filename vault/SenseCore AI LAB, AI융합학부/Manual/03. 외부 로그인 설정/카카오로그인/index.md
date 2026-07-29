@@ -10,7 +10,7 @@ parent_notion_id: 330e313f58b98114bbc9e9d8d8aa230a
 
 ## 문서 목적
 
-이 문서는 `https://in.passv.co.kr` 운영 기준으로 카카오 로그인을 붙이는 초안 매뉴얼이다.
+이 문서는 `https://kon.ai.kr` 운영 기준으로 카카오 로그인을 붙이는 초안 매뉴얼이다.
 
 2026-03-27 기준 PASSV 운영 baseline과 Kakao Developers 공식 문서를 함께 반영했다. 아직 실제 운영 화면 캡처는 붙이지 않았고, 설정 순서와 운영 값 위주로 먼저 정리했다.
 
@@ -25,10 +25,10 @@ parent_notion_id: 330e313f58b98114bbc9e9d8d8aa230a
 
 | 항목 | 값 |
 | --- | --- |
-| 운영 주소 | `https://in.passv.co.kr` |
-| 로그인 화면 | `https://in.passv.co.kr/login` |
-| 카카오 로그인 시작 경로 | `https://in.passv.co.kr/api/auth/kakao/start` |
-| 카카오 로그인 콜백 URI | `https://in.passv.co.kr/api/auth/kakao/callback` |
+| 운영 주소 | `https://kon.ai.kr` |
+| 로그인 화면 | `https://kon.ai.kr/login` |
+| 카카오 로그인 시작 경로 | `https://kon.ai.kr/api/auth/kakao/start` |
+| 카카오 로그인 콜백 URI | `https://kon.ai.kr/api/auth/kakao/callback` |
 | 프론트 변수 | `VITE_KAKAO_REST_API_KEY` |
 | 백엔드 변수 1 | `KAKAO_REST_API_KEY` |
 | 백엔드 변수 2 | `KAKAO_CLIENT_SECRET` |
@@ -99,14 +99,14 @@ parent_notion_id: 330e313f58b98114bbc9e9d8d8aa230a
 2. 로그인 Origin으로 아래 값을 등록하거나 기존 등록값에 포함돼 있는지 확인한다.
 
 ```text
-https://in.passv.co.kr
+https://kon.ai.kr
 ```
 
 3. 운영 외 환경을 같이 관리한다면 DEV/LOCAL 값을 운영값과 섞지 말고 별도로 관리한다.
 
 ### 설명
 
-- PASSV 모바일 웹은 `https://in.passv.co.kr`에서 로그인 버튼을 노출한다.
+- PASSV 모바일 웹은 `https://kon.ai.kr`에서 로그인 버튼을 노출한다.
 - 따라서 운영 Origin은 최소한 위 주소를 기준값으로 관리해야 한다.
 - 이 단계는 현재 PASSV 웹 로그인 표면을 기준으로 정리한 운영 메모다.
 
@@ -131,7 +131,7 @@ https://in.passv.co.kr
 2. 아래 값을 등록한다.
 
 ```text
-https://in.passv.co.kr/api/auth/kakao/callback
+https://kon.ai.kr/api/auth/kakao/callback
 ```
 
 3. 저장 후 중복 등록이나 오탈자가 없는지 다시 확인한다.
@@ -140,7 +140,7 @@ https://in.passv.co.kr/api/auth/kakao/callback
 
 - Kakao 공식 문서 기준으로 REST API 방식 카카오 로그인은 REST API 키 쪽에 Redirect URI를 등록해야 한다.
 - `redirect_uri`가 다르면 `KOE006` 에러가 발생한다.
-- PASSV 운영값은 2026-03-27 기준 `https://in.passv.co.kr/api/auth/kakao/callback`이다.
+- PASSV 운영값은 2026-03-27 기준 `https://kon.ai.kr/api/auth/kakao/callback`이다.
 
 ## 6. 동의항목에서 이메일 사용 설정하기
 
@@ -183,7 +183,7 @@ https://in.passv.co.kr/api/auth/kakao/callback
 | 프론트 운영 변수 | `VITE_KAKAO_REST_API_KEY` | Kakao Developers의 `REST API 키` |
 | 백엔드 운영 변수 | `KAKAO_REST_API_KEY` | 같은 `REST API 키` |
 | 백엔드 운영 변수 | `KAKAO_CLIENT_SECRET` | Kakao Developers의 `Client Secret` |
-| 백엔드 운영 변수 | `KAKAO_REDIRECT_URI` | `https://in.passv.co.kr/api/auth/kakao/callback` |
+| 백엔드 운영 변수 | `KAKAO_REDIRECT_URI` | `https://kon.ai.kr/api/auth/kakao/callback` |
 
 ### PASSV 코드 기준으로 보면
 
@@ -198,21 +198,21 @@ https://in.passv.co.kr/api/auth/kakao/callback
 
 - 프론트는 Kakao REST API 키 존재 여부로 버튼 노출을 제어한다.
 - 백엔드는 같은 REST API 키와 Client Secret으로 code exchange를 처리한다.
-- `KAKAO_REDIRECT_URI`는 현재 운영에서 `https://in.passv.co.kr/api/auth/kakao/callback`로 고정해 맞추는 편이 안전하다.
+- `KAKAO_REDIRECT_URI`는 현재 운영에서 `https://kon.ai.kr/api/auth/kakao/callback`로 고정해 맞추는 편이 안전하다.
 
 ## 9. 운영 로그인 화면에서 마지막 확인하기
 
 ### 작업 순서
 
-1. `https://in.passv.co.kr/login`으로 이동한다.
+1. `https://kon.ai.kr/login`으로 이동한다.
 2. `카카오로 시작하기` 버튼이 보이는지 확인한다.
-3. 버튼을 눌렀을 때 `https://in.passv.co.kr/api/auth/kakao/start`로 시작되는 흐름이 열리는지 확인한다.
+3. 버튼을 눌렀을 때 `https://kon.ai.kr/api/auth/kakao/start`로 시작되는 흐름이 열리는지 확인한다.
 4. 실패 시 Kakao authorize URL의 `redirect_uri`와 `scope`를 먼저 확인한다.
 
 ### 설명
 
-- 2026-03-27 운영 기록 기준으로 live `GET https://in.passv.co.kr/api/auth/kakao/start`는 `HTTP 307`과 함께 Kakao authorize URL을 반환한다.
-- 현재 정상값은 `redirect_uri=https://in.passv.co.kr/api/auth/kakao/callback`와 `scope=account_email`이다.
+- 2026-03-27 운영 기록 기준으로 live `GET https://kon.ai.kr/api/auth/kakao/start`는 `HTTP 307`과 함께 Kakao authorize URL을 반환한다.
+- 현재 정상값은 `redirect_uri=https://kon.ai.kr/api/auth/kakao/callback`와 `scope=account_email`이다.
 - 여기서 다르면 운영 변수 또는 Kakao Developers 설정이 어긋난 것이다.
 
 ## 초보 운영개발자용 최종 체크리스트
@@ -220,10 +220,15 @@ https://in.passv.co.kr/api/auth/kakao/callback
 1. PASSV 운영용 기존 카카오 앱이 있는지 먼저 확인했다.
 2. 새 앱이 필요할 때만 만들었다.
 3. 카카오 로그인 사용 설정을 `ON`으로 켰다.
-4. 운영 Origin `https://in.passv.co.kr`를 기준으로 웹 표면을 정리했다.
-5. Redirect URI에 `https://in.passv.co.kr/api/auth/kakao/callback`를 등록했다.
+4. 운영 Origin `https://kon.ai.kr`를 기준으로 웹 표면을 정리했다.
+5. Redirect URI에 `https://kon.ai.kr/api/auth/kakao/callback`를 등록했다.
 6. `카카오계정(이메일)` 동의항목을 켰다.
 7. `REST API 키`를 `VITE_KAKAO_REST_API_KEY`와 `KAKAO_REST_API_KEY`에 같은 값으로 넣었다.
 8. `Client Secret`을 `KAKAO_CLIENT_SECRET`에 넣었다.
 9. `KAKAO_REDIRECT_URI`를 운영 콜백 URI와 같게 맞췄다.
 10. 운영 로그인 화면에서 `카카오로 시작하기` 버튼을 눌러 흐름이 시작되는지 확인했다.
+
+---
+
+> **온보딩 트랙 — 4부 운영 변경과 컨벤션**
+> 이전: [구글 로그인 설정 (Manual)](../구글로그인/index.md) · 다음: [Convention (규칙 지도)](../../../Convention/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)

@@ -1,9 +1,9 @@
 ---
-title: "11. 메트릭 - Prometheus와 Grafana"
+title: "02. 메트릭 - Prometheus와 Grafana"
 ---
-# 11. 메트릭 — Prometheus와 Grafana
+# 02. 메트릭 - Prometheus와 Grafana
 
-우리가 실제 구축해 쓰는 메트릭 스택이다. `monitoring` 네임스페이스에 **kube-prometheus-stack(Helm chart 58.7.2)** 한 묶음으로 배포되며 Prometheus·Grafana·Alertmanager·node-exporter·kube-state-metrics를 함께 설치한다. (알림 라우팅/Alerta는 [12. 알림](../03. 알림 - Alertmanager와 Alerta/index.md) 참고.)
+우리가 실제 구축해 쓰는 메트릭 스택이다. `monitoring` 네임스페이스에 **kube-prometheus-stack(Helm chart 58.7.2)** 한 묶음으로 배포되며 Prometheus·Grafana·Alertmanager·node-exporter·kube-state-metrics를 함께 설치한다. (알림 라우팅/Alerta는 [03. 알림 - Alertmanager와 Alerta](../03. 알림 - Alertmanager와 Alerta/index.md) 참고.)
 
 ```
 앱/노드/ingress(/metrics)
@@ -45,3 +45,8 @@ Prometheus ──(remote-write 수신)── Tempo 스팬 메트릭
 1. Grafana `grafana.do4ai.com` → 서비스 대시보드(5xx·재시작·리소스).
 2. 특정 메트릭이 안 보이면 대상이 ServiceMonitor/PodMonitor를 노출하는지, Prometheus Targets(`prometheus.do4ai.com`)에 떠 있는지 확인.
 3. 도구 사용 절차는 [Manual 06. 모니터링-로그 작업](../../../Manual/06. 모니터링-로그 작업/Grafana, Kibana, Tempo 1차 장애 확인 절차/index.md).
+
+---
+
+> **온보딩 트랙 — 3부 관측과 SRE**
+> 이전: [Observability 운영 가이드](../01. Observability 운영 가이드/index.md) · 다음: [알림 — Alertmanager와 Alerta](../03. 알림 - Alertmanager와 Alerta/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)

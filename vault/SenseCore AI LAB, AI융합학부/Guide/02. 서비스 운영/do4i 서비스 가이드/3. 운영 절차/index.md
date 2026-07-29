@@ -43,3 +43,8 @@ sudo kubectl logs statefulset/mysql -n do4i --tail=100
 
 ## 참고
 - 롤백 손절차: [Manual/04 ArgoCD 사용법](../../../../Manual/04. 서버와 배포 작업/ArgoCD 사용법/index.md), [k3s 클러스터 접속과 GitOps 배포 점검](../../../../Manual/04. 서버와 배포 작업/k3s 클러스터 접속과 GitOps 배포 점검/index.md).
+
+---
+
+> **온보딩 트랙 — 2부 서비스 운영**
+> 이전: [do4i — 모니터링·알람·SRE](../2. 모니터링·알람·SRE/index.md) · 다음: [do4i — 백업과 복구](../4. 백업과 복구/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../../시작하기/index.md)

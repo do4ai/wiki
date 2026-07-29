@@ -1,7 +1,7 @@
 ---
-title: "13. 로그 - Elasticsearch, Kibana, Filebeat, ElastAlert"
+title: "04. 로그 - Elasticsearch, Kibana, Filebeat, ElastAlert"
 ---
-# 13. 로그 — Elasticsearch · Kibana · Filebeat · ElastAlert (ELK)
+# 04. 로그 - Elasticsearch, Kibana, Filebeat, ElastAlert
 
 우리가 실제 구축한 로그 스택이다. 모두 `observability` 네임스페이스에서 돌고, **ECK(eck-stack 0.18.1)** 로 Elasticsearch/Kibana를, `central-logging` 앱으로 Filebeat/ElastAlert를 배포한다.
 
@@ -44,3 +44,8 @@ Elasticsearch(filebeat-* 인덱스) ── Kibana(검색 UI)
 1. 앱 오류는 Kibana(`kibana.do4ai.com`)에서 namespace/시간으로 좁혀 메시지 확인.
 2. 로그가 안 들어오면: Filebeat DaemonSet Ready, ES 파드(SPOF), `filebeat-*` 인덱스 순으로 점검.
 3. 절차는 [Manual 06. 모니터링-로그 작업](../../../Manual/06. 모니터링-로그 작업/index.md).
+
+---
+
+> **온보딩 트랙 — 3부 관측과 SRE**
+> 이전: [알림 — Alertmanager와 Alerta](../03. 알림 - Alertmanager와 Alerta/index.md) · 다음: [트레이싱 — OpenTelemetry와 Tempo](../05. 트레이싱 - OpenTelemetry와 Tempo/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)

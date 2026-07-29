@@ -7,7 +7,7 @@ title: "2. 모니터링·알람·SRE"
 
 - 플랫폼 공통 스택(Prometheus/Grafana, ElastAlert/ES/Kibana, OTel/Tempo) 사용.
 - gitops 편입 후 `passv` 네임스페이스가 알림/대시보드 대상에 포함된다.
-- 합성 모니터링: blackbox 프로브가 `app.passv.co.kr`, `api.passv.co.kr/api/health` 점검(`TODO` 대상 확정).
+- 합성 모니터링: blackbox 프로브가 `app.passv.co.kr`, `api.passv.co.kr/api/health` 점검(TODO(확정 필요: 대상)).
 
 ## 발화 실패 앱 레벨 알림 (Alerta 직접 전송)
 
@@ -24,7 +24,7 @@ title: "2. 모니터링·알람·SRE"
 
 ## SRE·SLO
 
-- **가용성/지연 SLO**: `TODO(확정 필요)` 제안값 99.9% / p95 < 1500ms.
+- **가용성/지연 SLO**: TODO(확정 필요) 제안값 99.9% / p95 < 1500ms.
 - **확장**: API HPA(min 2 / max 6) 정의 완료(prod overlay). 아바타/음성 워커 분리 배포는 컷오버 단계 결정.
 - **데이터 보호**: prod MySQL이 EC2→K8s StatefulSet로 이관되므로 컷오버 런북의 백업·복구 단계가 핵심.
 
@@ -33,3 +33,8 @@ title: "2. 모니터링·알람·SRE"
 - 현재(EC2): passv 레포 CI(`deploy.yml`/`rollback.yml`)와 EC2 호스트 점검.
 - gitops(dev/컷오버 후): ArgoCD `passv` → `passv` 네임스페이스 파드 → Grafana/Kibana.
 - 상세: [3. 운영 절차](../3. 운영 절차/index.md).
+
+---
+
+> **온보딩 트랙 — 2부 서비스 운영**
+> 이전: [passv — 아키텍처와 배포](../1. 아키텍처와 배포/index.md) · 다음: [passv — 운영 절차](../3. 운영 절차/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../../시작하기/index.md)

@@ -25,3 +25,8 @@ AI 대화형 커머스 passv의 관측. **현재 prod는 EC2, gitops(K8s `passv`
 ## 더 보기
 - 서비스 구조: [passv 서비스 가이드](../../../02. 서비스 운영/passv 서비스 가이드/index.md)
 - 손절차: [passv 운영 절차](../../../02. 서비스 운영/passv 서비스 가이드/3. 운영 절차/index.md) · 컷오버: [Manual 04. passv gitops 이전·컷오버 점검](../../../../Manual/04. 서버와 배포 작업/passv gitops 이전·컷오버 점검/index.md)
+
+---
+
+> **온보딩 트랙 — 3부 관측과 SRE**
+> 이전: [do4i 관측과 조치](../do4i 관측과 조치/index.md) · 다음: [palcar 관측과 조치](../palcar 관측과 조치/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../../시작하기/index.md)

@@ -44,3 +44,8 @@ title: "1. 아키텍처와 배포"
 - **도메인**: prod `palcar.do4ai.com`, `admin.palcar.do4ai.com` / dev `palcar.dev.do4ai.com` 등.
 
 > 배포 이상 대응은 [3. 운영 절차](../3. 운영 절차/index.md). 도구는 [Manual/04 ArgoCD 사용법](../../../../Manual/04. 서버와 배포 작업/ArgoCD 사용법/index.md).
+
+---
+
+> **온보딩 트랙 — 2부 서비스 운영**
+> 이전: [palcar 서비스 가이드](../index.md) · 다음: [palcar — 모니터링·알람·SRE](../2. 모니터링·알람·SRE/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../../시작하기/index.md)

@@ -29,5 +29,10 @@ landing/platform/admin (React, S3+CloudFront)
 - **목표(중앙 gitops)**: `gitops/k8s/apps/passv` (base + overlays/prod·dev), ArgoCD Application `passv`, 네임스페이스 `passv`.
   - **dev**: 본 매니페스트로 K8s 배포(자동 동기화 on).
   - **prod**: K8s 컷오버는 MySQL 데이터 이관 + DNS 전환 + 점검창 필요한 **게이팅 작업**(자동 동기화 off).
-- **시크릿**: Infisical `/apps/passv-api`, `/apps/passv-mysql`로 이관 예정(`TODO 확정 필요`).
-- **도메인**: prod `app/api/admin.passv.co.kr`, `kon.ai.kr` / dev `pv.dev.do4ai.com`, `app.dev.passv.co.kr`.
+- **시크릿**: Infisical `/apps/passv-api`, `/apps/passv-mysql`로 이관 예정(TODO(확정 필요)).
+- **도메인**: prod `app/api/admin.passv.co.kr`, `kon.ai.kr` / dev `dev.passv.co.kr`, `app.dev.passv.co.kr`.
+
+---
+
+> **온보딩 트랙 — 2부 서비스 운영**
+> 이전: [passv 서비스 가이드](../index.md) · 다음: [passv — 모니터링·알람·SRE](../2. 모니터링·알람·SRE/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../../시작하기/index.md)
