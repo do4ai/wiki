@@ -49,3 +49,8 @@ Terraform → k3s 클러스터 2개 (do4ai-prod / do4ai-dev)
 - [07. Harbor 컨테이너 레지스트리](07. Harbor 컨테이너 레지스트리/index.md)
 - [08. Infisical 시크릿 관리 가이드](08. Infisical 시크릿 관리 가이드/index.md)
 - [09. Headlamp 클러스터 대시보드](09. Headlamp 클러스터 대시보드/index.md)
+
+---
+
+> **온보딩 트랙 — 1부 인프라와 플랫폼**
+> 이전: [시작하기 — 신입 온보딩](../../시작하기/index.md) · 다음: [Kubernetes 기본 구조 가이드](01. Kubernetes 기본 구조 가이드/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../시작하기/index.md)

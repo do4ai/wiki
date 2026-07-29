@@ -118,3 +118,8 @@ sudo kubectl logs deploy/<deploy-name> -n <namespace> --tail=100
 - 바꾼 파일 경로
 - 검증한 URL 또는 health endpoint
 - 롤백 여부와 최종 상태
+
+---
+
+> **온보딩 트랙 — 4부 운영 변경과 컨벤션**
+> 이전: [장애 대응 의사결정 가이드](../../../Guide/03. 관측과 SRE/10. 장애 대응 의사결정 가이드/index.md) · 다음: [구글 로그인 설정 (Manual)](../../03. 외부 로그인 설정/구글로그인/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)

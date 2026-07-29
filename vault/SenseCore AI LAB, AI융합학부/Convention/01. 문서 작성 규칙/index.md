@@ -14,7 +14,7 @@ title: "01. 문서 작성 규칙"
 
 ## 구조(IA)
 
-- 최상위: `시작하기`(신입 온보딩) · `Guide`(이해) · `Manual`(도구 사용법) · `Convention` · `Domains` · `Wiki` · `Lecture`.
+- 최상위: `시작하기`(신입 온보딩) · `Guide`(이해) · `Manual`(도구 사용법) · `Domains` · `Convention` · `Wiki` · `Lecture`.
 - **Guide = 서비스·개념**: 01 인프라와 플랫폼 / 02 서비스 운영 / 03 관측과 SRE.
 - **Manual = 도구 사용 절차**. 서비스별 운영 절차는 Guide의 서비스 폴더에, 도구 사용법은 Manual에 둔다.
 
@@ -33,3 +33,8 @@ title: "01. 문서 작성 규칙"
 
 - 발행 경로: `vault/`(GitHub) → 클러스터 `content-sync`(60초 주기 `main` pull) → WikiJS. **`main` 머지 = 운영 반영.**
 - 변경 후: 상대 링크 깨짐 0, `python3 scripts/wiki_wikijs_sync.py sync --dry-run`으로 미리보기.
+
+---
+
+> **온보딩 트랙 — 4부 운영 변경과 컨벤션**
+> 이전: [Convention (규칙 지도)](../index.md) · 다음: [Git, 브랜치, 커밋, PR](../02. Git, 브랜치, 커밋, PR/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../시작하기/index.md)

@@ -46,3 +46,8 @@ sudo kubectl logs deploy/<deploy-name> -n <namespace> --tail=100
 
 ## 작업 후 기록
 - 대상 서비스/namespace, 장애 시각, `Application` 상태, pod 상태·핵심 로그, 최종 조치(관찰/조사/롤백).
+
+---
+
+> **온보딩 트랙 — 2부 서비스 운영**
+> 이전: [02. 서비스 운영 (서비스 카탈로그)](../index.md) · 다음: [do4i 서비스 가이드](../do4i 서비스 가이드/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)

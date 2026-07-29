@@ -8,6 +8,8 @@ parent_notion_id: 330e313f58b9810a9075d5d9e176d8fd
 ---
 # k3s 운영 장애 Discord 리포트 설계
 
+> ⚠️ 이 문서는 설계 시점(2026-03-29) 스냅샷이다. 본문의 앱 목록(`namanva` 포함, `passv` 제외)과 severity 체계(critical/high/warning/info)는 현행 운영(08·09 문서의 SLO 대상, `platform-alert-rules.yaml`의 critical/major/warning/minor)과 다르다.
+
 ## 목표
 
 - 운영 장애가 발생하면 사람 손으로 대시보드를 먼저 열지 않아도 Discord 채널에서 1차 상황을 바로 읽을 수 있어야 한다.

@@ -1,7 +1,7 @@
 ---
-title: "14. 트레이싱 - OpenTelemetry와 Tempo"
+title: "05. 트레이싱 - OpenTelemetry와 Tempo"
 ---
-# 14. 트레이싱 — OpenTelemetry와 Tempo
+# 05. 트레이싱 - OpenTelemetry와 Tempo
 
 요청이 **어느 구간에서 느려지거나 실패하는지**를 보는 분산 트레이싱 스택이다. `observability` 네임스페이스에서 돈다.
 
@@ -33,4 +33,9 @@ Prometheus(traces_spanmetrics_*) → platform-api-apm 대시보드
 ## 1차 확인 포인트
 1. 특정 요청이 느리면 Grafana → Explore(Tempo)에서 trace 검색, 또는 platform-api-apm에서 서비스별 p95·에러율.
 2. APM 알림이 떴는데 트레이스가 비면 otel-gateway(2 replica)·Tempo(SPOF) 상태 확인.
-3. 메트릭/로그와 함께 보는 순서는 [10. Observability 운영 가이드](../01. Observability 운영 가이드/index.md).
+3. 메트릭/로그와 함께 보는 순서는 [01. Observability 운영 가이드](../01. Observability 운영 가이드/index.md).
+
+---
+
+> **온보딩 트랙 — 3부 관측과 SRE**
+> 이전: [로그 — Elasticsearch, Kibana, Filebeat, ElastAlert](../04. 로그 - Elasticsearch, Kibana, Filebeat, ElastAlert/index.md) · 다음: [Grafana, Kibana, Tempo 1차 장애 확인 절차 (Manual)](../../../Manual/06. 모니터링-로그 작업/Grafana, Kibana, Tempo 1차 장애 확인 절차/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)
