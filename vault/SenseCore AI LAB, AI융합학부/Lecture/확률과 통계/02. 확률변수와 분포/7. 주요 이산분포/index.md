@@ -313,7 +313,7 @@ $$
 1. $P(X=k)=\binom{n}{k}p^k(1-p)^{n-k}$, $E[X]=np$, $\operatorname{Var}(X)=np(1-p)$.
 2. 성공확률 $p$의 시행에서 첫 성공까지의 시행 횟수입니다.
 3. 둘 다 $\lambda$로 같습니다.
-4. $n$이 크고 $p$가 작아 $\lambda=np$가 적당할 때(대략 $n\ge 20$, $p\le 0.05$).
+4. $n$이 크고 $p$가 작아 $\lambda=np$가 적당할 때 씁니다. 대략 $n\ge 20$, $p\le 0.05$가 기준입니다.
 5. $\binom{6}{2}\left(\tfrac12\right)^6=15\cdot\tfrac{1}{64}=\tfrac{15}{64}$.
 6. $\tfrac{1}{0.5}=2$.
 7. $e^{-3}\approx 0.0498$.

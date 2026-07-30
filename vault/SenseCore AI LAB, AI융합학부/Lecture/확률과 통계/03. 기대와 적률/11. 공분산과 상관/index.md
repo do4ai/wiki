@@ -336,7 +336,7 @@ $$
 **정답.**
 1. $\operatorname{Cov}(X,Y)=E[XY]-E[X]E[Y]$.
 2. $\operatorname{Var}(X)$.
-3. $\operatorname{Cov}(X,Y)=0$일 때(특히 독립일 때).
+3. $\operatorname{Cov}(X,Y)=0$일 때 사라지며, 특히 두 변수가 독립이면 그렇습니다.
 4. $-1\le\rho\le 1$. 표준화한 변수로 $E[(Z_X\pm Z_Y)^2]\ge 0$에서 나옵니다.
 5. $Y$가 $X$의 완전한 직선함수($Y=aX+b$)임을 뜻하며, 부호는 $a$의 부호와 같습니다.
 6. 독립이면 무상관입니다. 역은 성립하지 않습니다($Y=X^2$ 등 반례).
