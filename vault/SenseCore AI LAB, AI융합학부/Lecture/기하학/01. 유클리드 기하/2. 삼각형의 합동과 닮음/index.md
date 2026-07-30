@@ -251,4 +251,3 @@ $$
 5. 공통각이 있고 평행선으로 또 한 각이 같아지는 경우, 예를 들어 $\overline{DE}\parallel\overline{BC}$인 $\triangle ADE$와 $\triangle ABC$.
 6. 넓이비는 $a^2:b^2$, 부피비는 $a^3:b^3$.
 7. 평행선이 두 변을 자르면 공통각과 동위각으로 두 각이 같아져 AA 닮음이 생기고, 잘린 변들이 비례한다.
-</content>

@@ -228,5 +228,3 @@ $$
 6. 상수 $b$는 위치만 옮겨 퍼짐이 그대로이고, 배율 $a$는 편차를 $a$배 하여 제곱에서 $a^2$이 됩니다.
 7. $E[X]=\tfrac13(3)+\tfrac23(-1)=1-\tfrac23=\tfrac13$.
 8. $E[X^2]=\tfrac13(9)+\tfrac23(1)=3+\tfrac23=\tfrac{11}{3}$, $\operatorname{Var}(X)=\tfrac{11}{3}-\left(\tfrac13\right)^2=\tfrac{11}{3}-\tfrac19=\tfrac{33-1}{9}=\tfrac{32}{9}$.
-</content>
-</invoke>
