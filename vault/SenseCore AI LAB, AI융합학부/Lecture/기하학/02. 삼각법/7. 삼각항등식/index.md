@@ -274,4 +274,3 @@ $$
 6. 덧셈정리에서 $\beta=\alpha$로 놓으면 $\sin 2\alpha=2\sin\alpha\cos\alpha$, $\cos 2\alpha=\cos^2\alpha-\sin^2\alpha$가 나온다.
 7. $\sin^2\theta+\cos^2\theta=1$과 인수분해로 분모나 분자를 지운다.
 8. 값이 되는 기준각을 찾고, 그 삼각비가 맞는 부호가 되는 사분면마다 해를 적는다.
-</content>

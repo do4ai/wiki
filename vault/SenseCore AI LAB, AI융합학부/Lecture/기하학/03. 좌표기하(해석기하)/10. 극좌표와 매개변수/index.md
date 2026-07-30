@@ -204,4 +204,3 @@ $$
 5. 원은 $x=a\cos t$, $y=a\sin t$, 타원은 $x=a\cos t$, $y=b\sin t$이다.
 6. $x=x_0+t$, $y=y_0+mt$로 세우고 $t$를 넣어 점을 구한다.
 7. $\cos t$, $\sin t$를 $x$, $y$로 표현한 뒤 제곱해 더하면 $t$가 사라진다.
-</content>

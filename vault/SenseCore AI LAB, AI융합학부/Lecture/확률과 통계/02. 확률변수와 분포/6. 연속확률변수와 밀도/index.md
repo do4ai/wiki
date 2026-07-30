@@ -234,4 +234,3 @@ $$
 6. $\int_0^{1/2}3x^2 dx=\left[x^3\right]_0^{1/2}=\tfrac18$.
 7. $\operatorname{Var}(X)=\dfrac{(b-a)^2}{12}$.
 8. 이산은 합 $\sum_x x\,p(x)$, 연속은 적분 $\int x f(x)\,dx$로, 확률 무게가 PMF에서 밀도 조각 $f(x)dx$로 바뀝니다.
-</content>
