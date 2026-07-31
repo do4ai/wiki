@@ -7,7 +7,7 @@ title: "03. 알림 - Alertmanager와 Alerta"
 
 ```
 Prometheus 규칙 ─ Alertmanager ─┐
-ElastAlert(로그)  ───────────────┤
+Loki ruler(로그)  ──────────────┤
 ArgoCD Notifications ────────────┤
                                  ▼
                             Alerta (인시던트 허브, PostgreSQL)
@@ -15,6 +15,8 @@ ArgoCD Notifications ────────────┤
                                  ▼
                               디스코드
 ```
+
+> **Grafana는 알림을 보내지 않는다.** Grafana Unified Alerting은 쓰지 않고(규칙 0개), 알림 판단은 Prometheus 규칙과 Loki ruler가 하고 전달은 Alertmanager → Alerta → Discord가 맡는다. Grafana는 알림을 받은 뒤 원인을 파고들 때 쓰는 조회 화면이다.
 
 ## Alertmanager (kube-prometheus-stack 내장)
 - **라우팅**(`AlertmanagerConfig`): 수신자 `alerta`(webhook), groupBy `alertname/service/instance`, groupWait **30s**, groupInterval **5m**, repeat **2h**.
@@ -25,7 +27,7 @@ ArgoCD Notifications ────────────┤
 - **이미지**: `alerta/alerta-web:9.1.0`, replicas 1. **DB**: `postgres:16-alpine`(StatefulSet, 10Gi).
 - **접속**: `alerta.do4ai.com` (AUTH_REQUIRED). 시크릿은 Infisical `/platform/incident-alerting`(`alerta-secrets`)에서 주입(ADMIN/API key/DB/Discord webhook).
 - **플러그인**: `blackout, heartbeat, discord`. Discord 플러그인이 severity 색상으로 채널에 게시.
-- **들어오는 경로**: Alertmanager(메트릭), ElastAlert(로그 버스트), ArgoCD Notifications(sync/health). 앱이 직접 보내기도 함(passv 발화 실패 → `/api/alert`).
+- **들어오는 경로**: Alertmanager(메트릭·로그 버스트), ArgoCD Notifications(sync/health). 앱이 직접 보내기도 함(passv 발화 실패 → `/api/alert`).
 
 ## blackbox-exporter (합성 모니터링)
 - **이미지**: `prom/blackbox-exporter:v0.25.0`, 모듈 `http_2xx`, 60s.
@@ -34,10 +36,11 @@ ArgoCD Notifications ────────────┤
 ## 알림 규칙 인벤토리 (`monitoring/manifests`)
 | 파일 | 그룹 / 주요 알림 |
 | --- | --- |
-| `platform-alert-rules.yaml` | app-health(배포 가용성·ingress 5xx), apm-health(에러율·p95), observability-runtime(Alerta/OTel/Tempo/Filebeat 상태) |
+| `platform-alert-rules.yaml` | app-health(배포 가용성·ingress 5xx), apm-health(에러율·p95), observability-runtime(Alerta/OTel/Tempo 상태), cluster-hygiene(파드 CIDR 잔재), logging-stack(Loki/Alloy·적재 정지) |
 | `platform-runtime-alerts.yaml` | workload-health(CrashLoop·OOMKilled·CPU throttling·MySQL Ready0), capacity(PVC·노드 Memory/Disk Pressure) |
 | `platform-slo-rules.yaml` | SLO 레코딩(5m/30m/1h/6h) + 번레이트(fast/slow, 목표 99.9%) |
 | `blackbox-exporter.yaml` | EndpointDown, SSLCertExpiringSoon |
+| `loki.yaml`(loki-rules) | PlatformLogErrorBurst(오류 로그 급증), PlatformLogHttp5xxBurst(5xx 로그 급증) — Loki ruler가 평가 |
 
 모든 규칙은 `severity/environment/service/instance/group` 라벨을 공유해 별도 설정 없이 같은 파이프라인을 탄다.
 
@@ -49,4 +52,4 @@ ArgoCD Notifications ────────────┤
 ---
 
 > **온보딩 트랙 — 3부 관측과 SRE**
-> 이전: [메트릭 — Prometheus와 Grafana](../02. 메트릭 - Prometheus와 Grafana/index.md) · 다음: [로그 — Elasticsearch, Kibana, Filebeat, ElastAlert](../04. 로그 - Elasticsearch, Kibana, Filebeat, ElastAlert/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)
+> 이전: [메트릭 — Prometheus와 Grafana](../02. 메트릭 - Prometheus와 Grafana/index.md) · 다음: [로그 — Loki와 Alloy](../04. 로그 - Loki와 Alloy/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)

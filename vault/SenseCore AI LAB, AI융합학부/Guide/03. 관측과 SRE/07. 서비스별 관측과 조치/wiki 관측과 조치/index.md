@@ -7,7 +7,7 @@ title: "wiki 관측과 조치"
 
 ## 접속
 - **합성 모니터링**: blackbox 프로브가 `wiki.do4ai.com/healthz` 점검 → `PlatformEndpointDown` 알림. 직접 확인 `curl -I https://wiki.do4ai.com/healthz`.
-- **로그**: `kibana.do4ai.com` → `kubernetes.namespace:atlas` (특히 `content-sync` 컨테이너).
+- **로그**: Grafana Explore → `{namespace="atlas"}` (특히 `content-sync` 컨테이너).
 - **배포 상태**: `argocd.do4ai.com` → `atlas`.
 
 ## 볼 수 있는 메트릭·로그

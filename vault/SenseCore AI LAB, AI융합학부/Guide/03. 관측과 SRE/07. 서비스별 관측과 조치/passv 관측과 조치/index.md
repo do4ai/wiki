@@ -7,7 +7,7 @@ AI 대화형 커머스 passv의 관측. **현재 prod는 EC2, gitops(K8s `passv`
 
 ## 접속
 - **메트릭(K8s 편입 후)**: `grafana.do4ai.com` → `platform-api-apm`(service `passv-api`).
-- **로그(K8s)**: `kibana.do4ai.com` → `kubernetes.namespace:passv`. **현재 prod(EC2)**: EC2 호스트 `docker logs passv-server`.
+- **로그(K8s)**: Grafana Explore → `{namespace="passv"}`. **현재 prod(EC2)**: EC2 호스트 `docker logs passv-server`.
 - **트레이스**: Grafana Explore → Tempo, service `passv-api`(편입 후).
 - **알림 상태**: `alerta.do4ai.com`.
 

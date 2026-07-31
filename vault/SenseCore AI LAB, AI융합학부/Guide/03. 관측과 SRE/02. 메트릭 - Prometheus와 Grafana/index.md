@@ -44,7 +44,7 @@ Prometheus ──(remote-write 수신)── Tempo 스팬 메트릭
 ## 1차 확인 포인트
 1. Grafana `grafana.do4ai.com` → 서비스 대시보드(5xx·재시작·리소스).
 2. 특정 메트릭이 안 보이면 대상이 ServiceMonitor/PodMonitor를 노출하는지, Prometheus Targets(`prometheus.do4ai.com`)에 떠 있는지 확인.
-3. 도구 사용 절차는 [Manual 06. 모니터링-로그 작업](../../../Manual/06. 모니터링-로그 작업/Grafana, Kibana, Tempo 1차 장애 확인 절차/index.md).
+3. 도구 사용 절차는 [Manual 06. 모니터링-로그 작업](../../../Manual/06. 모니터링-로그 작업/Grafana, Loki, Tempo 1차 장애 확인 절차/index.md).
 
 ---
 

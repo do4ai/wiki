@@ -3,7 +3,7 @@ title: "Alerta 사용법"
 ---
 # Alerta 사용법
 
-Alerta(`alerta.do4ai.com`)는 모든 알림이 모이는 인시던트 허브다. Prometheus/Alertmanager·ElastAlert·ArgoCD 알림이 여기로 모이고, Discord 플러그인이 디스코드로 게시한다. 전체 파이프라인은 [모니터링·알림 아키텍처 가이드](../../../Guide/03. 관측과 SRE/06. 모니터링·알림 아키텍처 가이드/index.md).
+Alerta(`alerta.do4ai.com`)는 모든 알림이 모이는 인시던트 허브다. Prometheus/Alertmanager(메트릭·Loki 로그 규칙)·ArgoCD 알림이 여기로 모이고, Discord 플러그인이 디스코드로 게시한다. 전체 파이프라인은 [모니터링·알림 아키텍처 가이드](../../../Guide/03. 관측과 SRE/06. 모니터링·알림 아키텍처 가이드/index.md).
 
 ## 무엇을 위해 보나
 - 디스코드에 뜬 알림의 상태(open/ack/closed)를 관리하고, 같은 서비스/alertname 묶음을 본다.
@@ -30,9 +30,9 @@ curl -XPOST https://alerta.do4ai.com/api/alert \
 - Alerta는 `(environment, resource, event)`로 중복을 묶는다. 앱은 `correlate`·`timeout`을 함께 보내고, 임계/최소 재전송 간격으로 도배를 막는다.
 
 ## 함께 보기
-- [Grafana, Kibana, Tempo 1차 장애 확인 절차](../Grafana, Kibana, Tempo 1차 장애 확인 절차/index.md) · [Guide/03 09. 알림에서 인시던트, 에스컬레이션까지](../../../Guide/03. 관측과 SRE/09. 알림에서 인시던트, 에스컬레이션까지/index.md)
+- [Grafana, Loki, Tempo 1차 장애 확인 절차](../Grafana, Loki, Tempo 1차 장애 확인 절차/index.md) · [Guide/03 09. 알림에서 인시던트, 에스컬레이션까지](../../../Guide/03. 관측과 SRE/09. 알림에서 인시던트, 에스컬레이션까지/index.md)
 
 ---
 
 > **온보딩 트랙 — 3부 관측과 SRE**
-> 이전: [Grafana, Kibana, Tempo 1차 장애 확인 절차 (Manual)](../Grafana, Kibana, Tempo 1차 장애 확인 절차/index.md) · 다음: [모니터링·알림 아키텍처 가이드](../../../Guide/03. 관측과 SRE/06. 모니터링·알림 아키텍처 가이드/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)
+> 이전: [Grafana, Loki, Tempo 1차 장애 확인 절차 (Manual)](../Grafana, Loki, Tempo 1차 장애 확인 절차/index.md) · 다음: [모니터링·알림 아키텍처 가이드](../../../Guide/03. 관측과 SRE/06. 모니터링·알림 아키텍처 가이드/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)

@@ -23,7 +23,7 @@ title: "do4i 서비스 가이드"
 ## 공통·도구 문서
 
 - 서비스 공통: [서비스 공통 1차 대응 절차](../서비스 공통 1차 대응 절차/index.md)
-- 도구 사용법(ArgoCD·Grafana·Kibana 등): `Manual`(솔루션 사용법)
+- 도구 사용법(ArgoCD·Grafana·Loki 등): `Manual`(솔루션 사용법)
 - 공통 토대: [01. 인프라와 플랫폼](../../01. 인프라와 플랫폼/index.md) · [모니터링·알림 아키텍처](../../03. 관측과 SRE/06. 모니터링·알림 아키텍처 가이드/index.md) · [SLO·에러 버짓](../../03. 관측과 SRE/08. SLO·SLI와 에러 버짓 가이드/index.md)
 
 ## Page Tree

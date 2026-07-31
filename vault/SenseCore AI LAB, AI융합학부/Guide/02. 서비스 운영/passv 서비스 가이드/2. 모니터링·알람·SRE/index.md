@@ -5,7 +5,7 @@ title: "2. 모니터링·알람·SRE"
 
 ## 모니터링·관측
 
-- 플랫폼 공통 스택(Prometheus/Grafana, ElastAlert/ES/Kibana, OTel/Tempo) 사용.
+- 플랫폼 공통 스택(Prometheus/Grafana, Loki/Alloy, OTel/Tempo) 사용.
 - gitops 편입 후 `passv` 네임스페이스가 알림/대시보드 대상에 포함된다.
 - 합성 모니터링: blackbox 프로브가 `app.passv.co.kr`, `api.passv.co.kr/api/health` 점검(TODO(확정 필요: 대상)).
 
@@ -31,7 +31,7 @@ title: "2. 모니터링·알람·SRE"
 ## 1차 확인 포인트
 
 - 현재(EC2): passv 레포 CI(`deploy.yml`/`rollback.yml`)와 EC2 호스트 점검.
-- gitops(dev/컷오버 후): ArgoCD `passv` → `passv` 네임스페이스 파드 → Grafana/Kibana.
+- gitops(dev/컷오버 후): ArgoCD `passv` → `passv` 네임스페이스 파드 → Grafana.
 - 상세: [3. 운영 절차](../3. 운영 절차/index.md).
 
 ---

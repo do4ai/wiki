@@ -7,7 +7,7 @@ title: "papersens 관측과 조치"
 
 ## 접속
 - **메트릭**: `grafana.do4ai.com` → `papersens-operations`(가용 replica·재시작·5xx·리소스).
-- **로그**: `kibana.do4ai.com` → `kubernetes.namespace:papersens` (LLM/OpenRouter 오류).
+- **로그**: Grafana Explore → `{namespace="papersens"}` (LLM/OpenRouter 오류).
 - **트레이스**: Grafana Explore → Tempo, service `papersens-api`.
 - **배포 상태**: `argocd.do4ai.com` → `papersens`.
 

@@ -8,6 +8,9 @@ parent_notion_id: 330e313f58b9810a9075d5d9e176d8fd
 ---
 # k3s 운영 장애 Discord 리포트 설계
 
+> 이 문서는 2026-07-31 로그 스택 전환 이전에 작성된 리서치·설계 기록이다. 본문의 ELK(Elasticsearch·Kibana·Filebeat·ElastAlert) 서술은 현재 구성과 다르다. 현재 구성은 [04. 로그 - Loki와 Alloy](../04. 로그 - Loki와 Alloy/index.md)를 본다.
+
+
 > ⚠️ 이 문서는 설계 시점(2026-03-29) 스냅샷이다. 본문의 앱 목록(`namanva` 포함, `passv` 제외)과 severity 체계(critical/high/warning/info)는 현행 운영(08·09 문서의 SLO 대상, `platform-alert-rules.yaml`의 critical/major/warning/minor)과 다르다.
 
 ## 목표

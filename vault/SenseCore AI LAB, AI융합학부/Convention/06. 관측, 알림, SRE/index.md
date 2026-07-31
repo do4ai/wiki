@@ -11,7 +11,7 @@ title: "06. 관측, 알림, SRE"
 
 ## 알림 경로
 
-- 메트릭(Prometheus/Alertmanager)·로그(ElastAlert)·배포(ArgoCD Notifications)는 모두 **Alerta로 모이고 Discord로** 전송된다.
+- 메트릭(Prometheus/Alertmanager)·로그(Loki ruler)·배포(ArgoCD Notifications)는 모두 **Alerta로 모이고 Discord로** 전송된다.
 - 인프라 지표로 안 잡히는 **앱 레벨 기능 실패(예: 챗봇 발화 실패)는 앱이 Alerta로 직접** 보낸다.
 
 ## 알림 규칙 라벨

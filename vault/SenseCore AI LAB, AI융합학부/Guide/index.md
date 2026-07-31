@@ -47,7 +47,7 @@ parent_notion_id: 31ee313f58b980d68c5ad8ed9d5aeff8
   - [01. Observability 운영 가이드](03. 관측과 SRE/01. Observability 운영 가이드/index.md)
   - [02. 메트릭 - Prometheus와 Grafana](03. 관측과 SRE/02. 메트릭 - Prometheus와 Grafana/index.md)
   - [03. 알림 - Alertmanager와 Alerta](03. 관측과 SRE/03. 알림 - Alertmanager와 Alerta/index.md)
-  - [04. 로그 - Elasticsearch, Kibana, Filebeat, ElastAlert](03. 관측과 SRE/04. 로그 - Elasticsearch, Kibana, Filebeat, ElastAlert/index.md)
+  - [04. 로그 - Loki와 Alloy](03. 관측과 SRE/04. 로그 - Loki와 Alloy/index.md)
   - [05. 트레이싱 - OpenTelemetry와 Tempo](03. 관측과 SRE/05. 트레이싱 - OpenTelemetry와 Tempo/index.md)
   - [06. 모니터링·알림 아키텍처 가이드](03. 관측과 SRE/06. 모니터링·알림 아키텍처 가이드/index.md)
   - [07. 서비스별 관측과 조치](03. 관측과 SRE/07. 서비스별 관측과 조치/index.md)

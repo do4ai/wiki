@@ -21,7 +21,7 @@ title: "시작하기 (신입 온보딩)"
 | 　├ 01. 인프라와 플랫폼 | 기반: k3s·GitOps·ArgoCD·ingress·Harbor·Infisical·Headlamp | [01](../Guide/01. 인프라와 플랫폼/index.md) |
 | 　├ 02. 서비스 운영 | 서비스별(do4i·passv·palcar·papersens·wiki) 아키텍처·운영 | [02](../Guide/02. 서비스 운영/index.md) |
 | 　└ 03. 관측과 SRE | 관측 솔루션·URL·메트릭/로그 + 서비스별 조치 + SLO·인시던트 | [03](../Guide/03. 관측과 SRE/index.md) |
-| 🗓️ **Manual** | **도구 사용 절차**(ArgoCD·k3s·Grafana·Kibana·Tempo·Infisical·Harbor·Alerta) | [Manual](../Manual/index.md) |
+| 🗓️ **Manual** | **도구 사용 절차**(ArgoCD·k3s·Grafana·Loki·Tempo·Infisical·Harbor·Alerta) | [Manual](../Manual/index.md) |
 | 🧾 **Domains** | 프로젝트 도메인 문서(DDD: 컨텍스트 맵·UL 등) | [Domains](../Domains/index.md) |
 | 💼 **Convention** | 개발·운영에서 지켜야 하는 규칙 | [Convention](../Convention/index.md) |
 | 📚 **Wiki** | 분야별 지식베이스(개발·LLM·VLM·기획 등) | [Wiki](../Wiki/index.md) |
@@ -52,7 +52,7 @@ title: "시작하기 (신입 온보딩)"
 
 **배포(GitOps)**: 개발자가 `gitops` 레포 `main`에 push → ArgoCD가 레포를 "원하는 상태"로 읽고 클러스터를 그 상태로 자동 수렴. 클러스터를 직접 고치는 게 아니라 **레포를 고치면 클러스터가 따라온다.**
 
-**관측/알림**: 메트릭(Prometheus) + 로그(Filebeat→Elasticsearch→ElastAlert) + 트레이스(OTel→Tempo) → **Alerta**(인시던트 집계) → **Discord**. ArgoCD 배포 실패, 앱 발화 실패도 Alerta로 모인다.
+**관측/알림**: 메트릭(Prometheus) + 로그(Alloy→Loki) + 트레이스(OTel→Tempo) → **Alerta**(인시던트 집계) → **Discord**. ArgoCD 배포 실패, 앱 발화 실패도 Alerta로 모인다.
 
 ---
 
@@ -63,7 +63,7 @@ title: "시작하기 (신입 온보딩)"
 | 배포 상태 (ArgoCD) | `argocd.do4ai.com` | 앱이 OutOfSync/Degraded인지 1순위 확인 |
 | 대시보드 (Grafana) | `grafana.do4ai.com` (dev: `grafana.dev.do4ai.com`) | NodePort 30300 |
 | 메트릭 (Prometheus) | `prometheus.do4ai.com` (dev: `prometheus.dev.do4ai.com`) | basic auth |
-| 로그 (Kibana) | `kibana.do4ai.com` | 인덱스 `filebeat-*`, 필터 `kubernetes.namespace:<서비스>` |
+| 로그 (Loki) | `grafana.do4ai.com` Explore | 데이터소스 Loki, `{namespace="<서비스>"}` |
 | 인시던트/알림 (Alerta) | `alerta.do4ai.com` | 알림이 모이고 Discord로 전송 |
 | 클러스터 대시보드 (Headlamp) | `headlamp.do4ai.com` | **읽기 전용** |
 | 시크릿 관리 (Infisical) | `infisical.do4ai.com` | 모든 앱 시크릿의 원천 |
@@ -124,9 +124,9 @@ title: "시작하기 (신입 온보딩)"
 2. [Observability 운영 가이드](../Guide/03. 관측과 SRE/01. Observability 운영 가이드/index.md)
 3. [메트릭 — Prometheus와 Grafana](../Guide/03. 관측과 SRE/02. 메트릭 - Prometheus와 Grafana/index.md)
 4. [알림 — Alertmanager와 Alerta](../Guide/03. 관측과 SRE/03. 알림 - Alertmanager와 Alerta/index.md)
-5. [로그 — Elasticsearch, Kibana, Filebeat, ElastAlert](../Guide/03. 관측과 SRE/04. 로그 - Elasticsearch, Kibana, Filebeat, ElastAlert/index.md)
+5. [로그 — Loki와 Alloy](../Guide/03. 관측과 SRE/04. 로그 - Loki와 Alloy/index.md)
 6. [트레이싱 — OpenTelemetry와 Tempo](../Guide/03. 관측과 SRE/05. 트레이싱 - OpenTelemetry와 Tempo/index.md)
-7. [Grafana, Kibana, Tempo 1차 장애 확인 절차 (Manual)](../Manual/06. 모니터링-로그 작업/Grafana, Kibana, Tempo 1차 장애 확인 절차/index.md) — 실습: 서비스 하나를 골라 직접 상태 확인
+7. [Grafana, Loki, Tempo 1차 장애 확인 절차 (Manual)](../Manual/06. 모니터링-로그 작업/Grafana, Loki, Tempo 1차 장애 확인 절차/index.md) — 실습: 서비스 하나를 골라 직접 상태 확인
 8. [Alerta 사용법 (Manual)](../Manual/06. 모니터링-로그 작업/Alerta 사용법/index.md)
 9. [모니터링·알림 아키텍처 가이드](../Guide/03. 관측과 SRE/06. 모니터링·알림 아키텍처 가이드/index.md)
 10. [서비스별 관측과 조치](../Guide/03. 관측과 SRE/07. 서비스별 관측과 조치/index.md) → do4i·passv·palcar·papersens·wiki 5종
@@ -170,7 +170,7 @@ title: "시작하기 (신입 온보딩)"
 | Harbor | 사설 컨테이너 이미지 저장소(`harbor.do4i.com`) |
 | Alerta | 여러 알림을 모아 상태 관리하고 Discord로 보내는 인시던트 허브 |
 | Prometheus / Grafana | 메트릭 수집·저장 / 대시보드 |
-| Filebeat / Elasticsearch / Kibana / ElastAlert | 로그 수집 / 저장 / 검색 / 로그기반 알림 |
+| Alloy / Loki | 로그 수집 / 저장·조회·로그기반 알림 |
 | OpenTelemetry / Tempo | 트레이스 수집 / 저장 (요청이 어디서 느린지 추적) |
 | SLO / SLI / 에러 버짓 / 번레이트 | 목표치 / 실측 지표 / 허용 실패량 / 그 소진 속도 |
 | CrashLoopBackOff / ImagePullBackOff / OOMKilled / Pending | 앱 반복 죽음 / 이미지 못 받음 / 메모리 초과 종료 / 스케줄 대기 |

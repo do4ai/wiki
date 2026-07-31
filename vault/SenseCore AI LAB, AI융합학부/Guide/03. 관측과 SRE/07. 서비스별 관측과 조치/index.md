@@ -7,7 +7,7 @@ title: "07. 서비스별 관측과 조치"
 
 ## 한눈 매트릭스
 
-| 서비스 | 네임스페이스 | Grafana 대시보드 | Kibana 필터 | 대표 알림 |
+| 서비스 | 네임스페이스 | Grafana 대시보드 | Loki 쿼리 | 대표 알림 |
 | --- | --- | --- | --- | --- |
 | [do4i](do4i 관측과 조치/index.md) | `do4i` | `do4i-api-operations`, `platform-api-apm`(do4i-api) | `kubernetes.namespace:do4i` | 배포가용성·5xx·APM·MySQL |
 | [passv](passv 관측과 조치/index.md) | `passv`(이전 중) | `platform-api-apm`(passv-api) | `kubernetes.namespace:passv` | 발화 실패(앱 Alerta)·5xx·APM |
@@ -17,10 +17,10 @@ title: "07. 서비스별 관측과 조치"
 
 ## 공통 접속
 - 메트릭/대시보드: `grafana.do4ai.com` (NodePort 30300) — 좌측 Dashboards에서 위 이름 검색.
-- 로그: `kibana.do4ai.com` — Discover에서 `kubernetes.namespace:<ns>` + 시간범위.
+- 로그: Grafana Explore(데이터소스 Loki) — `{namespace="<ns>"}` + 시간범위.
 - 트레이스: Grafana → Explore → Tempo 데이터소스(서비스/지연으로 검색).
 - 알림 상태: `alerta.do4ai.com`.
-- 솔루션 상세는 [02. 메트릭](../02. 메트릭 - Prometheus와 Grafana/index.md)·[04. 로그](../04. 로그 - Elasticsearch, Kibana, Filebeat, ElastAlert/index.md)·[05. 트레이싱](../05. 트레이싱 - OpenTelemetry와 Tempo/index.md).
+- 솔루션 상세는 [02. 메트릭](../02. 메트릭 - Prometheus와 Grafana/index.md)·[04. 로그](../04. 로그 - Loki와 Alloy/index.md)·[05. 트레이싱](../05. 트레이싱 - OpenTelemetry와 Tempo/index.md).
 
 ## Page Tree
 

@@ -16,13 +16,13 @@ parent_notion_id: 330e313f58b9802b9cedda8dcbc5d112
 | --- | --- | --- |
 | **Grafana** | `grafana.do4ai.com` (NodePort 30300) | 메트릭 대시보드(서비스 운영·APM), 트레이스 Explore |
 | **Prometheus** | `prometheus.do4ai.com` (basic-auth) | 메트릭 원본 쿼리(PromQL)·스크레이프 타겟 |
-| **Kibana** | `kibana.do4ai.com` | 로그 검색·필터(`filebeat-*`) |
+| **Loki** | Grafana Explore | 로그 조회(`{namespace="<ns>"}`) |
 | **Alerta** | `alerta.do4ai.com` | 인시던트 허브(알림 집계·상태) → Discord |
 | **Tempo** | Grafana 내 데이터소스(Explore) | 분산 트레이스(요청 구간별 지연·오류) |
 | **(ArgoCD)** | `argocd.do4ai.com` | 배포 상태(Sync/Health) — [01. 인프라](../01. 인프라와 플랫폼/05. ArgoCD 운영 흐름 가이드/index.md) |
 | **(Headlamp)** | `headlamp.do4ai.com` | 리소스/이벤트/로그 빠른 점검 |
 
-> ⚠️ 일부 기본 계정이 평문(`Admin12!`)이고 ES/Tempo/Alerta는 replica 1(SPOF). 개선 과제는 각 문서에 ⚠️로 표시.
+> ⚠️ 일부 기본 계정이 평문(`Admin12!`)이고 Loki/Tempo/Alerta는 replica 1(SPOF). 개선 과제는 각 문서에 ⚠️로 표시.
 
 ## 문서 맵 (읽는 순서)
 
@@ -31,7 +31,7 @@ parent_notion_id: 330e313f58b9802b9cedda8dcbc5d112
 | 01 | [Observability 운영 가이드](01. Observability 운영 가이드/index.md) | 메트릭·로그·트레이스를 보는 순서(개요) |
 | 02 | [메트릭 - Prometheus와 Grafana](02. 메트릭 - Prometheus와 Grafana/index.md) | 수집·대시보드 |
 | 03 | [알림 - Alertmanager와 Alerta](03. 알림 - Alertmanager와 Alerta/index.md) | 알림 → Alerta → Discord, 규칙 인벤토리 |
-| 04 | [로그 - Elasticsearch, Kibana, Filebeat, ElastAlert](04. 로그 - Elasticsearch, Kibana, Filebeat, ElastAlert/index.md) | ELK 수집·검색·로그기반 알림 |
+| 04 | [로그 - Loki와 Alloy](04. 로그 - Loki와 Alloy/index.md) | 로그 수집·조회·로그기반 알림 |
 | 05 | [트레이싱 - OpenTelemetry와 Tempo](05. 트레이싱 - OpenTelemetry와 Tempo/index.md) | 분산 트레이싱·APM |
 | 06 | [모니터링·알림 아키텍처 가이드](06. 모니터링·알림 아키텍처 가이드/index.md) | 전체 파이프라인 한눈에 |
 | 07 | [서비스별 관측과 조치](07. 서비스별 관측과 조치/index.md) | **서비스마다 대시보드 URL·메트릭·로그·알림·조치** |
@@ -48,7 +48,7 @@ parent_notion_id: 330e313f58b9802b9cedda8dcbc5d112
 - [01. Observability 운영 가이드](01. Observability 운영 가이드/index.md)
 - [02. 메트릭 - Prometheus와 Grafana](02. 메트릭 - Prometheus와 Grafana/index.md)
 - [03. 알림 - Alertmanager와 Alerta](03. 알림 - Alertmanager와 Alerta/index.md)
-- [04. 로그 - Elasticsearch, Kibana, Filebeat, ElastAlert](04. 로그 - Elasticsearch, Kibana, Filebeat, ElastAlert/index.md)
+- [04. 로그 - Loki와 Alloy](04. 로그 - Loki와 Alloy/index.md)
 - [05. 트레이싱 - OpenTelemetry와 Tempo](05. 트레이싱 - OpenTelemetry와 Tempo/index.md)
 - [06. 모니터링·알림 아키텍처 가이드](06. 모니터링·알림 아키텍처 가이드/index.md)
 - [07. 서비스별 관측과 조치](07. 서비스별 관측과 조치/index.md)

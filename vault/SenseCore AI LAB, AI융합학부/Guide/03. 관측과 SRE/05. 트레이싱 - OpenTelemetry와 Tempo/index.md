@@ -38,4 +38,4 @@ Prometheus(traces_spanmetrics_*) → platform-api-apm 대시보드
 ---
 
 > **온보딩 트랙 — 3부 관측과 SRE**
-> 이전: [로그 — Elasticsearch, Kibana, Filebeat, ElastAlert](../04. 로그 - Elasticsearch, Kibana, Filebeat, ElastAlert/index.md) · 다음: [Grafana, Kibana, Tempo 1차 장애 확인 절차 (Manual)](../../../Manual/06. 모니터링-로그 작업/Grafana, Kibana, Tempo 1차 장애 확인 절차/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)
+> 이전: [로그 — Loki와 Alloy](../04. 로그 - Loki와 Alloy/index.md) · 다음: [Grafana, Loki, Tempo 1차 장애 확인 절차 (Manual)](../../../Manual/06. 모니터링-로그 작업/Grafana, Loki, Tempo 1차 장애 확인 절차/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)

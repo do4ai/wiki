@@ -6,7 +6,7 @@ title: "2. 모니터링·알람·SRE"
 ## 모니터링·관측
 
 - **대시보드**: Grafana `do4i-api-operations`(가용 replica·재시작·5xx·CPU·메모리), `platform-api-apm`(요청율·에러율·p95).
-- **로그**: Filebeat → Elasticsearch → Kibana(`kibana.do4ai.com`). 에러/예외 버스트는 ElastAlert로 감지.
+- **로그**: Alloy → Loki → Grafana Explore. 에러/5xx 버스트는 Loki ruler가 감지한다.
 - **트레이스**: OTel → Tempo(`do4i-api` 스팬).
 - **보는 순서**: 메트릭(범위) → 로그(원인) → 트레이스(병목). 전체 파이프라인은 [모니터링·알림 아키텍처 가이드](../../../03. 관측과 SRE/06. 모니터링·알림 아키텍처 가이드/index.md).
 
@@ -36,7 +36,7 @@ title: "2. 모니터링·알람·SRE"
 1. ArgoCD에서 `do4i` Application Sync/Health.
 2. `do4i` 네임스페이스 파드(api/mysql/avatar-worker).
 3. Grafana `do4i-api-operations` → 5xx·재시작·리소스.
-4. Kibana에서 `do4i` 로그 에러.
+4. Grafana Explore에서 `{namespace="do4i"}` 로그 에러.
 
 상세 절차: [3. 운영 절차](../3. 운영 절차/index.md).
 

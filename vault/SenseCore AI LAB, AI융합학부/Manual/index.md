@@ -8,9 +8,9 @@ parent_notion_id: 31ee313f58b980d68c5ad8ed9d5aeff8
 ---
 # SCAI LAB Manual
 
-`Manual`은 **운영에 쓰는 솔루션(도구)을 어떻게 쓰는가**를 정리한 곳이다. ArgoCD, kubectl/k3s, Grafana, Kibana, Tempo, Infisical, Harbor, Alerta 같은 도구의 사용·점검 절차를 도구 단위로 모은다.
+`Manual`은 **운영에 쓰는 솔루션(도구)을 어떻게 쓰는가**를 정리한 곳이다. ArgoCD, kubectl/k3s, Grafana, Loki, Tempo, Infisical, Harbor, Alerta 같은 도구의 사용·점검 절차를 도구 단위로 모은다.
 
-도구 사용법 중 일부(k3s 접속·ArgoCD·Harbor·Infisical·Grafana/Kibana/Tempo·Alerta·운영 변경·외부 로그인)는 [시작하기 — 신입 온보딩](../시작하기/index.md)의 온보딩 트랙에 실습 정거장으로 포함되어 있다.
+도구 사용법 중 일부(k3s 접속·ArgoCD·Harbor·Infisical·Grafana/Loki/Tempo·Alerta·운영 변경·외부 로그인)는 [시작하기 — 신입 온보딩](../시작하기/index.md)의 온보딩 트랙에 실습 정거장으로 포함되어 있다.
 
 > 서비스별(do4i·passv·palcar·papersens·wiki) 아키텍처와 그 서비스의 운영 절차는 `Guide`의 [02. 서비스 운영](../Guide/02. 서비스 운영/index.md)에서 서비스 폴더로 본다. **Manual = 도구 사용법, Guide = 서비스.**
 
@@ -21,7 +21,7 @@ parent_notion_id: 31ee313f58b980d68c5ad8ed9d5aeff8
 | ArgoCD | 배포 상태 확인·sync·롤백 | [ArgoCD 사용법](04. 서버와 배포 작업/ArgoCD 사용법/index.md) |
 | kubectl · k3s | 클러스터 접속·GitOps 배포 점검 | [k3s 클러스터 접속과 GitOps 배포 점검](04. 서버와 배포 작업/k3s 클러스터 접속과 GitOps 배포 점검/index.md) |
 | Harbor | 컨테이너 이미지 레지스트리 | [Harbor 사용법](04. 서버와 배포 작업/Harbor 사용법/index.md) |
-| Grafana · Kibana · Tempo | 메트릭·로그·트레이스 확인 | [Grafana, Kibana, Tempo 1차 장애 확인 절차](06. 모니터링-로그 작업/Grafana, Kibana, Tempo 1차 장애 확인 절차/index.md) |
+| Grafana · Loki · Tempo | 메트릭·로그·트레이스 확인 | [Grafana, Loki, Tempo 1차 장애 확인 절차](06. 모니터링-로그 작업/Grafana, Loki, Tempo 1차 장애 확인 절차/index.md) |
 | Alerta | 알림 허브·앱 직접 알림 전송 | [Alerta 사용법](06. 모니터링-로그 작업/Alerta 사용법/index.md) |
 | Infisical | 시크릿 반영·권한 변경 | [Infisical 시크릿 반영과 권한 변경 절차](07. 시크릿-권한 작업/Infisical 시크릿 반영과 권한 변경 절차/index.md) |
 | Ingress/도메인/환경변수 | 운영 변경 작업 | [Ingress, 도메인, 이미지, 환경 변수 변경 절차](05. 운영 변경 작업/Ingress, 도메인, 이미지, 환경 변수 변경 절차/index.md) |
@@ -52,7 +52,7 @@ parent_notion_id: 31ee313f58b980d68c5ad8ed9d5aeff8
 - [05. 운영 변경 작업](05. 운영 변경 작업/index.md)
   - [Ingress, 도메인, 이미지, 환경 변수 변경 절차](05. 운영 변경 작업/Ingress, 도메인, 이미지, 환경 변수 변경 절차/index.md)
 - [06. 모니터링/로그 작업](06. 모니터링-로그 작업/index.md)
-  - [Grafana, Kibana, Tempo 1차 장애 확인 절차](06. 모니터링-로그 작업/Grafana, Kibana, Tempo 1차 장애 확인 절차/index.md)
+  - [Grafana, Loki, Tempo 1차 장애 확인 절차](06. 모니터링-로그 작업/Grafana, Loki, Tempo 1차 장애 확인 절차/index.md)
   - [Alerta 사용법](06. 모니터링-로그 작업/Alerta 사용법/index.md)
 - [07. 시크릿/권한 작업](07. 시크릿-권한 작업/index.md)
   - [Infisical 시크릿 반영과 권한 변경 절차](07. 시크릿-권한 작업/Infisical 시크릿 반영과 권한 변경 절차/index.md)

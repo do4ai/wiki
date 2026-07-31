@@ -1,16 +1,16 @@
 ---
-title: "Grafana, Kibana, Tempo 1차 장애 확인 절차"
+title: "Grafana, Loki, Tempo 1차 장애 확인 절차"
 source_kind: page
-source_path: ssot/pages/31ee313f58b980d68c5ad8ed9d5aeff8__SenseCore AI LAB, AI융합학부/children/manual/330e313f58b98098b619f0e3ef2d0fa0__Manual/children/330e313f58b98117b6efd664ee0f6659__06. 모니터링-로그 작업/children/338e313f58b981cb9d17f7c61b7d1d0c__Grafana, Kibana, Tempo 1차 장애 확인 절차
+source_path: ssot/pages/31ee313f58b980d68c5ad8ed9d5aeff8__SenseCore AI LAB, AI융합학부/children/manual/330e313f58b98098b619f0e3ef2d0fa0__Manual/children/330e313f58b98117b6efd664ee0f6659__06. 모니터링-로그 작업/children/338e313f58b981cb9d17f7c61b7d1d0c__Grafana, Loki, Tempo 1차 장애 확인 절차
 notion_id: 338e313f58b981cb9d17f7c61b7d1d0c
 notion_url: https://www.notion.so/338e313f58b981cb9d17f7c61b7d1d0c
 parent_notion_id: 330e313f58b98117b6efd664ee0f6659
 ---
-# Grafana, Kibana, Tempo 1차 장애 확인 절차
+# Grafana, Loki, Tempo 1차 장애 확인 절차
 
 ## 문서 목적
 
-이 문서는 서비스 장애가 의심될 때 `Grafana`, `Kibana`, `Tempo`를 이용해 1차 근거를 빠르게 수집하는 절차를 정리한다.
+이 문서는 서비스 장애가 의심될 때 `Grafana`(메트릭·로그), `Tempo`(트레이스)를 이용해 1차 근거를 빠르게 수집하는 절차를 정리한다. 로그는 별도 UI 없이 Grafana Explore에서 데이터소스 `Loki`로 본다.
 
 초기 목표는 원인을 완전히 확정하는 것이 아니라, 메트릭 문제인지 로그 문제인지 추적 문제인지 먼저 좁히는 것이다.
 
@@ -19,7 +19,7 @@ parent_notion_id: 330e313f58b98117b6efd664ee0f6659
 - 대상 서비스 이름과 namespace
 - 대략적인 장애 시작 시각
 - 관련 URL, API path, 또는 job 이름
-- Grafana, Kibana, Tempo 접근 권한
+- Grafana, Tempo 접근 권한
 
 ## 절차
 
@@ -42,14 +42,14 @@ parent_notion_id: 330e313f58b98117b6efd664ee0f6659
 
 메트릭이 먼저 이상하면 앱 런타임 또는 인프라 문제일 가능성이 높다.
 
-### 3. Kibana에서 같은 시간대 로그를 확인한다
+### 3. Grafana Explore에서 같은 시간대 로그를 확인한다
 
-로그 조회 기준은 아래다.
+`grafana.do4ai.com` → Explore → 데이터소스 `Loki`에서 본다. 조회 기준은 아래다.
 
-- namespace
-- app 또는 pod 이름
-- 장애 시간 범위
-- `error`, `exception`, `traceback`, `timeout`, `connection` 같은 핵심 키워드
+- namespace: `{namespace="<서비스>"}`
+- pod 또는 container: `{namespace="<서비스>", pod=~"api-.*"}`
+- 장애 시간 범위(우측 상단 시간 선택)
+- 핵심 키워드: `{namespace="<서비스>"} |~ "error|exception|traceback|timeout|connection"`
 
 로그를 볼 때는 한 줄 에러만 보지 말고 직전/직후 로그까지 같이 읽는다.
 

@@ -7,7 +7,7 @@ title: "do4i 관측과 조치"
 
 ## 접속
 - **메트릭**: `grafana.do4ai.com` → `do4i-api-operations`(가용 replica·재시작·5xx·CPU/메모리), `platform-api-apm`(서비스 변수 `do4i-api`: 요청율·에러율·p95).
-- **로그**: `kibana.do4ai.com` → `kubernetes.namespace:do4i` (+ `error`/`exception` 키워드).
+- **로그**: Grafana Explore → `{namespace="do4i"}` (+ `error`/`exception` 키워드).
 - **트레이스**: Grafana Explore → Tempo, service `do4i-api`.
 - **배포 상태**: `argocd.do4ai.com` → `do4i`.
 

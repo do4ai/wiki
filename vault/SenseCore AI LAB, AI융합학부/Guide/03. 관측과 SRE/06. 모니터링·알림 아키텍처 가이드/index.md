@@ -10,8 +10,8 @@ title: "모니터링·알림 아키텍처 가이드"
 ```
 [메트릭]  앱/노드/ingress ─ Prometheus ─┬─ Grafana (대시보드)
                                          └─ Alertmanager ─┐
-[로그]    파드 ─ Filebeat ─ Elasticsearch ─┬─ Kibana       │
-                                            └─ ElastAlert ──┤
+[로그]    파드 ─ Alloy ─ Loki ─────────────┬─ Grafana      │
+                                            └─ Loki ruler ──┤
 [트레이스] 앱 ─ OTel Collector ─ Tempo ─ Grafana            │
                                                             ▼
                                                     Alerta (인시던트 허브)
@@ -25,13 +25,13 @@ title: "모니터링·알림 아키텍처 가이드"
 | 신호 | 도구 | 답하는 질문 |
 | --- | --- | --- |
 | 메트릭 | Prometheus / Grafana | 얼마나 나빠졌는가(범위·추세) |
-| 로그 | Filebeat / Elasticsearch / Kibana | 무슨 일이 있었는가(오류 메시지) |
+| 로그 | Alloy / Loki | 무슨 일이 있었는가(오류 메시지) |
 | 트레이스 | OTel / Tempo | 어디서 느려지거나 끊겼는가(병목) |
 
 ## 알림이 만들어지고 전달되는 경로
 
 1. **규칙 평가**: Prometheus가 `PrometheusRule`(아래 인벤토리)을 평가해 alert를 발생.
-2. **로그 기반**: ElastAlert가 `filebeat-*` 인덱스에서 에러/5xx 버스트를 감지해 직접 Alerta로 전송.
+2. **로그 기반**: Loki ruler가 수집된 로그에서 에러/5xx 버스트를 감지해 Alertmanager를 거쳐 Alerta로 전송.
 3. **라우팅**: Alertmanager(`AlertmanagerConfig`)가 `severity=~warning|critical|major|minor` alert를 Alerta webhook으로 전달. 그룹핑 키 `alertname/service/instance`, repeat 2h.
 4. **인시던트 허브**: Alerta가 알림을 모아 상태(open/ack/closed)를 관리하고 Discord 플러그인으로 채널에 게시.
 5. **GitOps 알림**: ArgoCD Notifications가 sync/health 실패를 Alerta로 보낸다.
@@ -40,7 +40,7 @@ title: "모니터링·알림 아키텍처 가이드"
 
 | 파일 | 내용 |
 | --- | --- |
-| `platform-alert-rules.yaml` | 배포 가용성, ingress 5xx, APM 에러율/지연(p95), Alerta/OTel/Tempo/Filebeat 상태 |
+| `platform-alert-rules.yaml` | 배포 가용성, ingress 5xx, APM 에러율/지연(p95), Alerta/OTel/Tempo 상태, 파드 CIDR 잔재, Loki/Alloy 상태 |
 | `platform-runtime-alerts.yaml` | CrashLoopBackOff, OOMKilled, CPU throttling, MySQL Ready 0, PVC 잔여, 노드 Memory/Disk Pressure |
 | `platform-slo-rules.yaml` | 가용성 SLO 레코딩 + 멀티윈도 번레이트(fast/slow) |
 | `blackbox-exporter.yaml` | 공개 엔드포인트 합성 프로브 + TLS 인증서 만료 임박 |
@@ -50,14 +50,14 @@ title: "모니터링·알림 아키텍처 가이드"
 ## 접속 지점
 
 - Grafana: `grafana.do4ai.com`(NodePort 30300) — 대시보드.
-- Kibana: `kibana.do4ai.com` — 로그.
+- 로그: `grafana.do4ai.com` Explore(데이터소스 Loki).
 - Alerta: `alerta.do4ai.com`(`monitoring` 네임스페이스) — 인시던트 허브.
 - Discord: 운영 알림 채널(`TODO 확정 필요`: 온콜/에스컬레이션 채널 분리).
 
 ## 이 문서와 하위 문서의 경계
 
 - 이 문서: 컴포넌트가 **왜·어떻게 연결되는가**.
-- 도구별 1차 확인 절차: [Manual/06 Grafana, Kibana, Tempo 1차 장애 확인 절차](../../../Manual/06. 모니터링-로그 작업/Grafana, Kibana, Tempo 1차 장애 확인 절차/index.md).
+- 도구별 1차 확인 절차: [Manual/06 Grafana, Loki, Tempo 1차 장애 확인 절차](../../../Manual/06. 모니터링-로그 작업/Grafana, Loki, Tempo 1차 장애 확인 절차/index.md).
 - 장애 판단·SLO·에스컬레이션: [10. 장애 대응 의사결정 가이드](../10. 장애 대응 의사결정 가이드/index.md).
 - Discord 리포트 설계 배경: [k3s 운영 장애 Discord 리포트 설계](../12. k3s 운영 장애 Discord 리포트 설계/index.md).
 

@@ -60,7 +60,7 @@ parent_notion_id: 330e313f58b981a0b738ed69daa8f3a0
 아래 같은 작업은 `Manual` 에서 다룬다.
 
 - Grafana에서 어디를 먼저 보는지
-- Kibana에서 어떤 필터로 좁히는지
+- Grafana Explore에서 어떤 쿼리로 좁히는지
 - Tempo나 trace 도구에서 어떤 요청을 찾는지
 
 ---

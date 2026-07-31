@@ -23,7 +23,7 @@ notion_icon: "🌒"
 
 | 📖 Guide | 🗓️ Manual |
 | --- | --- |
-| 시스템·서비스를 이해하는 가이드다 (개념 + 실제 우리 설정).<br>[Guide](Guide/index.md) | 운영 도구(ArgoCD·k3s·Grafana·Kibana·Tempo·Infisical·Harbor·Alerta)의 사용 절차다.<br>[Manual](Manual/index.md) |
+| 시스템·서비스를 이해하는 가이드다 (개념 + 실제 우리 설정).<br>[Guide](Guide/index.md) | 운영 도구(ArgoCD·k3s·Grafana·Loki·Tempo·Infisical·Harbor·Alerta)의 사용 절차다.<br>[Manual](Manual/index.md) |
 | 📚 Wiki | 💻 Lecture |
 | --- | --- |
 | 분야별 지식베이스다 (개발·LLM·VLM·기획 등).<br>[Wiki](Wiki/index.md) | 수학, 개발, AI 등 다양한 분야의 강의 자료다.<br>[Lecture](Lecture/index.md) |
@@ -283,7 +283,7 @@ notion_icon: "🌒"
     - [01. Observability 운영 가이드](Guide/03. 관측과 SRE/01. Observability 운영 가이드/index.md)
     - [02. 메트릭 - Prometheus와 Grafana](Guide/03. 관측과 SRE/02. 메트릭 - Prometheus와 Grafana/index.md)
     - [03. 알림 - Alertmanager와 Alerta](Guide/03. 관측과 SRE/03. 알림 - Alertmanager와 Alerta/index.md)
-    - [04. 로그 - Elasticsearch, Kibana, Filebeat, ElastAlert](Guide/03. 관측과 SRE/04. 로그 - Elasticsearch, Kibana, Filebeat, ElastAlert/index.md)
+    - [04. 로그 - Loki와 Alloy](Guide/03. 관측과 SRE/04. 로그 - Loki와 Alloy/index.md)
     - [05. 트레이싱 - OpenTelemetry와 Tempo](Guide/03. 관측과 SRE/05. 트레이싱 - OpenTelemetry와 Tempo/index.md)
     - [06. 모니터링·알림 아키텍처 가이드](Guide/03. 관측과 SRE/06. 모니터링·알림 아키텍처 가이드/index.md)
     - [07. 서비스별 관측과 조치](Guide/03. 관측과 SRE/07. 서비스별 관측과 조치/index.md)
@@ -306,7 +306,7 @@ notion_icon: "🌒"
   - [05. 운영 변경 작업](Manual/05. 운영 변경 작업/index.md)
     - [Ingress, 도메인, 이미지, 환경 변수 변경 절차](Manual/05. 운영 변경 작업/Ingress, 도메인, 이미지, 환경 변수 변경 절차/index.md)
   - [06. 모니터링/로그 작업](Manual/06. 모니터링-로그 작업/index.md)
-    - [Grafana, Kibana, Tempo 1차 장애 확인 절차](Manual/06. 모니터링-로그 작업/Grafana, Kibana, Tempo 1차 장애 확인 절차/index.md)
+    - [Grafana, Loki, Tempo 1차 장애 확인 절차](Manual/06. 모니터링-로그 작업/Grafana, Loki, Tempo 1차 장애 확인 절차/index.md)
     - [Alerta 사용법](Manual/06. 모니터링-로그 작업/Alerta 사용법/index.md)
   - [07. 시크릿/권한 작업](Manual/07. 시크릿-권한 작업/index.md)
     - [Infisical 시크릿 반영과 권한 변경 절차](Manual/07. 시크릿-권한 작업/Infisical 시크릿 반영과 권한 변경 절차/index.md)

@@ -7,7 +7,7 @@ title: "palcar 관측과 조치"
 
 ## 접속
 - **메트릭**: `grafana.do4ai.com` → `platform-api-apm`(service `palcar-api`) + 공통(kubernetes-cluster·nginx-ingress).
-- **로그**: `kibana.do4ai.com` → `kubernetes.namespace:palcar`.
+- **로그**: Grafana Explore → `{namespace="palcar"}`.
 - **트레이스**: Grafana Explore → Tempo, service `palcar-api`.
 - **배포 상태**: `argocd.do4ai.com` → `palcar`.
 
