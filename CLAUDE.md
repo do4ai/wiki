@@ -37,7 +37,7 @@
 
 - 발행 경로: `vault/`(GitHub) → 클러스터 `content-sync` 사이드카(60초 주기 `main` pull) → WikiJS. **`main`에 머지하면 운영에 반영**된다.
 - 문서 변경 후 검증:
-  - 링크: 상대 링크 깨짐 0 (스크립트로 점검).
+  - 링크: 상대 링크 깨짐 0 (`python3 scripts/check_links.py`, 깨짐이 있으면 종료코드 1).
   - 발행 미리보기: `python3 scripts/wiki_wikijs_sync.py sync --dry-run`.
 - 루트 `vault/index.md`는 발행되지 않는 중복 허브, 워크스페이스 홈 `vault/SenseCore AI LAB, AI융합학부/index.md`가 `/home`으로 발행된다. 둘의 Page Tree를 함께 맞춘다.
 
