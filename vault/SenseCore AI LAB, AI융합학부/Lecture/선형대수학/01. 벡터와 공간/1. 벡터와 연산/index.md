@@ -352,4 +352,3 @@ $$
 7. 삼각부등식을 코시-슈바르츠에서 유도할 수 있는가?
 
 **정답 요지.** 1. 순서 있는 실수 목록 / 방향과 크기를 가진 화살표. 2. $(\mathbf{u}+\mathbf{v})_i=u_i+v_i$, $(c\mathbf{v})_i=cv_i$. 3. $\sum u_iv_i$, 실수 하나. 4. $\sqrt{\sum(cv_i)^2}=|c|\sqrt{\sum v_i^2}$. 5. $\cos\theta=\frac{\mathbf{u}\cdot\mathbf{v}}{\lVert\mathbf{u}\rVert\lVert\mathbf{v}\rVert}$. 6. $|\mathbf{u}\cdot\mathbf{v}|\le\lVert\mathbf{u}\rVert\lVert\mathbf{v}\rVert$, 등호는 평행. 7. $\lVert\mathbf{u}+\mathbf{v}\rVert^2$ 전개 후 교차항에 코시-슈바르츠 적용.
-</content>
