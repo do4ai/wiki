@@ -7,17 +7,17 @@ title: "13. 디스코드 알림 채널과 웹훅 구성"
 
 > **웹훅 URL 자체는 이 문서에도, 레포 어디에도 적지 않는다.** URL을 아는 사람은 누구나 그 채널에 글을 쓸 수 있으므로 값은 Infisical에만 두고, 문서와 매니페스트에는 **키 이름만** 적는다.
 
-## 웹훅 다섯 개와 각자의 역할
+## 웹훅 키 다섯 종, 실제로 살아 있는 채널 네 개
 
-디스코드로 나가는 경로는 다섯 개이고, **다섯 개가 모두 서로 다른 채널**이다(2026-08-01 운영 클러스터에서 값 대조로 확인). 네 개는 Infisical `/platform/incident-alerting`에, 앱 직송용 하나는 서비스별 `/apps/api`에 둔다.
+디스코드로 나가는 경로는 키 이름 기준으로 다섯 종이다. 그중 **실제로 값이 들어 있는 것은 네 개이고, 네 개는 서로 다른 채널을 가리킨다**(2026-08-03 운영 클러스터에서 값 해시 대조로 확인). 나머지 하나(`DISCORD_WEBHOOK_URL_DEV`)는 매니페스트가 참조만 하고 시크릿에는 존재하지 않는다. 인프라용 키는 Infisical `/platform/incident-alerting`에, 앱 직송용 키는 서비스별 앱 시크릿 경로에 둔다.
 
 | 키 이름 | 무엇이 오나 | 보내는 주체 | 빈도 | 상태 |
 | --- | --- | --- | --- | --- |
 | `DISCORD_WEBHOOK_URL` | 운영 장애·복구 알림 | Alerta Discord 플러그인 | 사건 발생 시 | 설정됨 |
-| `DISCORD_WEBHOOK_URL_DEV` | 개발 환경 장애 알림 | Alerta Discord 플러그인 | 사건 발생 시 | ⚠️ **미설정** |
+| `DISCORD_WEBHOOK_URL_DEV` | 개발 환경 장애 알림 | Alerta Discord 플러그인 | 사건 발생 시 | ⚠️ **키 자체가 없음** |
 | `DISCORD_METRICS_WEBHOOK` | 시간별 메트릭 리포트 | `metrics-digest` CronJob | 매시 정각 | 설정됨 |
 | `DISCORD_DEPLOY_WEBHOOK` | 배포 완료 알림 | ArgoCD Notifications | 배포 성공 시 | 설정됨 |
-| `DISCORD_ALERT_WEBHOOK_URL` | 앱 런타임 오류 직송 | 앱(`platform_runtime`) | 오류 발생 시 | do4i·palcar 설정됨 |
+| `DISCORD_ALERT_WEBHOOK_URL` | 앱 런타임 오류 직송 | 앱(`platform_runtime`) | 오류 발생 시 | do4i·palcar만 설정됨 |
 
 ```
 Prometheus 규칙 ─┐
@@ -62,6 +62,8 @@ Alerta의 Discord 플러그인은 **알림에 붙은 `environment` 라벨**만 �
 
 Alertmanager는 `severity`가 `critical·major·warning·minor` 중 하나인 알림만 Alerta로 넘긴다. 같은 알림은 **2시간마다 한 번만** 다시 보낸다(`repeatInterval`). 알림을 묶는 단위는 `alertname`·`service`·`instance`다.
 
+**디스코드로는 처음 한 번만 나간다.** Alertmanager가 2시간마다 다시 보내더라도 Alerta는 그것을 중복으로 판정하고, Discord 플러그인은 중복 알림을 건너뛴다(`if alert.repeat: return`). 채널이 같은 문구로 도배되지 않는 대신, **오래 열려 있는 알림은 디스코드에서 보이지 않는다.** 예를 들어 `KubePodNotReady` 는 2026-07-12부터 열린 채로 중복 1,273회를 기록했지만 디스코드에는 최초 1회만 찍혔다. 지금 무엇이 열려 있는지는 반드시 Alerta 화면에서 확인한다. 상태가 `ack` 나 `closed` 로 바뀔 때는 다시 한 번 알림이 나간다.
+
 ### 시간별 메트릭 리포트 (`metrics-digest`)
 
 매시 정각(Asia/Seoul)에 Prometheus를 조회해 지난 한 시간을 요약한다. 대상 서비스는 `do4i`·`palcar`·`papersens`·`passv` 네 개로 **고정**이라, 트래픽이 없어도 항목이 빠지지 않는다.
@@ -100,7 +102,7 @@ Alertmanager는 `severity`가 `critical·major·warning·minor` 중 하나인 �
 - 표준 라이브러리만 쓰고 전송은 스레드로 넘겨 이벤트 루프를 막지 않는다.
 - `DISCORD_ALERT_WEBHOOK_URL` 이 없으면 조용히 아무것도 하지 않는다.
 
-운영 클러스터 기준으로 이 시크릿은 **`do4i` 와 `palcar` 에 있고 `papersens` 에는 없다.** papersens에서 발생하는 런타임 오류는 현재 디스코드로 오지 않는다.
+운영 클러스터 기준으로 이 시크릿은 **`do4i` 와 `palcar` 두 곳에만 있다.** `papersens` 와 `namanva` 에는 없어서, 두 서비스에서 발생하는 런타임 오류는 디스코드로 오지 않는다.
 
 ### Alerta 기반 앱 알림은 비활성 상태다
 
@@ -115,7 +117,7 @@ Alertmanager는 `severity`가 `critical·major·warning·minor` 중 하나인 �
 
 ## 시크릿 보관과 주입 경로
 
-인프라 쪽 웹훅 네 개는 Infisical **`do4ai` 프로젝트 / `prod` 환경 / `/platform/incident-alerting`** 에, 앱 직송 웹훅은 서비스별 앱 시크릿 경로에 있다.
+인프라 쪽 웹훅은 Infisical **`do4ai` 프로젝트 / `prod` 환경 / `/platform/incident-alerting`** 에, 앱 직송 웹훅은 서비스별 앱 시크릿 경로에 있다.
 
 | 쓰는 곳 | 쿠버네티스 시크릿 | 네임스페이스 |
 | --- | --- | --- |
@@ -123,24 +125,27 @@ Alertmanager는 `severity`가 `critical·major·warning·minor` 중 하나인 �
 | ArgoCD Notifications | `argocd-notifications-secret` | `argocd` |
 | 앱 런타임 직송 | `alert-webhook` | `do4i`, `palcar` |
 
+`alerta-secrets` 와 `argocd-notifications-secret` 은 같은 Infisical 경로를 읽기 때문에 **키 구성이 완전히 같다**. 그래서 ArgoCD 쪽 시크릿에도 `DISCORD_METRICS_WEBHOOK` 과 `DISCORD_WEBHOOK_URL` 이 들어 있지만, ArgoCD가 실제로 쓰는 것은 `DISCORD_DEPLOY_WEBHOOK` 과 Alerta 접속용 키뿐이다. 나머지는 쓰이지 않는 잔여 키이므로 여기서 값을 찾지 않는다.
+
 Infisical Operator가 이 경로를 통째로 읽어 시크릿으로 만든다. 값을 바꾸면 **Infisical에서만 바꾸면 되고 매니페스트는 손대지 않는다.**
 
 주의할 점이 하나 있다. **개발 클러스터도 `prod` 환경 스코프를 읽는다.** dev 오버레이는 Infisical 접속 주소만 바꾸고 환경 슬러그는 그대로 두기 때문에, 양쪽 클러스터가 같은 키 묶음을 본다. `DISCORD_WEBHOOK_URL_DEV`를 이 경로에 넣으면 개발 클러스터에서도 그대로 읽힌다.
 
 ## 알림이 안 올 때 보는 순서
 
-1. Alerta(`alerta.do4ai.com`)에 인시던트가 쌓였는지 본다. 쌓여 있는데 디스코드만 조용하면 **웹훅 문제**이고, 아예 없으면 **알림이 생성되지 않은 것**이다.
-2. 웹훅 문제로 좁혀지면 Alerta 파드 로그에서 `alerta.plugins.discord` 경고를 찾는다. `DISCORD_WEBHOOK_URL not configured`가 보이면 시크릿이 주입되지 않은 것이다.
-3. 인시던트가 아예 없으면 Alertmanager가 Alerta로 넘기는 구간을 본다. 알림 자체가 없으면 Prometheus 규칙과 대상 메트릭이 있는지 확인한다.
-4. 개발 알림만 안 보이면 채널을 착각한 경우가 많다. `DISCORD_WEBHOOK_URL_DEV`가 비어 있으면 운영 채널에 섞여 들어간다.
-5. 매시 리포트만 안 오면 `metrics-digest` CronJob의 마지막 실행 결과를 본다. `DISCORD_METRICS_WEBHOOK 미설정` 로그가 있으면 키가 비어 있는 것이다.
-6. 앱 오류 알림만 안 오면 그 서비스 네임스페이스에 `alert-webhook` 시크릿이 있는지 먼저 본다. 없으면 직송 경로가 통째로 꺼져 있다. 이 경로는 Alerta와 무관하므로 Alerta 상태를 봐도 소용이 없다.
+1. Alerta(`alerta.do4ai.com`)에 인시던트가 쌓였는지 본다. 아예 없으면 **알림이 생성되지 않은 것**이다.
+2. 인시던트는 있는데 디스코드가 조용하다면 먼저 **중복 여부**를 본다. 중복 횟수가 올라가는 알림은 플러그인이 의도적으로 건너뛰므로 고장이 아니다. 중복이 아닌 새 알림인데도 조용할 때만 웹훅 문제로 좁힌다.
+3. 웹훅 문제로 좁혀지면 Alerta 파드 로그에서 `alerta.plugins.discord` 경고를 찾는다. `DISCORD_WEBHOOK_URL not configured`가 보이면 시크릿이 주입되지 않은 것이다.
+4. 인시던트가 아예 없으면 Alertmanager가 Alerta로 넘기는 구간을 본다. 알림 자체가 없으면 Prometheus 규칙과 대상 메트릭이 있는지 확인한다.
+5. 개발 알림만 안 보이면 채널을 착각한 경우가 많다. `DISCORD_WEBHOOK_URL_DEV`가 없으면 운영 채널에 섞여 들어간다.
+6. 매시 리포트만 안 오면 `metrics-digest` CronJob의 마지막 실행 결과를 본다. `DISCORD_METRICS_WEBHOOK 미설정` 로그가 있으면 키가 비어 있는 것이다.
+7. 앱 오류 알림만 안 오면 그 서비스 네임스페이스에 `alert-webhook` 시크릿이 있는지 먼저 본다. 없으면 직송 경로가 통째로 꺼져 있다. 이 경로는 Alerta와 무관하므로 Alerta 상태를 봐도 소용이 없다.
 
 절차 상세는 [Manual 06. 모니터링-로그 작업](../../../Manual/06. 모니터링-로그 작업/index.md)에 있다.
 
 ## 알려진 결함
 
-2026-08-01에 운영 클러스터에서 대조하며 확인한 내용이다.
+2026-08-03에 운영 클러스터에서 다시 대조하며 확인한 내용이다. 아래 네 건은 모두 이 시점에도 그대로 남아 있다.
 
 ### 합성 모니터링이 수집되지 않는다
 
@@ -157,26 +162,34 @@ Infisical Operator가 이 경로를 통째로 읽어 시크릿으로 만든다. 
 
 ### 개발 알림이 운영 채널로 섞인다
 
-`DISCORD_WEBHOOK_URL_DEV` 가 비어 있어 개발 클러스터 알림이 운영 채널로 들어온다. Infisical `/platform/incident-alerting` 에 키를 추가하면 해소된다.
+`DISCORD_WEBHOOK_URL_DEV` 는 Alerta 배포 매니페스트가 `optional: true` 로 참조하지만 시크릿에는 키 자체가 없다. 그래서 파드는 정상 기동하고, 개발 클러스터 알림은 조용히 운영 채널로 들어온다. Infisical `/platform/incident-alerting` 에 키를 추가하면 해소되며 매니페스트는 손대지 않아도 된다.
 
-### papersens 런타임 오류가 디스코드로 오지 않는다
+### papersens와 namanva의 런타임 오류가 디스코드로 오지 않는다
 
-`alert-webhook` 시크릿이 `do4i` 와 `palcar` 에만 있고 `papersens` 에는 없다. papersens에서 나는 앱 오류는 직송 경로를 타지 못한다.
+`alert-webhook` 시크릿이 `do4i` 와 `palcar` 에만 있다. `papersens` 와 `namanva` 에서 나는 앱 오류는 직송 경로를 타지 못한다. 특히 `namanva` 는 `api` 디플로이가 `0/1` 로 떠 있지 못한 상태여서 알림 공백이 실제 장애와 겹쳐 있다.
+
+### 오래 열린 알림이 디스코드에서 사라진다
+
+Discord 플러그인이 중복 알림을 건너뛰기 때문에, 처음 한 번 알린 뒤로는 해결될 때까지 채널에 아무것도 남지 않는다. 실제로 `KubePodNotReady` 는 2026-07-12부터 22일째 열린 채로 중복 1,273회를 기록하고 있지만 디스코드만 보고 있으면 이를 알 수 없다. 도배를 막으려는 의도된 동작이므로 코드를 고치기보다, **열린 인시던트는 Alerta 화면으로 주기 점검한다**는 운영 습관으로 메운다.
 
 ### 그 밖에
 
 - ⚠️ Alerta는 replica 1이다. Alerta가 내려가면 Alerta를 거치는 알림이 전부 멈춘다. 앱 직송 경로는 영향을 받지 않는다.
+- ⚠️ `node-exporter` 파드가 재시작 774회를 기록하고 있다. 알림 경로와 직접 관계는 없지만 노드 메트릭 결손 가능성이 있어 별도로 봐야 한다.
 
-## 확인된 현황 (2026-08-01)
+## 확인된 현황 (2026-08-03)
 
 | 항목 | 상태 |
 | --- | --- |
 | Alerta / Loki / Alloy / blackbox-exporter 파드 | 모두 Running, 재시작 0회 |
-| `metrics-digest` CronJob | 매시 정각 정상 실행, 직전 회차 전송 성공 |
-| 디스코드 웹훅 | 5개 모두 서로 다른 채널로 확인 |
-| `DISCORD_WEBHOOK_URL_DEV` | 미설정 |
-| `ALERTA_API_KEY` | 미설정 (직송 경로로 대체됨) |
-| `probe_success` 시계열 | 0개 (합성 모니터링 미수집) |
+| `metrics-digest` CronJob | 매시 정각(Asia/Seoul) 정상 실행, 직전 회차 전송 성공 |
+| Alertmanager → Alerta 전달 | 정상. webhook POST가 계속 `201` 로 수신됨 |
+| ArgoCD → 디스코드 배포 알림 | 정상 동작 확인 |
+| 고유 디스코드 웹훅 값 | **4개** (서로 다른 채널). 키 이름은 5종 |
+| `DISCORD_WEBHOOK_URL_DEV` | 키 없음 (운영 채널로 폴백 중) |
+| `ALERTA_API_KEY` | 어디에도 없음 (직송 경로로 대체됨) |
+| `probe_success` 시계열 | 0개. `blackbox-public` 은 스크레이프 대상 목록에 아예 없음 |
+| Alerta 열린 인시던트 | 4건, 모두 `Production` · `warning` |
 
 이 문서 이전의 설계 배경은 [11. 운영 장애 Discord 리포트 솔루션 리서치](../11. 운영 장애 Discord 리포트 솔루션 리서치/index.md)와 [12. k3s 운영 장애 Discord 리포트 설계](../12. k3s 운영 장애 Discord 리포트 설계/index.md)에 있다. 두 문서는 2026-03-29 시점 기록이라 현행 구성과 다른 부분이 있고, 실제 구성은 이 문서를 따른다.
 
