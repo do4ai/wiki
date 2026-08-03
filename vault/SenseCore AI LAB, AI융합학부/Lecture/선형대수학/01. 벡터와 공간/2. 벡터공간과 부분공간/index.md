@@ -232,4 +232,3 @@ $$
 7. $A\mathbf{x}=\mathbf{b}$의 가해성이 열공간과 어떻게 연결되는가?
 
 **정답 요지.** 1. 덧셈 관련(닫힘·교환·결합·항등원·역원)과 스칼라배 관련(닫힘·분배·결합·항등). 2. $\mathbf{0}$ 포함, 덧셈 닫힘, 스칼라배 닫힘. 3. 세 조건 중 하나를 깨는 반례(특히 합이 밖으로 나가는 예). 4. 일차결합은 $\sum c_i\mathbf{v}_i$, span은 그 전체 집합. 5. 영벡터 포함하고 두 연산에 닫혀 있으므로. 6. 열공간은 열의 span=$\{A\mathbf{x}\}$, 영공간은 $A\mathbf{x}=\mathbf{0}$의 해집합. 7. $A\mathbf{x}=\mathbf{b}$가 풀림 $\iff$ $\mathbf{b}\in\operatorname{Col}(A)$.
-</content>
