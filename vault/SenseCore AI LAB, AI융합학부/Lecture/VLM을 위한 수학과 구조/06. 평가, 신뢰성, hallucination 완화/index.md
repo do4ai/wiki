@@ -41,7 +41,7 @@ source_kind: page
 - hallucination과 calibration, faithfulness 문제를 구분해 설명할 수 있다.
 - research metric과 product metric을 동시에 설계하는 관점을 가질 수 있다.
 
-# 문제 해설과 강의 목록
+# 문제집과 강의 목록
 - 이 단계의 연습문제 해설은 맨 아래 해설 페이지에 모아 둡니다.
 
 [26. benchmark, leaderboard, evaluation protocol](26. benchmark, leaderboard, evaluation protocol/index.md)
@@ -49,7 +49,7 @@ source_kind: page
 [28. calibration, uncertainty, abstention](28. calibration, uncertainty, abstention/index.md)
 [29. data filtering, verifier, retrieval grounding](29. data filtering, verifier, retrieval grounding/index.md)
 [30. human evaluation과 product metric](30. human evaluation과 product metric/index.md)
-[문제 해설 - 06. 평가, 신뢰성, hallucination 완화](문제 해설 - 06. 평가, 신뢰성, hallucination 완화/index.md)
+[문제집 - 06. 평가, 신뢰성, hallucination 완화](문제집 - 06. 평가, 신뢰성, hallucination 완화/index.md)
 
 ## Page Tree
 
@@ -58,4 +58,4 @@ source_kind: page
 - [28. calibration, uncertainty, abstention](28. calibration, uncertainty, abstention/index.md)
 - [29. data filtering, verifier, retrieval grounding](29. data filtering, verifier, retrieval grounding/index.md)
 - [30. human evaluation과 product metric](30. human evaluation과 product metric/index.md)
-- [문제 해설 - 06. 평가, 신뢰성, hallucination 완화](문제 해설 - 06. 평가, 신뢰성, hallucination 완화/index.md)
+- [문제집 - 06. 평가, 신뢰성, hallucination 완화](문제집 - 06. 평가, 신뢰성, hallucination 완화/index.md)

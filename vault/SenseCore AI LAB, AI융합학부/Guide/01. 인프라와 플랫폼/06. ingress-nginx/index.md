@@ -6,7 +6,7 @@ title: "06. ingress-nginx"
 클러스터로 들어오는 모든 HTTP(S) 트래픽의 입구(리버스 프록시)다. 각 서비스의 `Ingress` 리소스를 실제 라우팅으로 구현한다.
 
 ## 실제 구성
-- **Helm chart 4.10.1**, 두 클러스터(prod·dev) 모두 배포(sync-wave 0 — 가장 먼저).
+- **Helm chart 4.10.1**, 두 클러스터(prod·dev) 모두 배포(sync-wave 0, 가장 먼저).
 - **노출**: NodePort **30800(HTTP)/30843(HTTPS)** + **hostPort 80/443**(노드에 직접 바인드).
 - **ingressClass**: `nginx` (모든 서비스 Ingress가 이 클래스를 지정).
 - 주요 설정: `proxy-body-size 100m`, `use-forwarded-headers true`, 메트릭+ServiceMonitor(prod) → Grafana `nginx-ingress` 대시보드·`PlatformAppIngress5xxRatioHigh` 알림의 측정원.
@@ -22,5 +22,5 @@ title: "06. ingress-nginx"
 
 ---
 
-> **온보딩 트랙 — 1부 인프라와 플랫폼**
-> 이전: [ArgoCD 사용법 (Manual)](../../../Manual/04. 서버와 배포 작업/ArgoCD 사용법/index.md) · 다음: [Harbor 컨테이너 레지스트리](../07. Harbor 컨테이너 레지스트리/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)
+> **온보딩 트랙 1부. 인프라와 플랫폼**
+> 이전: [ArgoCD 사용법 (Manual)](../../../Manual/04. 서버와 배포 작업/ArgoCD 사용법/index.md) · 다음: [Harbor 컨테이너 레지스트리](../07. Harbor 컨테이너 레지스트리/index.md) · 전체 경로: [시작하기: 신입 온보딩](../../../시작하기/index.md)

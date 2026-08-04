@@ -136,7 +136,7 @@ $$
 | 좌표 복원 | $\mathbf{x}=P_B[\mathbf{x}]_B$ | $B$좌표 → 표준좌표 |
 | 좌표 추출 | $[\mathbf{x}]_B=P_B^{-1}\mathbf{x}$ | 표준좌표 → $B$좌표 |
 | 두 기저 사이 | $P_{C\leftarrow B}=P_C^{-1}P_B$ | 표준을 매개로 |
-| 표현행렬 변환 | $[T]_B=P^{-1}AP$ | 되돌리기–적용–바꾸기 |
+| 표현행렬 변환 | $[T]_B=P^{-1}AP$ | 되돌리기·적용·바꾸기 |
 | 닮음 | $B'=P^{-1}AP$ | 같은 변환, 다른 기저 |
 | 불변량 | $\det,\ \operatorname{tr},\ \operatorname{rank}$, 고유값 | 닮음에서 보존 |
 
@@ -196,4 +196,4 @@ $$
 6. 닮은 행렬이 공유하는 불변량을 말할 수 있는가?
 7. 대각합·행렬식이 닮음에서 보존되는 이유를 설명할 수 있는가?
 
-**정답 요지.** 1. 기저벡터를 열로 세움. 2. 앞은 $B$좌표를 표준으로, 뒤는 표준을 $B$좌표로. 3. $C$의 전이행렬 역과 $B$의 전이행렬의 곱. 4. 되돌리기($P$)–적용($A$)–바꾸기($P^{-1}$)를 합성. 5. 가역 $P$로 $B'=P^{-1}AP$. 6. $\det$, $\operatorname{tr}$, $\operatorname{rank}$, 고유값. 7. $\det(P^{-1}AP)=\det A$, $\operatorname{tr}(P^{-1}AP)=\operatorname{tr}(APP^{-1})=\operatorname{tr}A$.
+**정답 요지.** 1. 기저벡터를 열로 세움. 2. 앞은 $B$좌표를 표준으로, 뒤는 표준을 $B$좌표로. 3. $C$의 전이행렬 역과 $B$의 전이행렬의 곱. 4. 되돌리기($P$)·적용($A$)·바꾸기($P^{-1}$)를 합성. 5. 가역 $P$로 $B'=P^{-1}AP$. 6. $\det$, $\operatorname{tr}$, $\operatorname{rank}$, 고유값. 7. $\det(P^{-1}AP)=\det A$, $\operatorname{tr}(P^{-1}AP)=\operatorname{tr}(APP^{-1})=\operatorname{tr}A$.

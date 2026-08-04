@@ -1,7 +1,7 @@
 ---
 title: "passv 관측과 조치"
 ---
-# passv — 관측과 조치
+# passv 관측과 조치
 
 AI 대화형 커머스 passv의 관측. **현재 prod는 EC2, gitops(K8s `passv`)로 이전 중**이라 환경에 따라 보는 곳이 다르다.
 
@@ -11,7 +11,7 @@ AI 대화형 커머스 passv의 관측. **현재 prod는 EC2, gitops(K8s `passv`
 - **트레이스**: Grafana Explore → Tempo, service `passv-api`(편입 후).
 - **알림 상태**: `alerta.do4ai.com`.
 
-## 발화 실패는 별도 — 앱 레벨 Alerta 알림
+## 발화 실패는 별도: 앱 레벨 Alerta 알림
 챗봇 **발화 실패는 ingress 5xx로 안 잡힌다**(200+오류 본문, LLM/아바타 실패 등). passv 백엔드가 Alerta로 직접 알림(`ChatGenerationFailed`)을 보낸다.
 - 켜기·키 발급·검증: [Manual 06. Alerta 사용법](../../../../Manual/06. 모니터링-로그 작업/Alerta 사용법/index.md), 구현 개요: [passv 서비스 가이드 2. 모니터링·알람·SRE](../../../02. 서비스 운영/passv 서비스 가이드/2. 모니터링·알람·SRE/index.md).
 
@@ -28,5 +28,5 @@ AI 대화형 커머스 passv의 관측. **현재 prod는 EC2, gitops(K8s `passv`
 
 ---
 
-> **온보딩 트랙 — 3부 관측과 SRE**
-> 이전: [do4i 관측과 조치](../do4i 관측과 조치/index.md) · 다음: [palcar 관측과 조치](../palcar 관측과 조치/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../../시작하기/index.md)
+> **온보딩 트랙 3부. 관측과 SRE**
+> 이전: [do4i 관측과 조치](../do4i 관측과 조치/index.md) · 다음: [palcar 관측과 조치](../palcar 관측과 조치/index.md) · 전체 경로: [시작하기: 신입 온보딩](../../../../시작하기/index.md)

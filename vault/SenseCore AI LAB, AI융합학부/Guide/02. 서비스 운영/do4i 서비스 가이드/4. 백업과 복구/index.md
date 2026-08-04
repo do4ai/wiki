@@ -1,7 +1,7 @@
 ---
-title: "do4i — 백업과 복구"
+title: "do4i 백업과 복구"
 ---
-# do4i — 백업과 복구
+# do4i 백업과 복구
 
 do4i의 MySQL을 S3로 정기 백업하는 체계와 복구 절차를 정리한다. do4i MySQL은 단일 레플리카 StatefulSet이라 복제(replication)가 없으므로, 클러스터 밖 S3로 보내는 논리 백업이 유일한 회복 기준선이다.
 

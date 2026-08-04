@@ -41,7 +41,7 @@ source_kind: page
 - decoder-only와 encoder-decoder 접근의 차이를 `vision token 처리 방식` 기준으로 설명할 수 있다.
 - 대표 모델 계열의 장단점을 정보 흐름과 병목 기준으로 비교할 수 있다.
 
-# 문제 해설과 강의 목록
+# 문제집과 강의 목록
 - 이 단계의 연습문제 해설은 맨 아래 해설 페이지에 모아 둡니다.
 
 [11. encoder-decoder, decoder-only, fusion map](11. encoder-decoder, decoder-only, fusion map/index.md)
@@ -49,7 +49,7 @@ source_kind: page
 [13. prefix tuning, visual prompt, frozen LM](13. prefix tuning, visual prompt, frozen LM/index.md)
 [14. token compression, memory, long context](14. token compression, memory, long context/index.md)
 [15. representative VLM families 비교](15. representative VLM families 비교/index.md)
-[문제 해설 - 03. VLM 아키텍처와 정보 흐름](문제 해설 - 03. VLM 아키텍처와 정보 흐름/index.md)
+[문제집 - 03. VLM 아키텍처와 정보 흐름](문제집 - 03. VLM 아키텍처와 정보 흐름/index.md)
 
 ## Page Tree
 
@@ -58,4 +58,4 @@ source_kind: page
 - [13. prefix tuning, visual prompt, frozen LM](13. prefix tuning, visual prompt, frozen LM/index.md)
 - [14. token compression, memory, long context](14. token compression, memory, long context/index.md)
 - [15. representative VLM families 비교](15. representative VLM families 비교/index.md)
-- [문제 해설 - 03. VLM 아키텍처와 정보 흐름](문제 해설 - 03. VLM 아키텍처와 정보 흐름/index.md)
+- [문제집 - 03. VLM 아키텍처와 정보 흐름](문제집 - 03. VLM 아키텍처와 정보 흐름/index.md)

@@ -67,5 +67,5 @@ ArgoCD는 GitOps 선언을 읽고, 클러스터의 실제 상태를 원하는 �
 
 ---
 
-> **온보딩 트랙 — 1부 인프라와 플랫폼**
-> 이전: [GitOps 운영 모델 가이드](../04. GitOps 운영 모델 가이드/index.md) · 다음: [ArgoCD 사용법 (Manual)](../../../Manual/04. 서버와 배포 작업/ArgoCD 사용법/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)
+> **온보딩 트랙 1부. 인프라와 플랫폼**
+> 이전: [GitOps 운영 모델 가이드](../04. GitOps 운영 모델 가이드/index.md) · 다음: [ArgoCD 사용법 (Manual)](../../../Manual/04. 서버와 배포 작업/ArgoCD 사용법/index.md) · 전체 경로: [시작하기: 신입 온보딩](../../../시작하기/index.md)

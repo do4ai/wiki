@@ -68,5 +68,5 @@ Infisical은 시크릿 원천 저장소다.
 
 ---
 
-> **온보딩 트랙 — 1부 인프라와 플랫폼**
-> 이전: [Harbor 사용법 (Manual)](../../../Manual/04. 서버와 배포 작업/Harbor 사용법/index.md) · 다음: [Infisical 시크릿 반영과 권한 변경 절차 (Manual)](../../../Manual/07. 시크릿-권한 작업/Infisical 시크릿 반영과 권한 변경 절차/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)
+> **온보딩 트랙 1부. 인프라와 플랫폼**
+> 이전: [Harbor 사용법 (Manual)](../../../Manual/04. 서버와 배포 작업/Harbor 사용법/index.md) · 다음: [Infisical 시크릿 반영과 권한 변경 절차 (Manual)](../../../Manual/07. 시크릿-권한 작업/Infisical 시크릿 반영과 권한 변경 절차/index.md) · 전체 경로: [시작하기: 신입 온보딩](../../../시작하기/index.md)

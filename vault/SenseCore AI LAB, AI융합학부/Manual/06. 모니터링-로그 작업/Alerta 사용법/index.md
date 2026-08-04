@@ -34,5 +34,5 @@ curl -XPOST https://alerta.do4ai.com/api/alert \
 
 ---
 
-> **온보딩 트랙 — 3부 관측과 SRE**
-> 이전: [Grafana, Loki, Tempo 1차 장애 확인 절차 (Manual)](../Grafana, Loki, Tempo 1차 장애 확인 절차/index.md) · 다음: [모니터링·알림 아키텍처 가이드](../../../Guide/03. 관측과 SRE/06. 모니터링·알림 아키텍처 가이드/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)
+> **온보딩 트랙 3부. 관측과 SRE**
+> 이전: [Grafana, Loki, Tempo 1차 장애 확인 절차 (Manual)](../Grafana, Loki, Tempo 1차 장애 확인 절차/index.md) · 다음: [모니터링·알림 아키텍처 가이드](../../../Guide/03. 관측과 SRE/06. 모니터링·알림 아키텍처 가이드/index.md) · 전체 경로: [시작하기: 신입 온보딩](../../../시작하기/index.md)

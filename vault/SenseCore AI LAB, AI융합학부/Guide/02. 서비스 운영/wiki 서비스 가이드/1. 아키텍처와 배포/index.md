@@ -1,7 +1,7 @@
 ---
 title: "1. 아키텍처와 배포"
 ---
-# wiki — 아키텍처와 배포
+# wiki 아키텍처와 배포
 
 ## 아키텍처 구조
 
@@ -18,14 +18,14 @@ GitHub do4ai/wiki (vault 소스)
 
 ## 배포 구조
 
-- **네임스페이스**: `atlas` (prod 전용 — dev 없음).
+- **네임스페이스**: `atlas` (prod 전용, dev 없음).
 - **GitOps 경로**: `gitops/k8s/apps/atlas`, ArgoCD Application `atlas`(prod 트리).
-- **전략**: replicas 1, `Recreate`(롤링 아님). SQLite 단일 파일이라 HA 불가 — 단일 인스턴스 운영.
+- **전략**: replicas 1, `Recreate`(롤링 아님). SQLite 단일 파일이라 HA 불가, 단일 인스턴스 운영.
 - **도메인**: `wiki.do4ai.com`, 내부 `origin.wiki.do4ai.com`.
 
 > 운영·복구 손절차는 [3. 운영 절차](../3. 운영 절차/index.md).
 
 ---
 
-> **온보딩 트랙 — 2부 서비스 운영**
-> 이전: [wiki 서비스 가이드](../index.md) · 다음: [wiki — 모니터링·알람·SRE](../2. 모니터링·알람·SRE/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../../시작하기/index.md)
+> **온보딩 트랙 2부. 서비스 운영**
+> 이전: [wiki 서비스 가이드](../index.md) · 다음: [wiki 모니터링·알람·SRE](../2. 모니터링·알람·SRE/index.md) · 전체 경로: [시작하기: 신입 온보딩](../../../../시작하기/index.md)

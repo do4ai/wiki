@@ -1,7 +1,7 @@
 ---
 title: "papersens 관측과 조치"
 ---
-# papersens — 관측과 조치
+# papersens 관측과 조치
 
 논문 검사 솔루션 papersens(namespace `papersens`). **메모리가 무겁고 영속 DB가 없다(인메모리)** 는 점을 전제로 본다.
 
@@ -18,7 +18,7 @@ title: "papersens 관측과 조치"
 ## 이 서비스에 걸린 알림 → 조치
 | 알림 | 의미 | 조치 |
 | --- | --- | --- |
-| PlatformContainerOOMKilled(papersens) | 메모리 초과 종료 | 메모리 limit 상향/요청 크기 점검 — **무거운 워크로드라 1순위 주의** |
+| PlatformContainerOOMKilled(papersens) | 메모리 초과 종료 | 메모리 limit 상향과 요청 크기 점검. **무거운 워크로드라 1순위 주의** |
 | PlatformAppIngress5xxRatioHigh(papersens-ingress) | 5xx | 대표·wildcard host 분리 확인 → 앱 로그 |
 | PlatformAppServerErrorRateHigh / LatencyP95High | 에러율·지연 | LLM 외부 호출 병목 여부(스케일아웃 효과 제한적) |
 | PlatformPodCrashLooping / CPUThrottling | 워크로드 이상 | 로그·리소스 |
@@ -31,5 +31,5 @@ title: "papersens 관측과 조치"
 
 ---
 
-> **온보딩 트랙 — 3부 관측과 SRE**
-> 이전: [palcar 관측과 조치](../palcar 관측과 조치/index.md) · 다음: [wiki 관측과 조치](../wiki 관측과 조치/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../../시작하기/index.md)
+> **온보딩 트랙 3부. 관측과 SRE**
+> 이전: [palcar 관측과 조치](../palcar 관측과 조치/index.md) · 다음: [wiki 관측과 조치](../wiki 관측과 조치/index.md) · 전체 경로: [시작하기: 신입 온보딩](../../../../시작하기/index.md)

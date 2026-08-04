@@ -25,7 +25,7 @@ Prometheus ──(remote-write 수신)── Tempo 스팬 메트릭
 ## Grafana
 - **역할**: 대시보드·시각화. 메트릭(Prometheus)과 트레이스(Tempo)를 한곳에서 본다.
 - **접속**: `grafana.do4ai.com` (NodePort **30300**). 영속 스토리지 10Gi.
-- **계정**: `admin / Admin12!` — ⚠️ **values.yaml 평문 기본값. 로테이션 대상**([개선 과제]). 
+- **계정**: `admin / Admin12!`. ⚠️ **values.yaml 평문 기본값. 로테이션 대상**([개선 과제]). 
 - **데이터소스**: `Prometheus`(기본), `Tempo`(`http://tempo.observability.svc.cluster.local:3200`, traces→metrics 연동).
 - **프로비저닝 대시보드**(코드로 관리):
   | 대시보드 | 출처 | 용도 |
@@ -38,7 +38,7 @@ Prometheus ──(remote-write 수신)── Tempo 스팬 메트릭
   | platform-api-apm | 커스텀(Tempo 스팬 메트릭) | 요청율·에러율·p95(서비스 템플릿) |
 
 ## 배포·연결
-- **배포**: ArgoCD `monitoring` 앱이 **멀티소스**로 설치 — ① Helm 차트(kube-prometheus-stack 58.7.2) ② `k8s/infra/monitoring/values.yaml` ③ `k8s/infra/monitoring/manifests/`(Alerta·알림 규칙·blackbox 등 kustomize).
+- **배포**: ArgoCD `monitoring` 앱이 **멀티소스**로 설치한다. ① Helm 차트(kube-prometheus-stack 58.7.2) ② `k8s/infra/monitoring/values.yaml` ③ `k8s/infra/monitoring/manifests/`(Alerta·알림 규칙·blackbox 등 kustomize).
 - **dev**: `values-dev.yaml` + `manifests-dev/`.
 
 ## 1차 확인 포인트
@@ -48,5 +48,5 @@ Prometheus ──(remote-write 수신)── Tempo 스팬 메트릭
 
 ---
 
-> **온보딩 트랙 — 3부 관측과 SRE**
-> 이전: [Observability 운영 가이드](../01. Observability 운영 가이드/index.md) · 다음: [알림 — Alertmanager와 Alerta](../03. 알림 - Alertmanager와 Alerta/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)
+> **온보딩 트랙 3부. 관측과 SRE**
+> 이전: [Observability 운영 가이드](../01. Observability 운영 가이드/index.md) · 다음: [알림 - Alertmanager와 Alerta](../03. 알림 - Alertmanager와 Alerta/index.md) · 전체 경로: [시작하기: 신입 온보딩](../../../시작하기/index.md)

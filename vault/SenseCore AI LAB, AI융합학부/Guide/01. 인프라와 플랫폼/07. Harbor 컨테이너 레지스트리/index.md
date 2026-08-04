@@ -8,7 +8,7 @@ title: "07. Harbor 컨테이너 레지스트리"
 ## 실제 구성
 - **Helm chart 1.18.3**, **prod 클러스터에만** 배포.
 - **접속**: `harbor.do4i.com` (⚠️ `.do4i.com` 도메인, 현재 HTTP/ingress 노출).
-- **프로젝트**: `do4ai` — 이미지 경로 예 `harbor.do4i.com/do4ai/do4i-api`, `.../palcar-api`, `.../passv-api`.
+- **프로젝트**: `do4ai`, 이미지 경로 예 `harbor.do4i.com/do4ai/do4i-api`, `.../palcar-api`, `.../passv-api`.
 - **스토리지**: `local-path`(registry 20Gi, db 5Gi, redis 2Gi, jobLog 2Gi, trivy 5Gi).
 - **자격증명**: Infisical `/platform/harbor-credentials` → `harbor-credentials`(InfisicalSecret). 각 앱은 `harbor-credentials`(또는 `harbor-registry`) imagePullSecret으로 pull.
 - 참고: papersens·passv(prod)는 일부 **AWS ECR**도 사용([papersens 서비스 가이드](../../02. 서비스 운영/papersens 서비스 가이드/index.md)·[passv 서비스 가이드](../../02. 서비스 운영/passv 서비스 가이드/index.md) 참고).
@@ -22,5 +22,5 @@ title: "07. Harbor 컨테이너 레지스트리"
 
 ---
 
-> **온보딩 트랙 — 1부 인프라와 플랫폼**
-> 이전: [ingress-nginx](../06. ingress-nginx/index.md) · 다음: [Harbor 사용법 (Manual)](../../../Manual/04. 서버와 배포 작업/Harbor 사용법/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)
+> **온보딩 트랙 1부. 인프라와 플랫폼**
+> 이전: [ingress-nginx](../06. ingress-nginx/index.md) · 다음: [Harbor 사용법 (Manual)](../../../Manual/04. 서버와 배포 작업/Harbor 사용법/index.md) · 전체 경로: [시작하기: 신입 온보딩](../../../시작하기/index.md)

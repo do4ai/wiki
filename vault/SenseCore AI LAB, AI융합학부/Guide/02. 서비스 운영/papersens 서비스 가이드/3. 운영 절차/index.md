@@ -1,7 +1,7 @@
 ---
 title: "3. 운영 절차"
 ---
-# papersens — 운영 절차 (배포 이상 대응)
+# papersens 운영 절차 (배포 이상 대응)
 
 `papersens`가 배포 후 정상 수렴하지 않거나 대표 도메인 접근이 비정상일 때의 절차다. 먼저 [서비스 공통 1차 대응 절차](../../서비스 공통 1차 대응 절차/index.md)를 적용한 뒤 papersens 특화(단일 deployment + wildcard host)를 본다.
 
@@ -45,5 +45,5 @@ sudo kubectl get svc -n papersens
 
 ---
 
-> **온보딩 트랙 — 2부 서비스 운영**
-> 이전: [papersens — 모니터링·알람·SRE](../2. 모니터링·알람·SRE/index.md) · 다음: [wiki 서비스 가이드](../../wiki 서비스 가이드/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../../시작하기/index.md)
+> **온보딩 트랙 2부. 서비스 운영**
+> 이전: [papersens 모니터링·알람·SRE](../2. 모니터링·알람·SRE/index.md) · 다음: [wiki 서비스 가이드](../../wiki 서비스 가이드/index.md) · 전체 경로: [시작하기: 신입 온보딩](../../../../시작하기/index.md)
