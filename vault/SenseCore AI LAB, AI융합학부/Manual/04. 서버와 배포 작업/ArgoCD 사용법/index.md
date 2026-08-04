@@ -36,5 +36,5 @@ sudo kubectl describe application <앱> -n argocd
 
 ---
 
-> **온보딩 트랙 — 1부 인프라와 플랫폼**
-> 이전: [ArgoCD 운영 흐름 가이드](../../../Guide/01. 인프라와 플랫폼/05. ArgoCD 운영 흐름 가이드/index.md) · 다음: [ingress-nginx](../../../Guide/01. 인프라와 플랫폼/06. ingress-nginx/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)
+> **온보딩 트랙 1부. 인프라와 플랫폼**
+> 이전: [ArgoCD 운영 흐름 가이드](../../../Guide/01. 인프라와 플랫폼/05. ArgoCD 운영 흐름 가이드/index.md) · 다음: [ingress-nginx](../../../Guide/01. 인프라와 플랫폼/06. ingress-nginx/index.md) · 전체 경로: [시작하기: 신입 온보딩](../../../시작하기/index.md)

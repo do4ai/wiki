@@ -8,7 +8,7 @@ notion_icon: "🌒"
 ---
 # 🚀 시작하기 (신입 온보딩)
 새로 합류하면 여기서 출발한다. 위키 전체 지도와, 운영 문서를 순서대로 잇는 온보딩 트랙(꼬리물기 경로)이 있다.
-**[시작하기 — 신입 온보딩](시작하기/index.md)**
+**[시작하기: 신입 온보딩](시작하기/index.md)**
 
 # ⭐ Vision
 [SensCore AI Lab](https://senscore.github.io/index.html#home)

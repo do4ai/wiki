@@ -136,5 +136,5 @@ sudo kubectl get deploy,sts,svc,ing -n palcar
 
 ---
 
-> **온보딩 트랙 — 1부 인프라와 플랫폼**
-> 이전: [k3s GitOps 운영 클러스터 초보자 가이드](../../../Guide/01. 인프라와 플랫폼/03. k3s GitOps 운영 클러스터 초보자 가이드/index.md) · 다음: [GitOps 운영 모델 가이드](../../../Guide/01. 인프라와 플랫폼/04. GitOps 운영 모델 가이드/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)
+> **온보딩 트랙 1부. 인프라와 플랫폼**
+> 이전: [k3s GitOps 운영 클러스터 초보자 가이드](../../../Guide/01. 인프라와 플랫폼/03. k3s GitOps 운영 클러스터 초보자 가이드/index.md) · 다음: [GitOps 운영 모델 가이드](../../../Guide/01. 인프라와 플랫폼/04. GitOps 운영 모델 가이드/index.md) · 전체 경로: [시작하기: 신입 온보딩](../../../시작하기/index.md)

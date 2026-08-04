@@ -10,7 +10,7 @@ title: "07. 코드 규칙"
 - 신규/변경 코드는 **타입을 명시**한다(Python type hints, TS strict).
 - 네이밍: Python `snake_case`, React 컴포넌트 `PascalCase`, TS 변수·함수 `camelCase`.
 - 목업·placeholder 금지(실기능 구현). 미사용 import/변수는 제거한다.
-- 문서·계획·검증 산출물은 `sdd/` 하위에만 둔다(top-level `docs/` 금지) — do4i·palcar·passv 공통 거버넌스.
+- 문서·계획·검증 산출물은 `sdd/` 하위에만 둔다(top-level `docs/` 금지). do4i·palcar·passv 공통 거버넌스.
 
 ## 백엔드 (Python · FastAPI)
 
@@ -56,5 +56,5 @@ title: "07. 코드 규칙"
 
 ---
 
-> **온보딩 트랙 — 4부 운영 변경과 컨벤션**
-> 이전: [관측, 알림, SRE](../06. 관측, 알림, SRE/index.md) · 다음: 없음 — 트랙 끝. [시작하기 — 신입 온보딩](../../시작하기/index.md)의 "트랙을 마친 뒤"를 본다 · 전체 경로: [시작하기 — 신입 온보딩](../../시작하기/index.md)
+> **온보딩 트랙 4부. 운영 변경과 컨벤션**
+> 이전: [관측, 알림, SRE](../06. 관측, 알림, SRE/index.md) · 다음: 없음(트랙 끝). [시작하기: 신입 온보딩](../../시작하기/index.md)의 "트랙을 마친 뒤"를 본다 · 전체 경로: [시작하기: 신입 온보딩](../../시작하기/index.md)

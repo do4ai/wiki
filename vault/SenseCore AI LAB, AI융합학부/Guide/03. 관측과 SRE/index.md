@@ -19,7 +19,7 @@ parent_notion_id: 330e313f58b9802b9cedda8dcbc5d112
 | **Loki** | Grafana Explore | 로그 조회(`{namespace="<ns>"}`) |
 | **Alerta** | `alerta.do4ai.com` | 인시던트 허브(알림 집계·상태) → Discord |
 | **Tempo** | Grafana 내 데이터소스(Explore) | 분산 트레이스(요청 구간별 지연·오류) |
-| **(ArgoCD)** | `argocd.do4ai.com` | 배포 상태(Sync/Health) — [01. 인프라](../01. 인프라와 플랫폼/05. ArgoCD 운영 흐름 가이드/index.md) |
+| **(ArgoCD)** | `argocd.do4ai.com` | 배포 상태(Sync/Health). [01. 인프라](../01. 인프라와 플랫폼/05. ArgoCD 운영 흐름 가이드/index.md) |
 | **(Headlamp)** | `headlamp.do4ai.com` | 리소스/이벤트/로그 빠른 점검 |
 
 > ⚠️ 일부 기본 계정이 평문(`Admin12!`)이고 Loki/Tempo/Alerta는 replica 1(SPOF). 개선 과제는 각 문서에 ⚠️로 표시.
@@ -60,5 +60,5 @@ parent_notion_id: 330e313f58b9802b9cedda8dcbc5d112
 
 ---
 
-> **온보딩 트랙 — 3부 관측과 SRE**
-> 이전: [wiki — 운영 절차](../02. 서비스 운영/wiki 서비스 가이드/3. 운영 절차/index.md) · 다음: [Observability 운영 가이드](01. Observability 운영 가이드/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../시작하기/index.md)
+> **온보딩 트랙 3부. 관측과 SRE**
+> 이전: [wiki 운영 절차](../02. 서비스 운영/wiki 서비스 가이드/3. 운영 절차/index.md) · 다음: [Observability 운영 가이드](01. Observability 운영 가이드/index.md) · 전체 경로: [시작하기: 신입 온보딩](../../시작하기/index.md)

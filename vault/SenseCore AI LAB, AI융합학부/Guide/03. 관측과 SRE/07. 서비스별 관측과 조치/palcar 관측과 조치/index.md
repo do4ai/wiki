@@ -1,7 +1,7 @@
 ---
 title: "palcar 관측과 조치"
 ---
-# palcar — 관측과 조치
+# palcar 관측과 조치
 
 자동차 경매 워크플로 palcar(namespace `palcar`).
 
@@ -29,5 +29,5 @@ title: "palcar 관측과 조치"
 
 ---
 
-> **온보딩 트랙 — 3부 관측과 SRE**
-> 이전: [passv 관측과 조치](../passv 관측과 조치/index.md) · 다음: [papersens 관측과 조치](../papersens 관측과 조치/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../../시작하기/index.md)
+> **온보딩 트랙 3부. 관측과 SRE**
+> 이전: [passv 관측과 조치](../passv 관측과 조치/index.md) · 다음: [papersens 관측과 조치](../papersens 관측과 조치/index.md) · 전체 경로: [시작하기: 신입 온보딩](../../../../시작하기/index.md)

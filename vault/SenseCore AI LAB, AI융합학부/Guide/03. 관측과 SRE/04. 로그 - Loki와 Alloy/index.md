@@ -94,5 +94,5 @@ Loki를 양 클러스터에서 검증한 뒤 단계를 나눠 은퇴시켰다. �
 
 ---
 
-> **온보딩 트랙 — 3부 관측과 SRE**
-> 이전: [알림 — Alertmanager와 Alerta](../03. 알림 - Alertmanager와 Alerta/index.md) · 다음: [트레이싱 — OpenTelemetry와 Tempo](../05. 트레이싱 - OpenTelemetry와 Tempo/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)
+> **온보딩 트랙 3부. 관측과 SRE**
+> 이전: [알림 - Alertmanager와 Alerta](../03. 알림 - Alertmanager와 Alerta/index.md) · 다음: [트레이싱 - OpenTelemetry와 Tempo](../05. 트레이싱 - OpenTelemetry와 Tempo/index.md) · 전체 경로: [시작하기: 신입 온보딩](../../../시작하기/index.md)

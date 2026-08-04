@@ -1,7 +1,7 @@
 ---
 title: "1. 아키텍처와 배포"
 ---
-# do4i — 아키텍처와 배포
+# do4i 아키텍처와 배포
 
 ## 아키텍처 구조
 
@@ -19,21 +19,21 @@ title: "1. 아키텍처와 배포"
       └─ avatar-livekit-worker (LiveKit + Simli, HPA)
 ```
 
-### 프론트엔드 (3종, K8s 아님 — S3/CloudFront)
-- `client/agents` — 사용자 앱(React 19 + Vite, LiveKit/Simli 클라이언트). `agents.do4i.com`
-- `client/admin` — 운영 대시보드(React 19 + Vite + Tailwind). `admin.do4i.com`
-- `client/landing` — 소개 페이지(React 18 + Vite). `do4i.com`
+### 프론트엔드 (3종, K8s 아님, S3/CloudFront)
+- `client/agents`: 사용자 앱(React 19 + Vite, LiveKit/Simli 클라이언트). `agents.do4i.com`
+- `client/admin`: 운영 대시보드(React 19 + Vite + Tailwind). `admin.do4i.com`
+- `client/landing`: 소개 페이지(React 18 + Vite). `do4i.com`
 - 빌드 산출물(dist)을 **AWS S3 + CloudFront**로 배포. `/api*`만 CloudFront가 ingress(백엔드)로 포워딩.
 
 ### 백엔드
 - **Python 3.12 + FastAPI**(Uvicorn) 모놀리스, DDD 컨텍스트(agents/auth/avatar/chatbot/payments/user/organizations/sellers/voice 등).
 - 포트 8000, 헬스 `/api/health`, 모든 라우트 `/api/*` 프리픽스. HTTP + WebSocket(아바타/채팅/STT/음성).
 - ORM **SQLModel(SQLAlchemy 2.0)** + 마이그레이션 **Alembic**.
-- **아바타 워커**: `avatar-livekit-worker`(API와 동일 이미지, `avatar_agent` 실행) — LiveKit 실시간 영상 + Simli 렌더링, 메모리 기준 HPA(10~100).
+- **아바타 워커**: `avatar-livekit-worker`(API와 동일 이미지, `avatar_agent` 실행). LiveKit 실시간 영상 + Simli 렌더링, 메모리 기준 HPA(10~100).
 
 ### 데이터
 - **MySQL 8.0** StatefulSet(DB명 `do4i`). 개발 폴백은 SQLite.
-- **Chroma 벡터DB**(RAG) — `api-storage` PVC(`/app/runtime/storage`)에 로컬 저장. 업로드 파일 동거.
+- **Chroma 벡터DB**(RAG)는 `api-storage` PVC(`/app/runtime/storage`)에 로컬 저장. 업로드 파일 동거.
 
 ### 외부 의존성
 - OpenAI(LLM, realtime/TTS), LiveKit + Simli(아바타), Google OAuth, **Twilio(전화 인증)**, **Toss(결제)**, **MinIO(S3 호환 파일 저장)**.
@@ -52,5 +52,5 @@ title: "1. 아키텍처와 배포"
 
 ---
 
-> **온보딩 트랙 — 2부 서비스 운영**
-> 이전: [do4i 서비스 가이드](../index.md) · 다음: [do4i — 모니터링·알람·SRE](../2. 모니터링·알람·SRE/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../../시작하기/index.md)
+> **온보딩 트랙 2부. 서비스 운영**
+> 이전: [do4i 서비스 가이드](../index.md) · 다음: [do4i 모니터링·알람·SRE](../2. 모니터링·알람·SRE/index.md) · 전체 경로: [시작하기: 신입 온보딩](../../../../시작하기/index.md)

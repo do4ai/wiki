@@ -1,7 +1,7 @@
 ---
 title: "1. 아키텍처와 배포"
 ---
-# passv — 아키텍처와 배포
+# passv 아키텍처와 배포
 
 ## 아키텍처 구조
 
@@ -17,7 +17,7 @@ landing/platform/admin (React, S3+CloudFront)
 ```
 
 - **API**: Python 3.12 FastAPI 모놀리스(DDD 컨텍스트: auth/user/organizations/products/sellers/payments/chatbot/avatar/voice 등). 포트 8000, 헬스 `/api/health`.
-- **프론트 4종**: landing/platform/admin/mobile(React+Vite). **S3+CloudFront 정적 호스팅** — K8s 대상이 아니다.
+- **프론트 4종**: landing/platform/admin/mobile(React+Vite). **S3+CloudFront 정적 호스팅**: K8s 대상이 아니다.
 - **DB**: MySQL 8.0, DB명 `passv`.
 - **외부 의존성**: OpenAI, LiveKit/Simli(아바타), Minimax(TTS), Toss(결제), Google/Kakao OAuth, KMC/Work24(본인확인).
 
@@ -34,5 +34,5 @@ landing/platform/admin (React, S3+CloudFront)
 
 ---
 
-> **온보딩 트랙 — 2부 서비스 운영**
-> 이전: [passv 서비스 가이드](../index.md) · 다음: [passv — 모니터링·알람·SRE](../2. 모니터링·알람·SRE/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../../시작하기/index.md)
+> **온보딩 트랙 2부. 서비스 운영**
+> 이전: [passv 서비스 가이드](../index.md) · 다음: [passv 모니터링·알람·SRE](../2. 모니터링·알람·SRE/index.md) · 전체 경로: [시작하기: 신입 온보딩](../../../../시작하기/index.md)

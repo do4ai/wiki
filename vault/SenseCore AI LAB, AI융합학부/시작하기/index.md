@@ -2,7 +2,7 @@
 title: "시작하기 (신입 온보딩)"
 ---
 
-# 🚀 시작하기 — 신입 온보딩
+# 🚀 시작하기: 신입 온보딩
 
 이 문서는 SCAI LAB(데이터센스)에 새로 합류한 사람이 **여기서 출발해** 위키 전체와 개발·운영 인프라를 막힘 없이 따라가도록 만든 **최상위 입구**다. (Guide·Manual 등 다른 영역과 나란히, 가장 먼저 본다.)
 
@@ -16,7 +16,7 @@ title: "시작하기 (신입 온보딩)"
 
 | 영역 | 무엇을 담나 | 들어가기 |
 | --- | --- | --- |
-| 🚀 **시작하기** | 신입 온보딩·온보딩 트랙 (지금 이 문서) | — |
+| 🚀 **시작하기** | 신입 온보딩·온보딩 트랙 (지금 이 문서) | 없음 |
 | 📖 **Guide** | 시스템·서비스를 **이해**하는 가이드 (개념 + 실제 우리 설정) | [Guide](../Guide/index.md) |
 | 　├ 01. 인프라와 플랫폼 | 기반: k3s·GitOps·ArgoCD·ingress·Harbor·Infisical·Headlamp | [01](../Guide/01. 인프라와 플랫폼/index.md) |
 | 　├ 02. 서비스 운영 | 서비스별(do4i·passv·palcar·papersens·wiki) 아키텍처·운영 | [02](../Guide/02. 서비스 운영/index.md) |
@@ -83,20 +83,20 @@ title: "시작하기 (신입 온보딩)"
 
 ---
 
-## 3. 온보딩 트랙 — 순서대로 읽으면 운영 전반이 잡힌다
+## 3. 온보딩 트랙: 순서대로 읽으면 운영 전반이 잡힌다
 
 운영 문서는 **꼬리물기 체인**으로 이어져 있다. 트랙에 속한 문서는 모두 하단에 `온보딩 트랙` 내비게이션(이전·다음·전체 경로)이 있어서, 1부 첫 문서에서 출발해 "다음"만 따라가면 **인프라 → 서비스 → 관측·장애 대응 → 운영 변경·규칙** 순서로 운영 전반을 한 바퀴 돈다. 전체는 4부 65개 문서이고, 개념(Guide)을 읽은 직후 해당 도구의 손절차(Manual)를 실습하도록 배치했다.
 
-**1부 — 인프라와 플랫폼 (14)** : 서비스가 올라가는 기반. 클러스터와 GitOps 배포 모델, 진입점·레지스트리·시크릿·대시보드.
+**1부. 인프라와 플랫폼 (14)**: 서비스가 올라가는 기반. 클러스터와 GitOps 배포 모델, 진입점·레지스트리·시크릿·대시보드.
 
 1. [01. 인프라와 플랫폼 (섹션 지도)](../Guide/01. 인프라와 플랫폼/index.md)
 2. [Kubernetes 기본 구조 가이드](../Guide/01. 인프라와 플랫폼/01. Kubernetes 기본 구조 가이드/index.md)
 3. [k3s 운영 구조 가이드](../Guide/01. 인프라와 플랫폼/02. k3s 운영 구조 가이드/index.md)
-4. [k3s GitOps 운영 클러스터 초보자 가이드](../Guide/01. 인프라와 플랫폼/03. k3s GitOps 운영 클러스터 초보자 가이드/index.md) — **신입 핵심**
-5. [k3s 클러스터 접속과 GitOps 배포 점검 (Manual)](../Manual/04. 서버와 배포 작업/k3s 클러스터 접속과 GitOps 배포 점검/index.md) — 첫 실습
+4. [k3s GitOps 운영 클러스터 초보자 가이드](../Guide/01. 인프라와 플랫폼/03. k3s GitOps 운영 클러스터 초보자 가이드/index.md): **신입 핵심**
+5. [k3s 클러스터 접속과 GitOps 배포 점검 (Manual)](../Manual/04. 서버와 배포 작업/k3s 클러스터 접속과 GitOps 배포 점검/index.md): 첫 실습
 6. [GitOps 운영 모델 가이드](../Guide/01. 인프라와 플랫폼/04. GitOps 운영 모델 가이드/index.md)
 7. [ArgoCD 운영 흐름 가이드](../Guide/01. 인프라와 플랫폼/05. ArgoCD 운영 흐름 가이드/index.md)
-8. [ArgoCD 사용법 (Manual)](../Manual/04. 서버와 배포 작업/ArgoCD 사용법/index.md) — `argocd.do4ai.com`을 직접 열어 본다
+8. [ArgoCD 사용법 (Manual)](../Manual/04. 서버와 배포 작업/ArgoCD 사용법/index.md): `argocd.do4ai.com`을 직접 열어 본다
 9. [ingress-nginx](../Guide/01. 인프라와 플랫폼/06. ingress-nginx/index.md)
 10. [Harbor 컨테이너 레지스트리](../Guide/01. 인프라와 플랫폼/07. Harbor 컨테이너 레지스트리/index.md)
 11. [Harbor 사용법 (Manual)](../Manual/04. 서버와 배포 작업/Harbor 사용법/index.md)
@@ -106,10 +106,10 @@ title: "시작하기 (신입 온보딩)"
 
 > 1부를 마친 기준: "배포는 gitops 레포가 기준이고 ArgoCD가 수렴시킨다"를 말로 설명할 수 있고, 클러스터에 직접 접속해 앱 상태를 확인할 수 있다.
 
-**2부 — 서비스 운영 (22)** : 우리가 무엇을 운영하는지. 서비스 카탈로그와 공통 1차 대응, 서비스별 아키텍처·모니터링·운영 절차.
+**2부. 서비스 운영 (22)**: 우리가 무엇을 운영하는지. 서비스 카탈로그와 공통 1차 대응, 서비스별 아키텍처·모니터링·운영 절차.
 
 1. [02. 서비스 운영 (서비스 카탈로그)](../Guide/02. 서비스 운영/index.md)
-2. [서비스 공통 1차 대응 절차](../Guide/02. 서비스 운영/서비스 공통 1차 대응 절차/index.md) — **장애 대응의 뼈대**
+2. [서비스 공통 1차 대응 절차](../Guide/02. 서비스 운영/서비스 공통 1차 대응 절차/index.md): **장애 대응의 뼈대**
 3. [do4i 서비스 가이드](../Guide/02. 서비스 운영/do4i 서비스 가이드/index.md) → 아키텍처와 배포 → 모니터링·알람·SRE → 운영 절차
 4. [passv 서비스 가이드](../Guide/02. 서비스 운영/passv 서비스 가이드/index.md) → 같은 3종
 5. [palcar 서비스 가이드](../Guide/02. 서비스 운영/palcar 서비스 가이드/index.md) → 같은 3종
@@ -118,15 +118,15 @@ title: "시작하기 (신입 온보딩)"
 
 > 담당 서비스가 정해져 있으면 그 서비스의 3종을 먼저 정독하고, 나머지 서비스는 카탈로그 수준으로 훑은 뒤 트랙을 계속 따라가도 된다. 체인은 do4i → passv → palcar → papersens → wiki 순서로 이어진다.
 
-**3부 — 관측과 SRE (18)** : 장애를 어떻게 발견하고 대응하는지. 메트릭·알림·로그·트레이싱, 서비스별 조치, SLO와 인시던트 대응.
+**3부. 관측과 SRE (18)**: 장애를 어떻게 발견하고 대응하는지. 메트릭·알림·로그·트레이싱, 서비스별 조치, SLO와 인시던트 대응.
 
 1. [03. 관측과 SRE (섹션 지도)](../Guide/03. 관측과 SRE/index.md)
 2. [Observability 운영 가이드](../Guide/03. 관측과 SRE/01. Observability 운영 가이드/index.md)
-3. [메트릭 — Prometheus와 Grafana](../Guide/03. 관측과 SRE/02. 메트릭 - Prometheus와 Grafana/index.md)
-4. [알림 — Alertmanager와 Alerta](../Guide/03. 관측과 SRE/03. 알림 - Alertmanager와 Alerta/index.md)
-5. [로그 — Loki와 Alloy](../Guide/03. 관측과 SRE/04. 로그 - Loki와 Alloy/index.md)
-6. [트레이싱 — OpenTelemetry와 Tempo](../Guide/03. 관측과 SRE/05. 트레이싱 - OpenTelemetry와 Tempo/index.md)
-7. [Grafana, Loki, Tempo 1차 장애 확인 절차 (Manual)](../Manual/06. 모니터링-로그 작업/Grafana, Loki, Tempo 1차 장애 확인 절차/index.md) — 실습: 서비스 하나를 골라 직접 상태 확인
+3. [메트릭 - Prometheus와 Grafana](../Guide/03. 관측과 SRE/02. 메트릭 - Prometheus와 Grafana/index.md)
+4. [알림 - Alertmanager와 Alerta](../Guide/03. 관측과 SRE/03. 알림 - Alertmanager와 Alerta/index.md)
+5. [로그 - Loki와 Alloy](../Guide/03. 관측과 SRE/04. 로그 - Loki와 Alloy/index.md)
+6. [트레이싱 - OpenTelemetry와 Tempo](../Guide/03. 관측과 SRE/05. 트레이싱 - OpenTelemetry와 Tempo/index.md)
+7. [Grafana, Loki, Tempo 1차 장애 확인 절차 (Manual)](../Manual/06. 모니터링-로그 작업/Grafana, Loki, Tempo 1차 장애 확인 절차/index.md). 실습으로 서비스 하나를 골라 직접 상태 확인
 8. [Alerta 사용법 (Manual)](../Manual/06. 모니터링-로그 작업/Alerta 사용법/index.md)
 9. [모니터링·알림 아키텍처 가이드](../Guide/03. 관측과 SRE/06. 모니터링·알림 아키텍처 가이드/index.md)
 10. [서비스별 관측과 조치](../Guide/03. 관측과 SRE/07. 서비스별 관측과 조치/index.md) → do4i·passv·palcar·papersens·wiki 5종
@@ -136,7 +136,7 @@ title: "시작하기 (신입 온보딩)"
 
 > 3부를 마친 기준: 알림이 오면 어느 대시보드에서 무엇을 확인하고, 언제 롤백하고 언제 에스컬레이션하는지 설명할 수 있다.
 
-**4부 — 운영 변경과 컨벤션 (11)** : 실제 변경 작업을 안전하게 하는 법과 팀 규칙.
+**4부. 운영 변경과 컨벤션 (11)**: 실제 변경 작업을 안전하게 하는 법과 팀 규칙.
 
 1. [Ingress, 도메인, 이미지, 환경 변수 변경 절차 (Manual)](../Manual/05. 운영 변경 작업/Ingress, 도메인, 이미지, 환경 변수 변경 절차/index.md)
 2. [구글 로그인 설정 (Manual)](../Manual/03. 외부 로그인 설정/구글로그인/index.md) · [카카오 로그인 설정 (Manual)](../Manual/03. 외부 로그인 설정/카카오로그인/index.md)
@@ -144,7 +144,7 @@ title: "시작하기 (신입 온보딩)"
 
 **권장 속도**: 1주차 = 1부 / 2주차 = 2부 + 3부 1~8 / 3주차 = 3부 나머지 + 4부. 과거 인시던트 1건을 Alerta에서 찾아 선배와 함께 리뷰하면 3부 이해가 빨라진다.
 
-**트랙 밖 참고 문서**: 다음은 체인에 넣지 않는다 — [Guide 03의 11·12(Discord 리포트 리서치/설계)](../Guide/03. 관측과 SRE/11. 운영 장애 Discord 리포트 솔루션 리서치/index.md)는 운영 가이드가 아니라 설계 배경 문서, [passv gitops 이전·컷오버 점검](../Manual/04. 서버와 배포 작업/passv gitops 이전·컷오버 점검/index.md)은 이전 작업 전용, [Manual 01(위키 관리 규칙)](../Manual/01. SCAI LAB Manual 사용법/index.md)·[Manual 02(계정 발급과 회수)](../Manual/02. 계정 발급과 회수/index.md)는 필요할 때 찾아 본다.
+**트랙 밖 참고 문서**: 다음은 체인에 넣지 않는다. [Guide 03의 11·12(Discord 리포트 리서치/설계)](../Guide/03. 관측과 SRE/11. 운영 장애 Discord 리포트 솔루션 리서치/index.md)는 운영 가이드가 아니라 설계 배경 문서, [passv gitops 이전·컷오버 점검](../Manual/04. 서버와 배포 작업/passv gitops 이전·컷오버 점검/index.md)은 이전 작업 전용, [Manual 01(위키 관리 규칙)](../Manual/01. SCAI LAB Manual 사용법/index.md)·[Manual 02(계정 발급과 회수)](../Manual/02. 계정 발급과 회수/index.md)는 필요할 때 찾아 본다.
 
 ### 트랙을 마친 뒤
 

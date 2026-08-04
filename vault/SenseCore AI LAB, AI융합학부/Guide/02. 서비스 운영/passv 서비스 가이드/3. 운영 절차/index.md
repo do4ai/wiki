@@ -1,7 +1,7 @@
 ---
 title: "3. 운영 절차"
 ---
-# passv — 운영 절차 (배포 이상 대응)
+# passv 운영 절차 (배포 이상 대응)
 
 `passv`는 현재 prod 정본이 **EC2(docker-compose) + S3/CloudFront**이고 중앙 gitops(K8s)로 **이전 중**이라, 환경에 따라 보는 곳이 다르다. 먼저 [서비스 공통 1차 대응 절차](../../서비스 공통 1차 대응 절차/index.md)를 적용한다.
 
@@ -45,5 +45,5 @@ curl -f http://localhost:8000/api/health
 
 ---
 
-> **온보딩 트랙 — 2부 서비스 운영**
-> 이전: [passv — 모니터링·알람·SRE](../2. 모니터링·알람·SRE/index.md) · 다음: [palcar 서비스 가이드](../../palcar 서비스 가이드/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../../시작하기/index.md)
+> **온보딩 트랙 2부. 서비스 운영**
+> 이전: [passv 모니터링·알람·SRE](../2. 모니터링·알람·SRE/index.md) · 다음: [palcar 서비스 가이드](../../palcar 서비스 가이드/index.md) · 전체 경로: [시작하기: 신입 온보딩](../../../../시작하기/index.md)

@@ -49,9 +49,9 @@ title: "모니터링·알림 아키텍처 가이드"
 
 ## 접속 지점
 
-- Grafana: `grafana.do4ai.com`(NodePort 30300) — 대시보드.
+- Grafana: `grafana.do4ai.com`(NodePort 30300). 대시보드.
 - 로그: `grafana.do4ai.com` Explore(데이터소스 Loki).
-- Alerta: `alerta.do4ai.com`(`monitoring` 네임스페이스) — 인시던트 허브.
+- Alerta: `alerta.do4ai.com`(`monitoring` 네임스페이스). 인시던트 허브.
 - Discord: 운영 알림 채널(`TODO 확정 필요`: 온콜/에스컬레이션 채널 분리).
 
 ## 이 문서와 하위 문서의 경계
@@ -63,5 +63,5 @@ title: "모니터링·알림 아키텍처 가이드"
 
 ---
 
-> **온보딩 트랙 — 3부 관측과 SRE**
-> 이전: [Alerta 사용법 (Manual)](../../../Manual/06. 모니터링-로그 작업/Alerta 사용법/index.md) · 다음: [서비스별 관측과 조치 (지도)](../07. 서비스별 관측과 조치/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)
+> **온보딩 트랙 3부. 관측과 SRE**
+> 이전: [Alerta 사용법 (Manual)](../../../Manual/06. 모니터링-로그 작업/Alerta 사용법/index.md) · 다음: [서비스별 관측과 조치 (지도)](../07. 서비스별 관측과 조치/index.md) · 전체 경로: [시작하기: 신입 온보딩](../../../시작하기/index.md)

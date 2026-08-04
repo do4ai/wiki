@@ -40,7 +40,7 @@ ArgoCD Notifications ────────────┤
 | `platform-runtime-alerts.yaml` | workload-health(CrashLoop·OOMKilled·CPU throttling·MySQL Ready0), capacity(PVC·노드 Memory/Disk Pressure) |
 | `platform-slo-rules.yaml` | SLO 레코딩(5m/30m/1h/6h) + 번레이트(fast/slow, 목표 99.9%) |
 | `blackbox-exporter.yaml` | EndpointDown, SSLCertExpiringSoon |
-| `loki.yaml`(loki-rules) | PlatformLogErrorBurst(오류 로그 급증), PlatformLogHttp5xxBurst(5xx 로그 급증) — Loki ruler가 평가 |
+| `loki.yaml`(loki-rules) | PlatformLogErrorBurst(오류 로그 급증), PlatformLogHttp5xxBurst(5xx 로그 급증). Loki ruler가 평가한다 |
 
 모든 규칙은 `severity/environment/service/instance/group` 라벨을 공유해 별도 설정 없이 같은 파이프라인을 탄다.
 
@@ -51,5 +51,5 @@ ArgoCD Notifications ────────────┤
 
 ---
 
-> **온보딩 트랙 — 3부 관측과 SRE**
-> 이전: [메트릭 — Prometheus와 Grafana](../02. 메트릭 - Prometheus와 Grafana/index.md) · 다음: [로그 — Loki와 Alloy](../04. 로그 - Loki와 Alloy/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)
+> **온보딩 트랙 3부. 관측과 SRE**
+> 이전: [메트릭 - Prometheus와 Grafana](../02. 메트릭 - Prometheus와 Grafana/index.md) · 다음: [로그 - Loki와 Alloy](../04. 로그 - Loki와 Alloy/index.md) · 전체 경로: [시작하기: 신입 온보딩](../../../시작하기/index.md)

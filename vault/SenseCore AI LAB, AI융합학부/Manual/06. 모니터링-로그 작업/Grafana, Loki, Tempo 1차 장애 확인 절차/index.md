@@ -104,5 +104,5 @@ sudo kubectl logs deploy/<deploy-name> -n <namespace> --tail=100
 
 ---
 
-> **온보딩 트랙 — 3부 관측과 SRE**
-> 이전: [트레이싱 — OpenTelemetry와 Tempo](../../../Guide/03. 관측과 SRE/05. 트레이싱 - OpenTelemetry와 Tempo/index.md) · 다음: [Alerta 사용법 (Manual)](../Alerta 사용법/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)
+> **온보딩 트랙 3부. 관측과 SRE**
+> 이전: [트레이싱 - OpenTelemetry와 Tempo](../../../Guide/03. 관측과 SRE/05. 트레이싱 - OpenTelemetry와 Tempo/index.md) · 다음: [Alerta 사용법 (Manual)](../Alerta 사용법/index.md) · 전체 경로: [시작하기: 신입 온보딩](../../../시작하기/index.md)

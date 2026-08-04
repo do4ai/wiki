@@ -61,5 +61,5 @@ parent_notion_id: 330e313f58b981a0b738ed69daa8f3a0
 
 ---
 
-> **온보딩 트랙 — 1부 인프라와 플랫폼**
-> 이전: [k3s 클러스터 접속과 GitOps 배포 점검 (Manual)](../../../Manual/04. 서버와 배포 작업/k3s 클러스터 접속과 GitOps 배포 점검/index.md) · 다음: [ArgoCD 운영 흐름 가이드](../05. ArgoCD 운영 흐름 가이드/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)
+> **온보딩 트랙 1부. 인프라와 플랫폼**
+> 이전: [k3s 클러스터 접속과 GitOps 배포 점검 (Manual)](../../../Manual/04. 서버와 배포 작업/k3s 클러스터 접속과 GitOps 배포 점검/index.md) · 다음: [ArgoCD 운영 흐름 가이드](../05. ArgoCD 운영 흐름 가이드/index.md) · 전체 경로: [시작하기: 신입 온보딩](../../../시작하기/index.md)

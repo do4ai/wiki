@@ -65,5 +65,5 @@ parent_notion_id: 330e313f58b981a0b738ed69daa8f3a0
 
 ---
 
-> **온보딩 트랙 — 3부 관측과 SRE**
-> 이전: [03. 관측과 SRE (섹션 지도)](../index.md) · 다음: [메트릭 — Prometheus와 Grafana](../02. 메트릭 - Prometheus와 Grafana/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)
+> **온보딩 트랙 3부. 관측과 SRE**
+> 이전: [03. 관측과 SRE (섹션 지도)](../index.md) · 다음: [메트릭 - Prometheus와 Grafana](../02. 메트릭 - Prometheus와 Grafana/index.md) · 전체 경로: [시작하기: 신입 온보딩](../../../시작하기/index.md)

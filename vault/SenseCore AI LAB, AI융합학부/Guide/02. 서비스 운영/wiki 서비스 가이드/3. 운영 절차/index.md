@@ -1,12 +1,12 @@
 ---
 title: "3. 운영 절차"
 ---
-# wiki — 운영 절차
+# wiki 운영 절차
 
 WikiJS 런타임(`wiki.do4ai.com`, 코드상 `atlas`)이 안 뜨거나 문서가 갱신되지 않을 때의 절차다.
 
 ## 먼저 확인할 운영 단위
-- namespace `atlas`(prod 전용) / Deployment `atlas` — 컨테이너 `wikijs`(:3000, `/healthz`), `content-sync`(60초 주기 main pull 사이드카), `repo-bootstrap` init / ingress host `wiki.do4ai.com` / 콘텐츠 정본 GitHub `do4ai/wiki` 레포(= vault).
+- namespace `atlas`(prod 전용) / Deployment `atlas`: 컨테이너 `wikijs`(:3000, `/healthz`), `content-sync`(60초 주기 main pull 사이드카), `repo-bootstrap` init / ingress host `wiki.do4ai.com` / 콘텐츠 정본 GitHub `do4ai/wiki` 레포(= vault).
 
 ## 절차
 
@@ -31,9 +31,9 @@ sudo kubectl logs deploy/atlas -c content-sync -n atlas --tail=100
 
 ## 참고
 - 로컬 발행 미리보기: `python3 scripts/wiki_wikijs_sync.py sync --dry-run`.
-- 발행 파이프라인 개요: [wiki 서비스 가이드 — 아키텍처와 배포](../1. 아키텍처와 배포/index.md).
+- 발행 파이프라인 개요: [wiki 서비스 가이드: 아키텍처와 배포](../1. 아키텍처와 배포/index.md).
 
 ---
 
-> **온보딩 트랙 — 2부 서비스 운영**
-> 이전: [wiki — 모니터링·알람·SRE](../2. 모니터링·알람·SRE/index.md) · 다음: [03. 관측과 SRE (섹션 지도)](../../../03. 관측과 SRE/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../../시작하기/index.md)
+> **온보딩 트랙 2부. 서비스 운영**
+> 이전: [wiki 모니터링·알람·SRE](../2. 모니터링·알람·SRE/index.md) · 다음: [03. 관측과 SRE (섹션 지도)](../../../03. 관측과 SRE/index.md) · 전체 경로: [시작하기: 신입 온보딩](../../../../시작하기/index.md)

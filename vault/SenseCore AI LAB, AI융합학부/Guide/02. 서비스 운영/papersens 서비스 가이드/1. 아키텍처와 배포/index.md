@@ -1,7 +1,7 @@
 ---
 title: "1. 아키텍처와 배포"
 ---
-# papersens — 아키텍처와 배포
+# papersens 아키텍처와 배포
 
 ## 아키텍처 구조
 
@@ -11,11 +11,11 @@ title: "1. 아키텍처와 배포"
    papersens (단일 컨테이너, FastAPI :8082)
       ├ 프론트(React 빌드물)를 / 및 /assets 에서 서빙
       └ LLM/VLM 호출 → OpenRouter(gpt-4o-mini) / Ollama 폴백
-   (영속 DB 없음 — 인메모리)
+   (영속 DB 없음, 인메모리)
 ```
 
 ### 프론트엔드
-- `web-app` — React 18 + Vite + TypeScript. **별도 배포가 아니라 백엔드 이미지에 빌드 산출물(dist)이 포함**되어, FastAPI(`web_ui.py`)가 `/`(HTML)·`/assets`에서 직접 서빙한다. 즉 **UI + API가 한 컨테이너**.
+- `web-app`: React 18 + Vite + TypeScript. **별도 배포가 아니라 백엔드 이미지에 빌드 산출물(dist)이 포함**되어, FastAPI(`web_ui.py`)가 `/`(HTML)·`/assets`에서 직접 서빙한다. 즉 **UI + API가 한 컨테이너**.
 
 ### 백엔드
 - **Python 3.12 + FastAPI** 단일 파일(`web_ui.py`), 포트 8082.
@@ -40,12 +40,12 @@ title: "1. 아키텍처와 배포"
 - **GitOps 경로**: `gitops/k8s/apps/papersens` (base + overlays/prod·dev), ArgoCD Application `papersens`.
 - **이미지**: ECR `741323757384.dkr.ecr.ap-northeast-2.amazonaws.com/do4ai/papersens` (UI+API 단일 이미지).
 - **시크릿**: `InfisicalSecret`(api) + ECR registry secret.
-- **prod 규모**: 신규 HPA(min 2 / max 4) + PDB minAvailable 1. `TODO(확정 필요)`: 무거운 워크로드라 min 2는 노드 용량 의존 — 단일/저용량 노드면 min 1. (인메모리 특성상 replica 간 데이터 공유 안 됨도 유의.)
+- **prod 규모**: 신규 HPA(min 2 / max 4) + PDB minAvailable 1. `TODO(확정 필요)`: 무거운 워크로드라 min 2는 노드 용량에 의존하며, 단일·저용량 노드면 min 1. (인메모리 특성상 replica 간 데이터 공유 안 됨도 유의.)
 - **도메인**: `papersens.do4ai.com`, 와일드카드 `*.ps.do4ai.com`.
 
 > 배포 이상 대응은 [3. 운영 절차](../3. 운영 절차/index.md). 도구는 [Manual/04 ArgoCD 사용법](../../../../Manual/04. 서버와 배포 작업/ArgoCD 사용법/index.md).
 
 ---
 
-> **온보딩 트랙 — 2부 서비스 운영**
-> 이전: [papersens 서비스 가이드](../index.md) · 다음: [papersens — 모니터링·알람·SRE](../2. 모니터링·알람·SRE/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../../시작하기/index.md)
+> **온보딩 트랙 2부. 서비스 운영**
+> 이전: [papersens 서비스 가이드](../index.md) · 다음: [papersens 모니터링·알람·SRE](../2. 모니터링·알람·SRE/index.md) · 전체 경로: [시작하기: 신입 온보딩](../../../../시작하기/index.md)
