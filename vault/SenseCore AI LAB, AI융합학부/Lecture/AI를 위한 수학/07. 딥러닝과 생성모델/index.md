@@ -41,7 +41,7 @@ title: "07. 딥러닝과 생성모델"
 [34. self-supervised learning과 표현학습](34. self-supervised learning과 표현학습/index.md)
 [35. variational inference, ELBO, VAE](35. variational inference, ELBO, VAE/index.md)
 [36. 확률과정, score matching, diffusion](36. 확률과정, score matching, diffusion/index.md)
-[문제 해설 - 07. 딥러닝과 생성모델](문제 해설 - 07. 딥러닝과 생성모델/index.md)
+[문제집 - 07. 딥러닝과 생성모델](문제집 - 07. 딥러닝과 생성모델/index.md)
 
 ## Page Tree
 
@@ -50,4 +50,4 @@ title: "07. 딥러닝과 생성모델"
 - [34. self-supervised learning과 표현학습](34. self-supervised learning과 표현학습/index.md)
 - [35. variational inference, ELBO, VAE](35. variational inference, ELBO, VAE/index.md)
 - [36. 확률과정, score matching, diffusion](36. 확률과정, score matching, diffusion/index.md)
-- [문제 해설 - 07. 딥러닝과 생성모델](문제 해설 - 07. 딥러닝과 생성모델/index.md)
+- [문제집 - 07. 딥러닝과 생성모델](문제집 - 07. 딥러닝과 생성모델/index.md)

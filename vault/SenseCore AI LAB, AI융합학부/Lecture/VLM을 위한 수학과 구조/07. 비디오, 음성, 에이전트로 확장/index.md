@@ -41,7 +41,7 @@ source_kind: page
 - multimodal RAG가 왜 단순 검색 이상의 문제인지 말할 수 있다.
 - serving과 cost 제약이 모델 설계와 제품 운영에 미치는 영향을 설명할 수 있다.
 
-# 문제 해설과 강의 목록
+# 문제집과 강의 목록
 - 이 단계의 연습문제 해설은 맨 아래 해설 페이지에 모아 둡니다.
 
 [31. video token, frame sampling, temporal modeling](31. video token, frame sampling, temporal modeling/index.md)
@@ -49,7 +49,7 @@ source_kind: page
 [33. multimodal RAG, memory, tool use](33. multimodal RAG, memory, tool use/index.md)
 [34. GUI agent, robotics, embodied reasoning](34. GUI agent, robotics, embodied reasoning/index.md)
 [35. latency, serving, cost optimization](35. latency, serving, cost optimization/index.md)
-[문제 해설 - 07. 비디오, 음성, 에이전트로 확장](문제 해설 - 07. 비디오, 음성, 에이전트로 확장/index.md)
+[문제집 - 07. 비디오, 음성, 에이전트로 확장](문제집 - 07. 비디오, 음성, 에이전트로 확장/index.md)
 
 ## Page Tree
 
@@ -58,4 +58,4 @@ source_kind: page
 - [33. multimodal RAG, memory, tool use](33. multimodal RAG, memory, tool use/index.md)
 - [34. GUI agent, robotics, embodied reasoning](34. GUI agent, robotics, embodied reasoning/index.md)
 - [35. latency, serving, cost optimization](35. latency, serving, cost optimization/index.md)
-- [문제 해설 - 07. 비디오, 음성, 에이전트로 확장](문제 해설 - 07. 비디오, 음성, 에이전트로 확장/index.md)
+- [문제집 - 07. 비디오, 음성, 에이전트로 확장](문제집 - 07. 비디오, 음성, 에이전트로 확장/index.md)

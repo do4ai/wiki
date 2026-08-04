@@ -41,7 +41,7 @@ source_kind: page
 - OCR과 spatial reference가 왜 VLM에서 핵심 난제인지 구조적으로 말할 수 있다.
 - hallucination이 어디서 생기는지 vision, connector, LM 관점으로 나눠 설명할 수 있다.
 
-# 문제 해설과 강의 목록
+# 문제집과 강의 목록
 - 이 단계의 연습문제 해설은 맨 아래 해설 페이지에 모아 둡니다.
 
 [16. OCR, document understanding, chart understanding](16. OCR, document understanding, chart understanding/index.md)
@@ -49,7 +49,7 @@ source_kind: page
 [18. referring expression, region reasoning, counting](18. referring expression, region reasoning, counting/index.md)
 [19. multimodal chain-of-thought와 visual reasoning](19. multimodal chain-of-thought와 visual reasoning/index.md)
 [20. grounding failure와 hallucination의 구조](20. grounding failure와 hallucination의 구조/index.md)
-[문제 해설 - 04. Grounding, OCR, region reasoning](문제 해설 - 04. Grounding, OCR, region reasoning/index.md)
+[문제집 - 04. Grounding, OCR, region reasoning](문제집 - 04. Grounding, OCR, region reasoning/index.md)
 
 ## Page Tree
 
@@ -58,4 +58,4 @@ source_kind: page
 - [18. referring expression, region reasoning, counting](18. referring expression, region reasoning, counting/index.md)
 - [19. multimodal chain-of-thought와 visual reasoning](19. multimodal chain-of-thought와 visual reasoning/index.md)
 - [20. grounding failure와 hallucination의 구조](20. grounding failure와 hallucination의 구조/index.md)
-- [문제 해설 - 04. Grounding, OCR, region reasoning](문제 해설 - 04. Grounding, OCR, region reasoning/index.md)
+- [문제집 - 04. Grounding, OCR, region reasoning](문제집 - 04. Grounding, OCR, region reasoning/index.md)

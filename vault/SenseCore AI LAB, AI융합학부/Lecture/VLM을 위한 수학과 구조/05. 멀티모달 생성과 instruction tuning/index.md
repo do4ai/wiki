@@ -41,7 +41,7 @@ source_kind: page
 - RLHF와 DPO가 `멀티모달 응답 분포`에서 무엇을 바꾸는지 말할 수 있다.
 - safety policy가 모델 구조와 분리된 후처리만이 아니라는 점을 설명할 수 있다.
 
-# 문제 해설과 강의 목록
+# 문제집과 강의 목록
 - 이 단계의 연습문제 해설은 맨 아래 해설 페이지에 모아 둡니다.
 
 [21. captioning, VQA, conditional generation](21. captioning, VQA, conditional generation/index.md)
@@ -49,7 +49,7 @@ source_kind: page
 [23. preference learning, reward model, RLHF](23. preference learning, reward model, RLHF/index.md)
 [24. DPO, rejection sampling, policy alignment](24. DPO, rejection sampling, policy alignment/index.md)
 [25. safety policy, refusal, jailbreak 대응](25. safety policy, refusal, jailbreak 대응/index.md)
-[문제 해설 - 05. 멀티모달 생성과 instruction tuning](문제 해설 - 05. 멀티모달 생성과 instruction tuning/index.md)
+[문제집 - 05. 멀티모달 생성과 instruction tuning](문제집 - 05. 멀티모달 생성과 instruction tuning/index.md)
 
 ## Page Tree
 
@@ -58,4 +58,4 @@ source_kind: page
 - [23. preference learning, reward model, RLHF](23. preference learning, reward model, RLHF/index.md)
 - [24. DPO, rejection sampling, policy alignment](24. DPO, rejection sampling, policy alignment/index.md)
 - [25. safety policy, refusal, jailbreak 대응](25. safety policy, refusal, jailbreak 대응/index.md)
-- [문제 해설 - 05. 멀티모달 생성과 instruction tuning](문제 해설 - 05. 멀티모달 생성과 instruction tuning/index.md)
+- [문제집 - 05. 멀티모달 생성과 instruction tuning](문제집 - 05. 멀티모달 생성과 instruction tuning/index.md)

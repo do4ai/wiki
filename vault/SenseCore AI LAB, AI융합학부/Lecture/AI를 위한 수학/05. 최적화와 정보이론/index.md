@@ -34,7 +34,7 @@ title: "05. 최적화와 정보이론"
 - 왜 분류 문제에서 cross-entropy가 자주 쓰이는지 말할 수 있습니다.
 - 정규화와 일반화가 왜 필요한지 설명할 수 있습니다.
 
-# 문제 해설과 강의 목록
+# 문제집과 강의 목록
 - 이 단계의 연습문제 해설은 아래 페이지에 모아 두었습니다.
 
 [22. 볼록성, 제약최적화, 라그랑주](22. 볼록성, 제약최적화, 라그랑주/index.md)
@@ -42,7 +42,7 @@ title: "05. 최적화와 정보이론"
 [24. 수치선형대수와 자동미분](24. 수치선형대수와 자동미분/index.md)
 [25. 엔트로피, cross-entropy, KL divergence](25. 엔트로피, cross-entropy, KL divergence/index.md)
 [26. 일반화, 정규화, bias-variance](26. 일반화, 정규화, bias-variance/index.md)
-[문제 해설 - 05. 최적화와 정보이론](문제 해설 - 05. 최적화와 정보이론/index.md)
+[문제집 - 05. 최적화와 정보이론](문제집 - 05. 최적화와 정보이론/index.md)
 
 ## Page Tree
 
@@ -51,4 +51,4 @@ title: "05. 최적화와 정보이론"
 - [24. 수치선형대수와 자동미분](24. 수치선형대수와 자동미분/index.md)
 - [25. 엔트로피, cross-entropy, KL divergence](25. 엔트로피, cross-entropy, KL divergence/index.md)
 - [26. 일반화, 정규화, bias-variance](26. 일반화, 정규화, bias-variance/index.md)
-- [문제 해설 - 05. 최적화와 정보이론](문제 해설 - 05. 최적화와 정보이론/index.md)
+- [문제집 - 05. 최적화와 정보이론](문제집 - 05. 최적화와 정보이론/index.md)
