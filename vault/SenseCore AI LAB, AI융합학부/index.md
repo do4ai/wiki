@@ -292,6 +292,7 @@ notion_icon: "🌒"
     - [10. 장애 대응 의사결정 가이드](Guide/03. 관측과 SRE/10. 장애 대응 의사결정 가이드/index.md)
     - [11. 운영 장애 Discord 리포트 솔루션 리서치](Guide/03. 관측과 SRE/11. 운영 장애 Discord 리포트 솔루션 리서치/index.md)
     - [12. k3s 운영 장애 Discord 리포트 설계](Guide/03. 관측과 SRE/12. k3s 운영 장애 Discord 리포트 설계/index.md)
+    - [13. 디스코드 알림 채널과 웹훅 구성](Guide/03. 관측과 SRE/13. 디스코드 알림 채널과 웹훅 구성/index.md)
 - [Manual](Manual/index.md)
   - [01. SCAI LAB Manual 사용법](Manual/01. SCAI LAB Manual 사용법/index.md)
   - [02. 계정 발급과 회수](Manual/02. 계정 발급과 회수/index.md)

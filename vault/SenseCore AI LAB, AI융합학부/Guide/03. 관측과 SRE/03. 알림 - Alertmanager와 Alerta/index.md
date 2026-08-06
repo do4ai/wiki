@@ -5,6 +5,8 @@ title: "03. 알림 - Alertmanager와 Alerta"
 
 장애 신호를 모아 디스코드로 보내는 알림 파이프라인이다. 전체 그림은 [모니터링·알림 아키텍처 가이드](../06. 모니터링·알림 아키텍처 가이드/index.md), 도구 사용법은 [Manual 06. Alerta 사용법](../../../Manual/06. 모니터링-로그 작업/Alerta 사용법/index.md).
 
+**디스코드 쪽 구성**(웹훅 키 다섯 종과 실제 채널 네 개, 운영·개발 채널 분리, 메시지 형태, 시크릿 위치)은 [13. 디스코드 알림 채널과 웹훅 구성](../13. 디스코드 알림 채널과 웹훅 구성/index.md)에 따로 정리했다.
+
 ```
 Prometheus 규칙 ─ Alertmanager ─┐
 Loki ruler(로그)  ──────────────┤
@@ -27,11 +29,13 @@ ArgoCD Notifications ────────────┤
 - **이미지**: `alerta/alerta-web:9.1.0`, replicas 1. **DB**: `postgres:16-alpine`(StatefulSet, 10Gi).
 - **접속**: `alerta.do4ai.com` (AUTH_REQUIRED). 시크릿은 Infisical `/platform/incident-alerting`(`alerta-secrets`)에서 주입(ADMIN/API key/DB/Discord webhook).
 - **플러그인**: `blackout, heartbeat, discord`. Discord 플러그인이 severity 색상으로 채널에 게시.
-- **들어오는 경로**: Alertmanager(메트릭·로그 버스트), ArgoCD Notifications(sync/health). 앱이 직접 보내기도 함(passv 발화 실패 → `/api/alert`).
+- **들어오는 경로**: Alertmanager(메트릭·로그 버스트), ArgoCD Notifications(sync/health).
+- ⚠️ **앱 → Alerta 직송 경로는 현재 죽어 있다.** 코드에는 `/api/alert` 헬퍼가 있으나 어느 파드에도 `ALERTA_API_KEY`가 주입되지 않아 전송이 no-op이다. 앱 런타임 오류는 대신 `platform_runtime`이 디스코드로 직접 보낸다([13. 디스코드 알림 채널과 웹훅 구성](../13. 디스코드 알림 채널과 웹훅 구성/index.md) 참고).
 
 ## blackbox-exporter (합성 모니터링)
 - **이미지**: `prom/blackbox-exporter:v0.25.0`, 모듈 `http_2xx`, 60s.
 - **대상**: `agents.do4i.com/api/health`, `wiki.do4ai.com/healthz`, `app.passv.co.kr`, `api.passv.co.kr/api/health`, `pc.do4ai.com/health`.
+- ⚠️ **현재 수집이 되지 않는다(2026-08-01 확인).** `Probe` 리소스에 `app.kubernetes.io/name: blackbox-exporter` 라벨만 붙어 있는데 Prometheus의 `probeSelector`는 `release: kube-prometheus-stack`을 요구해서 서로 물리지 않는다. `probe_success` 시계열이 0개라 아래 `EndpointDown`·`SSLCertExpiringSoon`은 발화할 수 없다. 상세는 [13. 디스코드 알림 채널과 웹훅 구성 — 알려진 결함](../13. 디스코드 알림 채널과 웹훅 구성/index.md).
 
 ## 알림 규칙 인벤토리 (`monitoring/manifests`)
 | 파일 | 그룹 / 주요 알림 |
