@@ -231,6 +231,7 @@ notion_icon: "🌒"
         - [08. 운영자 기능과 AI 상담 챗봇 개발](Lecture/풀스택실전스터디/08. 운영자 기능과 AI 상담 챗봇 개발/index.md)
         - [09. 통합 검증과 품질 고도화](Lecture/풀스택실전스터디/09. 통합 검증과 품질 고도화/index.md)
         - [10. 배포, 운영, 확장](Lecture/풀스택실전스터디/10. 배포, 운영, 확장/index.md)
+        - [11. 실습 코드 레퍼런스](Lecture/풀스택실전스터디/11. 실습 코드 레퍼런스/index.md)
     - Research
       - [연구 방법론](Lecture/연구 방법론/index.md)
         - [01. 연구의 기초](Lecture/연구 방법론/01. 연구의 기초/index.md)
