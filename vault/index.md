@@ -173,6 +173,7 @@ Workspace home: [SenseCore AI LAB, AI융합학부](SenseCore AI LAB, AI융합학
         - [08. 운영자 기능과 AI 상담 챗봇 개발](SenseCore AI LAB, AI융합학부/Lecture/풀스택실전스터디/08. 운영자 기능과 AI 상담 챗봇 개발/index.md)
         - [09. 통합 검증과 품질 고도화](SenseCore AI LAB, AI융합학부/Lecture/풀스택실전스터디/09. 통합 검증과 품질 고도화/index.md)
         - [10. 배포, 운영, 확장](SenseCore AI LAB, AI융합학부/Lecture/풀스택실전스터디/10. 배포, 운영, 확장/index.md)
+        - [11. 실습 코드 레퍼런스](SenseCore AI LAB, AI융합학부/Lecture/풀스택실전스터디/11. 실습 코드 레퍼런스/index.md)
 - [Guide](SenseCore AI LAB, AI융합학부/Guide/index.md)
   - [01. 인프라와 플랫폼](SenseCore AI LAB, AI융합학부/Guide/01. 인프라와 플랫폼/index.md)
     - [01. Kubernetes 기본 구조 가이드](SenseCore AI LAB, AI융합학부/Guide/01. 인프라와 플랫폼/01. Kubernetes 기본 구조 가이드/index.md)
