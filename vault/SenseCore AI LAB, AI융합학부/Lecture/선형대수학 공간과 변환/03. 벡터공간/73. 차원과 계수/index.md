@@ -585,7 +585,7 @@ $\mathbb{R}^{n}$에서 독립인 등식 제약 $k$개를 걸면 실행가능집�
 | 분야 | "전체" | "핵" | "상" |
 |---|---|---|---|
 | 선형대수 | $n$ | 영공간 | 열공간 |
-| 군론 | $|G|$ | $\ker\varphi$ | $\operatorname{im}\varphi$ |
+| 군론 | $\lvert G\rvert$ | $\ker\varphi$ | $\operatorname{im}\varphi$ |
 | 미분기하 | $n$ | 접공간의 핵 | 미분의 상 |
 | 통계 | 관측 수 | 잔차 공간 | 모형 공간 |
 
