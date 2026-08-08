@@ -34,8 +34,9 @@ ArgoCD Notifications ────────────┤
 
 ## blackbox-exporter (합성 모니터링)
 - **이미지**: `prom/blackbox-exporter:v0.25.0`, 모듈 `http_2xx`, 60s.
-- **대상**: `agents.do4i.com/api/health`, `wiki.do4ai.com/healthz`, `app.passv.co.kr`, `api.passv.co.kr/api/health`, `pc.do4ai.com/health`.
-- ⚠️ **현재 수집이 되지 않는다(2026-08-01 확인).** `Probe` 리소스에 `app.kubernetes.io/name: blackbox-exporter` 라벨만 붙어 있는데 Prometheus의 `probeSelector`는 `release: kube-prometheus-stack`을 요구해서 서로 물리지 않는다. `probe_success` 시계열이 0개라 아래 `EndpointDown`·`SSLCertExpiringSoon`은 발화할 수 없다. 상세는 [13. 디스코드 알림 채널과 웹훅 구성 — 알려진 결함](../13. 디스코드 알림 채널과 웹훅 구성/index.md).
+- **대상**: `agents.do4i.com/api/health`, `wiki.do4ai.com/healthz`, `app.passv.co.kr`, `api.passv.co.kr/api/health`, `palcar.co.kr/health`.
+- ✅ **수집 정상(2026-08-08 확인).** `probe_success` 시계열 8개(공개 5 + 컴포저블 3)가 전부 `1`이고 공개 프로브 5건은 모두 HTTP 200이다. 2026-08-01에 기록했던 라벨 불일치(`Probe` 에 `release: kube-prometheus-stack` 이 없어 `probeSelector` 와 물리지 않던 문제)는 해소됐다. 상세는 [13. 디스코드 알림 채널과 웹훅 구성 — 해소된 결함](../13. 디스코드 알림 채널과 웹훅 구성/index.md).
+- 다섯 번째 대상은 원래 `pc.do4ai.com/health` 였다. 이 이름은 은퇴한 별칭이라 DNS에서 회수됐고(NXDOMAIN), 감시 공백이 생기지 않도록 살아 있는 palcar 운영 엣지 `palcar.co.kr/health` 로 교체했다. 이 경로는 CloudFront가 hidden origin으로 넘겨 k3s `api`가 응답하므로 엣지와 백엔드를 한 번에 검사한다.
 
 ## 알림 규칙 인벤토리 (`monitoring/manifests`)
 | 파일 | 그룹 / 주요 알림 |
