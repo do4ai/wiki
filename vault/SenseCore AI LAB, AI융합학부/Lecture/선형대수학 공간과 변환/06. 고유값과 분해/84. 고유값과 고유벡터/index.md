@@ -335,7 +335,7 @@ $$\text{대수적 중복도 }2\ >\ \text{기하적 중복도 }1$$
 | 회전 ($\theta\ne0,\pi$) | $e^{\pm i\theta}$ |
 | 멱영 | $0$만 |
 | 대칭 | **실수**, 고유벡터가 직교 |
-| 직교 | $|\lambda|=1$ |
+| 직교 | $\lvert \lambda\rvert =1$ |
 
 **다섯째 줄이 86강의 스펙트럼 정리**입니다. 대칭행렬은 언제나 실수 고유값과 직교 고유벡터를 가지며, 이 과목에서 가장 중요한 정리입니다.
 
@@ -561,7 +561,7 @@ $$\begin{pmatrix}r\cos\theta&-r\sin\theta\\ r\sin\theta&r\cos\theta\end{pmatrix}
 
 **동역학에서 이 구조가 중요합니다.** $\mathbf{x}_{k+1}=A\mathbf{x}_{k}$의 거동이 고유값의 크기로 결정됩니다.
 
-| $|\lambda|$ | 거동 |
+| $\lvert \lambda\rvert $ | 거동 |
 |---|---|
 | $<1$ | 원점으로 수렴 |
 | $=1$ | 크기 유지 (회전이면 진동) |
