@@ -466,7 +466,7 @@ $$\operatorname{softmax}(\mathbf{x})_{i}=\frac{e^{x_{i}-m}}{\sum_{j}e^{x_{j}-m}}
 |---|---|
 | $\varepsilon_{\text{mach}}$ (배정밀도) | $2^{-52}=2.22\times10^{-16}$ |
 | 표현 범위 | $\sim10^{\pm308}$ |
-| 반올림 모형 | $\operatorname{fl}(x)=x(1+\delta)$, $|\delta|\le\varepsilon/2$ |
+| 반올림 모형 | $\operatorname{fl}(x)=x(1+\delta)$, $\lvert \delta\rvert \le\varepsilon/2$ |
 | 간격 | 크기에 비례 |
 
 | 위험 | 대응 |
