@@ -26,7 +26,7 @@ title: "2. 집합과 함수"
 | $A \setminus B$ | $A$ 차집합 $B$ | $A$에는 있고 $B$에는 없는 원소 |
 | $A^c$ | $A$의 여집합 | 전체집합에서 $A$를 뺀 것 |
 | $A \times B$ | $A$ 곱집합 $B$ | 순서쌍 $(a,b)$의 집합 |
-| $|A|$ | $A$의 크기 | 원소의 개수 |
+| $\lvert A\rvert $ | $A$의 크기 | 원소의 개수 |
 | $f: A \to B$ | 함수 $f$, $A$에서 $B$로 | 정의역 $A$, 공역 $B$인 함수 |
 | $g \circ f$ | $g$ 합성 $f$ | 먼저 $f$, 그다음 $g$를 적용 |
 
@@ -238,10 +238,10 @@ $$
 |---|---|
 | 집합 표기 | 원소나열법 $\{1,2,3\}$, 조건제시법 $\{x\mid \cdots\}$. 순서·중복 무시 |
 | 부분집합·상등 | $A\subseteq B \iff \forall x(x\in A\to x\in B)$, $A=B \iff A\subseteq B \land B\subseteq A$ |
-| 부분집합 개수 | $|A|=n$이면 부분집합 $2^n$개 |
+| 부분집합 개수 | $\lvert A\rvert =n$이면 부분집합 $2^n$개 |
 | 집합 연산 대응 | $\cup\leftrightarrow\lor$, $\cap\leftrightarrow\land$, $^c\leftrightarrow\lnot$ |
 | 드모르간(집합) | $(A\cup B)^c=A^c\cap B^c$, $(A\cap B)^c=A^c\cup B^c$ |
-| 곱집합 | $A\times B=\{(a,b)\}$, $|A\times B|=|A||B|$, 순서 중요 |
+| 곱집합 | $A\times B=\{(a,b)\}$, $\lvert A\times B\rvert =\lvert A\rvert \lvert B\rvert $, 순서 중요 |
 | 함수 조건 | 각 입력에 값이 정확히 하나 |
 | 정의역·공역·치역 | 치역 $\subseteq$ 공역 |
 | 단사 | $f(x_1)=f(x_2)\Rightarrow x_1=x_2$ |
