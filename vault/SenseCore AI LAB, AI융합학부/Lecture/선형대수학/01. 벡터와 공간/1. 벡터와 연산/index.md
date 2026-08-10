@@ -288,7 +288,7 @@ $$
 | 정규화 | $\hat{\mathbf{v}}=\mathbf{v}/\lVert\mathbf{v}\rVert$ | 노름으로 나눈다, 영벡터 제외 |
 | 각도 | $\cos\theta=\dfrac{\mathbf{u}\cdot\mathbf{v}}{\lVert\mathbf{u}\rVert\lVert\mathbf{v}\rVert}$ | 내적을 노름 곱으로 나눈다 |
 | 직교 판정 | $\mathbf{u}\cdot\mathbf{v}=0$ | 내적이 0이면 직교 |
-| 코시-슈바르츠 | $|\mathbf{u}\cdot\mathbf{v}|\le\lVert\mathbf{u}\rVert\lVert\mathbf{v}\rVert$ | 등호는 평행일 때 |
+| 코시-슈바르츠 | $\lvert \mathbf{u}\cdot\mathbf{v}\rvert \le\lVert\mathbf{u}\rVert\lVert\mathbf{v}\rVert$ | 등호는 평행일 때 |
 | 삼각부등식 | $\lVert\mathbf{u}+\mathbf{v}\rVert\le\lVert\mathbf{u}\rVert+\lVert\mathbf{v}\rVert$ | 한 변은 두 변 합 이하 |
 
 ## 4. 종합 문제 드릴

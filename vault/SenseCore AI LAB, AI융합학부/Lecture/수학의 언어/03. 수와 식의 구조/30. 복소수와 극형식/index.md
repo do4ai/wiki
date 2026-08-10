@@ -125,8 +125,8 @@ $z$가 실수이면 $b=0$이므로 $|z|=\sqrt{a^{2}}=|a|$가 되어 1강의 실�
 | 합과 곱의 켤레 | $\overline{z+w}=\bar{z}+\bar{w}$, $\overline{zw}=\bar{z}\bar{w}$ |
 | 실수 판정 | $z=\bar{z}\;\Longleftrightarrow\;z$가 실수입니다 |
 | 실수부와 허수부 | $\operatorname{Re}z=\dfrac{z+\bar{z}}{2}$, $\operatorname{Im}z=\dfrac{z-\bar{z}}{2i}$ |
-| 절댓값의 곱 | $|zw|=|z||w|$ |
-| 역수 | $z^{-1}=\dfrac{\bar{z}}{|z|^{2}}$ ($z\ne 0$) |
+| 절댓값의 곱 | $\lvert zw\rvert =\lvert z\rvert \lvert w\rvert $ |
+| 역수 | $z^{-1}=\dfrac{\bar{z}}{\lvert z\rvert ^{2}}$ ($z\ne 0$) |
 
 마지막 줄이 나눗셈의 일반 공식입니다. 방금 한 계산이 이 공식의 적용이었습니다.
 
