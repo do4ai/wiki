@@ -21,6 +21,11 @@ permissions:
 
 jobs:
   notify-discord:
+    # 커밋 메시지나 PR 제목에 [skip-notify] 가 있으면 알림을 보내지 않는다.
+    # 강의·문제집 집필처럼 반복 커밋이 많은 작업에서 채널이 묻히는 것을 막는다.
+    if: >-
+      !contains(github.event.pull_request.title, '[skip-notify]') &&
+      !contains(github.event.head_commit.message, '[skip-notify]')
     runs-on: ubuntu-latest
     steps:
       - name: Build Discord payload
