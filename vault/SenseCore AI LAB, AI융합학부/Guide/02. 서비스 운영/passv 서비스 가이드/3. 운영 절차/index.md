@@ -42,3 +42,8 @@ curl -f http://localhost:8000/api/health
 ## Escalation 또는 롤백 기준
 - `api`·`mysql` 동시 비정상 / DB 연결 실패 반복 / 직전 배포 원인 명확 / 결제·인증 등 핵심 도메인 장애.
 - 컷오버 중 장애는 [Manual/04 passv gitops 이전·컷오버 점검](../../../../Manual/04. 서버와 배포 작업/passv gitops 이전·컷오버 점검/index.md)의 롤백 단계.
+
+---
+
+> **온보딩 트랙 — 2부 서비스 운영**
+> 이전: [passv — 모니터링·알람·SRE](../2. 모니터링·알람·SRE/index.md) · 다음: [palcar 서비스 가이드](../../palcar 서비스 가이드/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../../시작하기/index.md)

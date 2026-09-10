@@ -3,6 +3,8 @@ title: "passv gitops 이전·컷오버 점검"
 ---
 # passv gitops 이전·컷오버 점검
 
+> ⚠️ 이 문서가 참조하는 gitops 경로(`k8s/apps/passv` 등)는 이전 작업에서 생성될 예정이며, 아직 gitops 레포에 존재하지 않는다. TODO(확정 필요): 이전 완료 후 실제 경로 확정.
+
 ## 문서 목적
 
 `passv`를 EC2(docker-compose) + S3/CloudFront 운영에서 **중앙 gitops(K8s)** 운영으로 옮기는 절차와 점검 항목을 정리한다.

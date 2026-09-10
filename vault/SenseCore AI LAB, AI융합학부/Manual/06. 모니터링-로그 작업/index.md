@@ -8,16 +8,16 @@ parent_notion_id: 330e313f58b98098b619f0e3ef2d0fa0
 ---
 # 06. 모니터링/로그 작업
 
-이 섹션은 Grafana, Prometheus, Kibana, Tempo 같은 도구에서 상태를 확인하고 근거를 찾는 절차 문서를 모아 둔다.
+이 섹션은 Grafana, Prometheus, Loki, Tempo 같은 도구에서 상태를 확인하고 근거를 찾는 절차 문서를 모아 둔다.
 
 어떤 화면과 명령을 먼저 봐야 하는지 실무 절차 중심으로 정리한다.
 
 도구별 사용법은 아래에서 본다.
 
-- `Grafana, Kibana, Tempo 1차 장애 확인 절차`: 장애 시간 범위 고정, 메트릭/로그/트레이스 교차 확인, 1차 판정 기준
+- `Grafana, Loki, Tempo 1차 장애 확인 절차`: 장애 시간 범위 고정, 메트릭/로그/트레이스 교차 확인, 1차 판정 기준
 - `Alerta 사용법`: 알림 허브 분류(triage), 앱이 직접 알림 보내기(passv 발화 실패 등), 전용 키 발급
 
 ## Page Tree
 
-- [Grafana, Kibana, Tempo 1차 장애 확인 절차](Grafana, Kibana, Tempo 1차 장애 확인 절차/index.md)
+- [Grafana, Loki, Tempo 1차 장애 확인 절차](Grafana, Loki, Tempo 1차 장애 확인 절차/index.md)
 - [Alerta 사용법](Alerta 사용법/index.md)

@@ -227,3 +227,8 @@ https://in.passv.co.kr/api/auth/kakao/callback
 8. `Client Secret`을 `KAKAO_CLIENT_SECRET`에 넣었다.
 9. `KAKAO_REDIRECT_URI`를 운영 콜백 URI와 같게 맞췄다.
 10. 운영 로그인 화면에서 `카카오로 시작하기` 버튼을 눌러 흐름이 시작되는지 확인했다.
+
+---
+
+> **온보딩 트랙 — 4부 운영 변경과 컨벤션**
+> 이전: [구글 로그인 설정 (Manual)](../구글로그인/index.md) · 다음: [Convention (규칙 지도)](../../../Convention/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)

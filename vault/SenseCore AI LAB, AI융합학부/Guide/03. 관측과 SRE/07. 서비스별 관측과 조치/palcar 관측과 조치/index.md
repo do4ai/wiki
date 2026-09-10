@@ -7,7 +7,7 @@ title: "palcar 관측과 조치"
 
 ## 접속
 - **메트릭**: `grafana.do4ai.com` → `platform-api-apm`(service `palcar-api`) + 공통(kubernetes-cluster·nginx-ingress).
-- **로그**: `kibana.do4ai.com` → `kubernetes.namespace:palcar`.
+- **로그**: Grafana Explore → `{namespace="palcar"}`.
 - **트레이스**: Grafana Explore → Tempo, service `palcar-api`.
 - **배포 상태**: `argocd.do4ai.com` → `palcar`.
 
@@ -26,3 +26,8 @@ title: "palcar 관측과 조치"
 ## 더 보기
 - 서비스 구조: [palcar 서비스 가이드](../../../02. 서비스 운영/palcar 서비스 가이드/index.md)
 - 손절차: [palcar 운영 절차](../../../02. 서비스 운영/palcar 서비스 가이드/3. 운영 절차/index.md)
+
+---
+
+> **온보딩 트랙 — 3부 관측과 SRE**
+> 이전: [passv 관측과 조치](../passv 관측과 조치/index.md) · 다음: [papersens 관측과 조치](../papersens 관측과 조치/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../../시작하기/index.md)

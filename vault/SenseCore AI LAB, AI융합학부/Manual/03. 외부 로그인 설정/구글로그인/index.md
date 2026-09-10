@@ -36,11 +36,13 @@ parent_notion_id: 330e313f58b98114bbc9e9d8d8aa230a
 
 ## 캡처 파일 위치
 
-실제 작업 캡처는 아래 폴더에 저장했다.
+본문의 작업 캡처 이미지는 passv 운영 도메인에 호스팅되어 있다.
 
-`notion/ssot/assets/manual/google-login-in-passv-co-kr/`
+`https://in.passv.co.kr/manual/google-login-in-passv-co-kr/`
 
 보안상 위험한 값은 캡처에서 마스킹했다.
+
+⚠️ 이미지가 운영 서비스 도메인에 호스팅되어 있어, 해당 서비스 장애나 경로 변경 시 이 문서의 이미지도 함께 깨진다.
 
 ## 전체 순서
 
@@ -287,3 +289,8 @@ Google Console에서 가져온 `Client ID` 1개를 아래 두 위치에 같은 �
 9. `PASSV_PROD_GOOGLE_CLIENT_ID`에 같은 값을 넣었다.
 10. 백엔드 `GOOGLE_CLIENT_ID`에도 같은 값을 넣었다.
 11. 운영 로그인 화면에서 `구글로 시작하기` 버튼을 확인했다.
+
+---
+
+> **온보딩 트랙 — 4부 운영 변경과 컨벤션**
+> 이전: [Ingress, 도메인, 이미지, 환경 변수 변경 절차 (Manual)](../../05. 운영 변경 작업/Ingress, 도메인, 이미지, 환경 변수 변경 절차/index.md) · 다음: [카카오 로그인 설정 (Manual)](../카카오로그인/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)

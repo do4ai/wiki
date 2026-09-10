@@ -133,3 +133,8 @@ sudo kubectl get deploy,sts,svc,ing -n palcar
 - 점검 대상 앱과 namespace
 - 최종 판정: 정상, 추가 조사 필요, 즉시 롤백 필요
 - 후속 담당자와 전달한 근거
+
+---
+
+> **온보딩 트랙 — 1부 인프라와 플랫폼**
+> 이전: [k3s GitOps 운영 클러스터 초보자 가이드](../../../Guide/01. 인프라와 플랫폼/03. k3s GitOps 운영 클러스터 초보자 가이드/index.md) · 다음: [GitOps 운영 모델 가이드](../../../Guide/01. 인프라와 플랫폼/04. GitOps 운영 모델 가이드/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../시작하기/index.md)

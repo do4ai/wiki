@@ -24,3 +24,8 @@ GitHub do4ai/wiki (vault 소스)
 - **도메인**: `wiki.do4ai.com`, 내부 `origin.wiki.do4ai.com`.
 
 > 운영·복구 손절차는 [3. 운영 절차](../3. 운영 절차/index.md).
+
+---
+
+> **온보딩 트랙 — 2부 서비스 운영**
+> 이전: [wiki 서비스 가이드](../index.md) · 다음: [wiki — 모니터링·알람·SRE](../2. 모니터링·알람·SRE/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../../시작하기/index.md)

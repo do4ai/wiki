@@ -8,7 +8,7 @@ parent_notion_id: 330e313f58b98098b619f0e3ef2d0fa0
 ---
 # 01. SCAI LAB Manual 사용법
 
-`Manual`은 운영에 쓰는 **솔루션(도구)을 어떻게 쓰는가**를 도구 단위로 정리한 문서 모음이다(ArgoCD·kubectl/k3s·Grafana·Kibana·Tempo·Infisical·Harbor·Alerta 등).
+`Manual`은 운영에 쓰는 **솔루션(도구)을 어떻게 쓰는가**를 도구 단위로 정리한 문서 모음이다(ArgoCD·kubectl/k3s·Grafana·Loki·Tempo·Infisical·Harbor·Alerta 등).
 
 이 페이지 아래 문서는 준비물, 작업 순서, 검증 방법, 실패 시 되돌리는 방법까지 포함하는 것을 기본 원칙으로 한다.
 

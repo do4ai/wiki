@@ -8,6 +8,9 @@ parent_notion_id: 330e313f58b9810a9075d5d9e176d8fd
 ---
 # 운영 장애 Discord 리포트 솔루션 리서치
 
+> 이 문서는 2026-07-31 로그 스택 전환 이전에 작성된 리서치·설계 기록이다. 본문의 ELK(Elasticsearch·Kibana·Filebeat·ElastAlert) 서술은 현재 구성과 다르다. 현재 구성은 [04. 로그 - Loki와 Alloy](../04. 로그 - Loki와 Alloy/index.md)를 본다.
+
+
 기준일: 2026-03-29  
 기준 환경: 현재 운영 중인 `k3s` 클러스터와 이미 배포된 `Prometheus`, `Alertmanager`, `ArgoCD Notifications`, `Elasticsearch`, `Kibana`, `Filebeat`, `OTel`, `Tempo`
 

@@ -11,7 +11,7 @@ title: "06. 관측, 알림, SRE"
 
 ## 알림 경로
 
-- 메트릭(Prometheus/Alertmanager)·로그(ElastAlert)·배포(ArgoCD Notifications)는 모두 **Alerta로 모이고 Discord로** 전송된다.
+- 메트릭(Prometheus/Alertmanager)·로그(Loki ruler)·배포(ArgoCD Notifications)는 모두 **Alerta로 모이고 Discord로** 전송된다.
 - 인프라 지표로 안 잡히는 **앱 레벨 기능 실패(예: 챗봇 발화 실패)는 앱이 Alerta로 직접** 보낸다.
 
 ## 알림 규칙 라벨
@@ -27,3 +27,8 @@ title: "06. 관측, 알림, SRE"
 
 - 알림은 Alerta에서 상태(open/ack/closed)를 관리한다.
 - 마무리 시 **원인 1줄·조치 1줄·재발 방지 1줄**을 남긴다. 판단 기준은 [장애 대응 의사결정 가이드](../../Guide/03. 관측과 SRE/10. 장애 대응 의사결정 가이드/index.md).
+
+---
+
+> **온보딩 트랙 — 4부 운영 변경과 컨벤션**
+> 이전: [시크릿과 보안](../05. 시크릿과 보안/index.md) · 다음: [코드 규칙](../07. 코드 규칙/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../시작하기/index.md)

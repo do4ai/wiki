@@ -7,7 +7,7 @@ title: "wiki 관측과 조치"
 
 ## 접속
 - **합성 모니터링**: blackbox 프로브가 `wiki.do4ai.com/healthz` 점검 → `PlatformEndpointDown` 알림. 직접 확인 `curl -I https://wiki.do4ai.com/healthz`.
-- **로그**: `kibana.do4ai.com` → `kubernetes.namespace:atlas` (특히 `content-sync` 컨테이너).
+- **로그**: Grafana Explore → `{namespace="atlas"}` (특히 `content-sync` 컨테이너).
 - **배포 상태**: `argocd.do4ai.com` → `atlas`.
 
 ## 볼 수 있는 메트릭·로그
@@ -25,3 +25,8 @@ title: "wiki 관측과 조치"
 ## 더 보기
 - 서비스 구조: [wiki 서비스 가이드](../../../02. 서비스 운영/wiki 서비스 가이드/index.md)
 - 손절차: [wiki 운영 절차](../../../02. 서비스 운영/wiki 서비스 가이드/3. 운영 절차/index.md)
+
+---
+
+> **온보딩 트랙 — 3부 관측과 SRE**
+> 이전: [papersens 관측과 조치](../papersens 관측과 조치/index.md) · 다음: [SLO·SLI와 에러 버짓 가이드](../../08. SLO·SLI와 에러 버짓 가이드/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../../../시작하기/index.md)

@@ -29,3 +29,8 @@ title: "03. GitOps와 배포"
 ## 검증
 
 - 매니페스트 변경 후 `kubectl kustomize <overlay>`로 렌더가 되는지 확인한다. 알림 규칙은 가능하면 `promtool check rules`.
+
+---
+
+> **온보딩 트랙 — 4부 운영 변경과 컨벤션**
+> 이전: [Git, 브랜치, 커밋, PR](../02. Git, 브랜치, 커밋, PR/index.md) · 다음: [네이밍과 환경](../04. 네이밍과 환경/index.md) · 전체 경로: [시작하기 — 신입 온보딩](../../시작하기/index.md)
